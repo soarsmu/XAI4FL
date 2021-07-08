@@ -1,0 +1,285 @@
+project_id	bug_id	temp_len	sloc	sloc_total	buggy_line	is_omission	is_not_found	shap_max	shap_min	shap_mean	buggy_line_max	buggy_line_min	buggy_line_mean
+Chart	1	629	13269	96382	org.jfree.chart.renderer.category.AbstractCategoryItemRenderer#1797	0	0	42.0	42.0	42.0
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#755	1	0	51.0	48.0	50.0	org.jfree.data.general.DatasetUtilities#757	org.jfree.data.general.DatasetUtilities#757	org.jfree.data.general.DatasetUtilities#757
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#757	1	0	51.0	48.0	50.0	org.jfree.data.general.DatasetUtilities#757	org.jfree.data.general.DatasetUtilities#757	org.jfree.data.general.DatasetUtilities#757
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#759	1	1	163	163	163			
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#761	1	0	115.5	115.5	115.5	org.jfree.data.general.DatasetUtilities#760	org.jfree.data.general.DatasetUtilities#760	org.jfree.data.general.DatasetUtilities#760
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#1242	1	0	115.5	115.5	115.5	org.jfree.data.general.DatasetUtilities#1242	org.jfree.data.general.DatasetUtilities#1242	org.jfree.data.general.DatasetUtilities#1242
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#1244	1	0	115.5	115.5	115.5	org.jfree.data.general.DatasetUtilities#1244	org.jfree.data.general.DatasetUtilities#1244	org.jfree.data.general.DatasetUtilities#1244
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#1246	1	1	163	163	163			
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#1248	1	0	115.5	115.5	115.5	org.jfree.data.general.DatasetUtilities#1247	org.jfree.data.general.DatasetUtilities#1247	org.jfree.data.general.DatasetUtilities#1247
+Chart	3	143	1571	96317	org.jfree.data.time.TimeSeries#1057	1	0	7.0	7.0	7.0	org.jfree.data.time.TimeSeries#1058	org.jfree.data.time.TimeSeries#1058	org.jfree.data.time.TimeSeries#1058
+Chart	4	2371	46751	94583	org.jfree.chart.plot.XYPlot#4493	1	0	241.0	280.0	285.0	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493
+Chart	4	2371	46751	94583	org.jfree.chart.plot.XYPlot#4501	1	0	241.0	280.0	285.0	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493
+Lang	31	32	3663	17591	org.apache.commons.lang3.StringUtils#1446	0	0	5.0	5.0	5.0
+Lang	31	32	3663	17591	org.apache.commons.lang3.StringUtils#1450	1	0	8.0	8.0	8.0	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449
+Lang	31	32	3663	17591	org.apache.commons.lang3.StringUtils#1451	1	0	8.0	8.0	8.0	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449
+Lang	31	32	3663	17591	org.apache.commons.lang3.StringUtils#1453	1	0	8.0	8.0	8.0	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#104	0	0	40.5	40.5	40.5
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#105	0	1	78	78	78
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#106	0	1	78	78	78
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#107	0	0	4.0	4.0	4.0	org.apache.commons.lang3.builder.HashCodeBuilder$1#107	org.apache.commons.lang3.builder.HashCodeBuilder$1#107	org.apache.commons.lang3.builder.HashCodeBuilder$1#107
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#108	0	1	78	78	78
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#109	0	1	78	78	78
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#152	0	0	40.5	40.5	40.5
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#538	0	0	40.5	40.5	40.5
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#522	1	0	40.5	40.5	40.5	org.apache.commons.lang3.builder.HashCodeBuilder#522	org.apache.commons.lang3.builder.HashCodeBuilder#522	org.apache.commons.lang3.builder.HashCodeBuilder#522
+Lang	33	456	2237	17302	org.apache.commons.lang3.ClassUtils#910	0	1	457	457	457
+Lang	34	456	1496	17310	org.apache.commons.lang3.builder.ToStringStyle#148	0	0	267.0	267.0	267.0
+Lang	34	456	1496	17310	org.apache.commons.lang3.builder.ToStringStyle#164	0	0	74.0	62.0	64.0
+Lang	35	27	1606	17078	org.apache.commons.lang3.ArrayUtils#3295	0	0	1.0	1.0	1.0
+Lang	35	27	1606	17078	org.apache.commons.lang3.ArrayUtils#3574	0	1	28	28	28
+Mockito	1	1172	7335	10517	org.mockito.internal.invocation.InvocationMatcher#123	0	0	1.0	1.0	1.0
+Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#71	0	1	511	511	511
+Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#87	0	1	511	511	511
+Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#90	0	1	511	511	511
+Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#94	0	1	511	511	511
+Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99	0	0	9.0	9.0	9.0
+Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#17	1	1	511	511	511			
+Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#103	1	0	9.0	9.0	9.0	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99
+Mockito	11	239	2772	10472	org.mockito.internal.creation.DelegatingMethod#60	0	1	240	240	240
+Mockito	11	239	2772	10472	org.mockito.internal.creation.DelegatingMethod#55	1	0	1.0	1.0	1.0	org.mockito.internal.creation.DelegatingMethod#55	org.mockito.internal.creation.DelegatingMethod#55	org.mockito.internal.creation.DelegatingMethod#55
+Mockito	11	239	2772	10472	org.mockito.internal.creation.DelegatingMethod#56	1	0	1.0	1.0	1.0	org.mockito.internal.creation.DelegatingMethod#55	org.mockito.internal.creation.DelegatingMethod#55	org.mockito.internal.creation.DelegatingMethod#55
+Mockito	12	279	4110	7284	org.mockito.internal.util.reflection.GenericMaster#20	1	0	39.0	267.0	69.0	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20
+Mockito	12	279	4110	7284	org.mockito.internal.util.reflection.GenericMaster#21	1	0	39.0	267.0	69.0	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20
+Mockito	12	279	4110	7284	org.mockito.internal.util.reflection.GenericMaster#22	1	0	39.0	267.0	69.0	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20
+Mockito	13	625	4211	7287	org.mockito.internal.MockHandler#77	0	0	83.0	83.0	83.0
+Mockito	13	625	4211	7287	org.mockito.internal.MockHandler#81	1	0	83.0	83.0	83.0	org.mockito.internal.MockHandler#77	org.mockito.internal.MockHandler#77	org.mockito.internal.MockHandler#77
+Mockito	13	625	4211	7287	org.mockito.internal.MockHandler#83	1	0	83.0	83.0	83.0	org.mockito.internal.MockHandler#77	org.mockito.internal.MockHandler#77	org.mockito.internal.MockHandler#77
+Mockito	14	626	3818	7161	org.mockito.internal.MockitoCore#73	0	0	370.0	370.0	370.0
+Mockito	14	626	3818	7161	org.mockito.internal.MockHandler#20	1	0	370.0	370.0	370.0	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76
+Mockito	14	626	3818	7161	org.mockito.internal.MockHandler#76	1	0	370.0	370.0	370.0	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76
+Mockito	14	626	3818	7161	org.mockito.internal.MockHandler#79	1	0	370.0	370.0	370.0	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76
+Mockito	14	626	3818	7161	org.mockito.internal.MockitoCore#23	1	0	370.0	370.0	370.0	org.mockito.internal.MockitoCore#73	org.mockito.internal.MockitoCore#73	org.mockito.internal.MockitoCore#73
+Mockito	15	475	3342	7562	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#4	1	0	276.5	276.5	276.5	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#34	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#34	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#34
+Mockito	15	475	3342	7562	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#25	1	0	276.5	276.5	276.5	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25
+Mockito	15	475	3342	7562	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#26	1	0	276.5	276.5	276.5	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25
+Mockito	16	458	3219	6372	org.mockito.Mockito#827	0	0	268.5	268.5	268.5
+Mockito	16	458	3219	6372	org.mockito.Mockito#899	0	1	459	459	459
+Mockito	16	458	3219	6372	org.mockito.internal.MockitoCore#32	0	0	4.0	4.0	4.0
+Mockito	16	458	3219	6372	org.mockito.internal.MockitoCore#33	0	1	459	459	459
+Mockito	16	458	3219	6372	org.mockito.internal.MockitoCore#35	1	0	268.5	268.5	268.5	org.mockito.internal.MockitoCore#35	org.mockito.internal.MockitoCore#35	org.mockito.internal.MockitoCore#35
+Mockito	16	458	3219	6372	org.mockito.internal.MockitoCore#36	1	0	268.5	268.5	268.5	org.mockito.internal.MockitoCore#36	org.mockito.internal.MockitoCore#36	org.mockito.internal.MockitoCore#36
+Mockito	17	213	2780	6364	org.mockito.internal.creation.MockSettingsImpl#22	0	0	2.0	2.0	2.0
+Mockito	17	213	2780	6364	org.mockito.internal.creation.MockSettingsImpl#74	0	1	214	214	214
+Mockito	17	213	2780	6364	org.mockito.internal.creation.MockSettingsImpl#20	1	0	2.0	2.0	2.0	org.mockito.internal.creation.MockSettingsImpl#22	org.mockito.internal.creation.MockSettingsImpl#22	org.mockito.internal.creation.MockSettingsImpl#22
+Mockito	17	213	2780	6364	org.mockito.internal.util.MockUtil#19	1	0	139.5	139.5	139.5	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45
+Mockito	17	213	2780	6364	org.mockito.internal.util.MockUtil#45	1	0	139.5	139.5	139.5	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45
+Mockito	17	213	2780	6364	org.mockito.internal.util.MockUtil#46	1	0	139.5	139.5	139.5	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45
+Mockito	18	303	2942	10518	org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues#87	1	0	1.0	1.0	1.0	org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues#87	org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues#87	org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues#87
+Mockito	19	303	4891	10519	org.mockito.internal.configuration.injection.PropertyAndSetterInjection#114	0	1	304	304	304
+Mockito	19	303	4891	10519	org.mockito.internal.configuration.injection.filter.FinalMockCandidateFilter#23	0	1	304	304	304
+Mockito	19	303	4891	10519	org.mockito.internal.configuration.injection.filter.MockCandidateFilter#15	0	1	304	304	304
+Mockito	19	303	4891	10519	org.mockito.internal.configuration.injection.filter.NameBasedCandidateFilter#23	0	1	304	304	304
+Mockito	19	303	4891	10519	org.mockito.internal.configuration.injection.filter.NameBasedCandidateFilter#31	0	1	304	304	304
+Mockito	19	303	4891	10519	org.mockito.internal.configuration.injection.filter.NameBasedCandidateFilter#43	0	1	304	304	304
+Mockito	19	303	4891	10519	org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter#20	0	1	304	304	304
+Mockito	19	303	4891	10519	org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter#28	0	1	304	304	304
+Mockito	19	303	4891	10519	org.mockito.internal.configuration.injection.filter.FinalMockCandidateFilter#13	1	1	304	304	304			
+Mockito	19	303	4891	10519	org.mockito.internal.configuration.injection.filter.MockCandidateFilter#9	1	1	304	304	304			
+Mockito	19	303	4891	10519	org.mockito.internal.configuration.injection.filter.NameBasedCandidateFilter#42	1	1	304	304	304			
+Mockito	2	293	3970	10998	org.mockito.internal.util.Timer#3	1	0	16.0	16.0	16.0	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10
+Mockito	2	293	3970	10998	org.mockito.internal.util.Timer#10	1	0	16.0	16.0	16.0	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10
+Mockito	2	293	3970	10998	org.mockito.internal.util.Timer#28	1	0	16.0	16.0	16.0	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10
+Mockito	20	937	6328	11629	org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker#34	0	0	217.0	261.0	252.0
+Mockito	20	937	6328	11629	org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker#45	0	1	938	938	938
+Mockito	20	937	6328	11629	org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker#32	1	0	217.0	257.0	252.0	org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker#34	org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker#32	org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker#34
+Mockito	21	224	2743	10721	org.mockito.internal.creation.instance.ConstructorInstantiator#17	0	0	8.0	8.0	8.0
+Mockito	21	224	2743	10721	org.mockito.internal.creation.instance.ConstructorInstantiator#20	0	1	225	225	225
+Mockito	21	224	2743	10721	org.mockito.internal.creation.instance.ConstructorInstantiator#24	0	0	2.0	2.0	2.0
+Mockito	21	224	2743	10721	org.mockito.internal.creation.instance.ConstructorInstantiator#25	0	0	3.0	3.0	3.0
+Mockito	21	224	2743	10721	org.mockito.internal.creation.instance.ConstructorInstantiator#29	1	0	3.0	3.0	3.0	org.mockito.internal.creation.instance.ConstructorInstantiator#25	org.mockito.internal.creation.instance.ConstructorInstantiator#25	org.mockito.internal.creation.instance.ConstructorInstantiator#25
+Mockito	21	224	2743	10721	org.mockito.internal.creation.instance.ConstructorInstantiator#36	1	0	2.0	2.0	2.0	org.mockito.internal.creation.instance.ConstructorInstantiator#24	org.mockito.internal.creation.instance.ConstructorInstantiator#24	org.mockito.internal.creation.instance.ConstructorInstantiator#24
+Mockito	22	211	2705	10498	org.mockito.internal.matchers.Equality#13	0	0	9.0	9.0	9.0
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#44	0	0	319.5	319.5	319.5
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#45	0	0	319.5	319.5	319.5
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114	0	0	319.5	319.5	319.5
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#52	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#52	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#52	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#52
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#59	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#60	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#100	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#123	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#124	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114
+Mockito	24	651	8614	10400	org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues#76	0	0	1.0	1.0	1.0
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#53	0	0	355.0	355.0	355.0
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#56	0	1	619	619	619
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	0	0	355.0	355.0	355.0
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#81	0	1	619	619	619
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#82	0	0	355.0	355.0	355.0
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#83	0	0	58.0	50.0	56.0
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#7	1	0	355.0	355.0	355.0	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#57	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#57	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#57
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#19	1	0	355.0	355.0	355.0	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#77	1	0	355.0	355.0	355.0	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#78	1	0	355.0	355.0	355.0	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#79	1	0	355.0	355.0	355.0	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#80	1	0	355.0	355.0	355.0	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68
+Mockito	26	761	7826	9506	org.mockito.internal.util.Primitives#66	0	0	41.0	133.0	96.0
+Mockito	27	597	4026	8316	org.mockito.internal.util.MockUtil#64	0	0	557.0	557.0	557.0
+Mockito	27	597	4026	8316	org.mockito.internal.util.MockUtil#65	0	0	3.0	3.0	3.0
+Mockito	28	559	3381	7597	org.mockito.internal.configuration.DefaultInjectionEngine#93	0	0	316.0	316.0	316.0
+Mockito	29	638	4230	7569	org.mockito.internal.matchers.Same#29	0	1	639	639	639
+Mockito	3	954	8626	10512	org.mockito.internal.invocation.InvocationMatcher#127	0	0	4.0	38.0	9.0
+Mockito	3	954	8626	10512	org.mockito.internal.invocation.InvocationMatcher#128	0	0	3.0	34.0	5.0
+Mockito	3	954	8626	10512	org.mockito.internal.invocation.InvocationMatcher#130	0	0	5.0	13.0	3.0
+Mockito	3	954	8626	10512	org.mockito.internal.invocation.InvocationMatcher#143	1	0	4.0	38.0	9.0	org.mockito.internal.invocation.InvocationMatcher#127	org.mockito.internal.invocation.InvocationMatcher#127	org.mockito.internal.invocation.InvocationMatcher#127
+Mockito	30	277	2116	7570	org.mockito.exceptions.Reporter#438	0	1	278	278	278
+Mockito	30	277	2116	7570	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls#56	0	1	278	278	278
+Mockito	30	277	2116	7570	org.mockito.exceptions.Reporter#442	1	0	6.0	6.0	6.0	org.mockito.exceptions.Reporter#439	org.mockito.exceptions.Reporter#439	org.mockito.exceptions.Reporter#439
+Mockito	31	238	2087	7568	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls#60	0	0	1.0	1.0	1.0	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60
+Mockito	31	238	2087	7568	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls#9	1	0	1.0	1.0	1.0	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60
+Mockito	32	688	4093	7356	org.mockito.internal.configuration.SpyAnnotationEngine#49	0	0	348.5	348.5	348.5
+Mockito	32	688	4093	7356	org.mockito.internal.configuration.SpyAnnotationEngine#19	1	0	348.5	348.5	348.5	org.mockito.internal.configuration.SpyAnnotationEngine#49	org.mockito.internal.configuration.SpyAnnotationEngine#49	org.mockito.internal.configuration.SpyAnnotationEngine#49
+Mockito	33	686	3980	7332	org.mockito.internal.invocation.InvocationMatcher#99	0	0	84.0	144.0	126.0
+Mockito	33	686	3980	7332	org.mockito.internal.invocation.InvocationMatcher#98	1	0	84.0	144.0	126.0	org.mockito.internal.invocation.InvocationMatcher#99	org.mockito.internal.invocation.InvocationMatcher#99	org.mockito.internal.invocation.InvocationMatcher#99
+Mockito	34	572	5400	6373	org.mockito.internal.invocation.InvocationMatcher#106	0	0	42.0	112.0	73.0
+Mockito	35	433	3575	6161	org.mockito.Matchers#362	0	0	65.0	57.0	60.0
+Mockito	35	433	3575	6161	org.mockito.Matchers#479	0	0	10.0	10.0	10.0
+Mockito	35	433	3575	6161	org.mockito.Matchers#516	0	0	9.0	6.0	9.0
+Mockito	36	517	5174	6069	org.mockito.internal.invocation.Invocation#11	1	1	518	518	518			
+Mockito	36	517	5174	6069	org.mockito.internal.invocation.Invocation#202	1	1	518	518	518			
+Mockito	37	460	3222	6061	org.mockito.internal.stubbing.answers.AnswersValidator#28	1	0	10.0	12.0	11.0	org.mockito.internal.stubbing.answers.AnswersValidator#24	org.mockito.internal.stubbing.answers.AnswersValidator#28	org.mockito.internal.stubbing.answers.AnswersValidator#24
+Mockito	37	460	3222	6061	org.mockito.internal.stubbing.answers.AnswersValidator#30	1	0	10.0	12.0	11.0	org.mockito.internal.stubbing.answers.AnswersValidator#24	org.mockito.internal.stubbing.answers.AnswersValidator#28	org.mockito.internal.stubbing.answers.AnswersValidator#24
+Mockito	38	581	3517	5506	org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool#48	0	1	582	582	582
+Mockito	4	707	5906	10951	org.mockito.exceptions.Reporter#424	0	1	708	708	708
+Mockito	4	707	5906	10951	org.mockito.exceptions.Reporter#434	0	1	708	708	708
+Mockito	4	707	5906	10951	org.mockito.exceptions.Reporter#677	1	1	708	708	708			
+Mockito	5	142	10433	10902	org.mockito.internal.verification.VerificationOverTimeImpl#91	0	1	143	143	143
+Mockito	6	879	6583	10903	org.mockito.Matchers#122	0	0	9.0	6.0	9.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#137	0	0	19.0	14.0	19.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#152	0	0	18.0	13.0	18.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#167	0	0	15.0	11.0	15.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#182	0	0	8.0	5.0	6.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#197	0	0	17.0	12.0	17.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#212	0	0	54.0	33.0	44.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#227	0	0	104.0	60.0	85.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#244	0	0	94.0	51.0	70.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#292	0	1	880	880	880
+Mockito	6	879	6583	10903	org.mockito.Matchers#309	0	1	880	880	880
+Mockito	6	879	6583	10903	org.mockito.Matchers#324	0	0	875.0	62.0	875.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#339	0	0	10.0	9.0	10.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#358	0	1	880	880	880
+Mockito	6	879	6583	10903	org.mockito.Matchers#373	0	0	7.0	8.0	7.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#392	0	1	880	880	880
+Mockito	6	879	6583	10903	org.mockito.Matchers#407	0	0	2.0	1.0	2.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#427	0	1	880	880	880
+Mockito	6	879	6583	10903	org.mockito.Matchers#442	0	0	4.0	4.0	4.0
+Mockito	6	879	6583	10903	org.mockito.Matchers#461	0	1	880	880	880
+Mockito	7	646	5105	10901	org.mockito.internal.util.reflection.GenericMetadataSupport#379	1	0	37.0	37.0	37.0	org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType#379	org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType#379	org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType#379
+Mockito	8	60	360	10901	org.mockito.internal.util.reflection.GenericMetadataSupport#79	0	1	61	61	61
+Mockito	9	623	6034	10741	org.mockito.internal.stubbing.answers.CallsRealMethods#8	1	1	624	624	624			
+Mockito	9	623	6034	10741	org.mockito.internal.stubbing.answers.CallsRealMethods#9	1	1	624	624	624			
+Mockito	9	623	6034	10741	org.mockito.internal.stubbing.answers.CallsRealMethods#36	1	1	624	624	624			
+Time	1	1002	8195	27795	org.joda.time.Partial#221	0	0	30.0	30.0	30.0
+Time	1	1002	8195	27795	org.joda.time.field.UnsupportedDurationField#227	0	0	15.0	15.0	15.0
+Time	1	1002	8195	27795	org.joda.time.field.UnsupportedDurationField#228	0	0	4.0	4.0	4.0
+Time	1	1002	8195	27795	org.joda.time.field.UnsupportedDurationField#229	0	1	1003	1003	1003
+Time	1	1002	8195	27795	org.joda.time.Partial#217	1	0	24.0	24.0	24.0	org.joda.time.Partial#216	org.joda.time.Partial#216	org.joda.time.Partial#216
+Time	10	1620	14769	27340	org.joda.time.base.BaseSingleFieldPeriod#104	0	0	861.5	861.5	861.5
+Time	10	1620	14769	27340	org.joda.time.base.BaseSingleFieldPeriod#52	1	0	861.5	861.5	861.5	org.joda.time.base.BaseSingleFieldPeriod#104	org.joda.time.base.BaseSingleFieldPeriod#104	org.joda.time.base.BaseSingleFieldPeriod#104
+Time	11	1260	9705	27329	org.joda.time.tz.ZoneInfoCompiler#68	0	0	663.5	663.5	663.5
+Time	11	1260	9705	27329	org.joda.time.tz.ZoneInfoCompiler#69	1	0	663.5	663.5	663.5	org.joda.time.tz.ZoneInfoCompiler#70	org.joda.time.tz.ZoneInfoCompiler#70	org.joda.time.tz.ZoneInfoCompiler#70
+Time	11	1260	9705	27329	org.joda.time.tz.ZoneInfoCompiler#70	0	0	663.5	663.5	663.5
+Time	11	1260	9705	27329	org.joda.time.tz.ZoneInfoCompiler#71	1	0	663.5	663.5	663.5	org.joda.time.tz.ZoneInfoCompiler#71	org.joda.time.tz.ZoneInfoCompiler#71	org.joda.time.tz.ZoneInfoCompiler#71
+Time	12	1541	11928	27273	org.joda.time.LocalDate#212	0	1	1542	1542	1542
+Time	12	1541	11928	27273	org.joda.time.LocalDateTime#201	0	0	1.0	1.0	1.0	org.joda.time.LocalDateTime#2016	org.joda.time.LocalDateTime#2016	org.joda.time.LocalDateTime#2016
+Time	12	1541	11928	27273	org.joda.time.LocalDate#210	1	0	35.0	29.0	33.0	org.joda.time.LocalDate#211	org.joda.time.LocalDate#211	org.joda.time.LocalDate#211
+Time	12	1541	11928	27273	org.joda.time.LocalDate#243	1	0	47.0	39.0	45.0	org.joda.time.LocalDate#244	org.joda.time.LocalDate#244	org.joda.time.LocalDate#244
+Time	12	1541	11928	27273	org.joda.time.LocalDate#244	1	0	47.0	39.0	45.0	org.joda.time.LocalDate#244	org.joda.time.LocalDate#244	org.joda.time.LocalDate#244
+Time	12	1541	11928	27273	org.joda.time.LocalDateTime#199	1	0	1.0	1.0	1.0	org.joda.time.LocalDateTime#2016	org.joda.time.LocalDateTime#2016	org.joda.time.LocalDateTime#2016
+Time	12	1541	11928	27273	org.joda.time.LocalDateTime#236	1	0	16.0	17.0	18.0	org.joda.time.LocalDateTime#233	org.joda.time.LocalDateTime#237	org.joda.time.LocalDateTime#237
+Time	12	1541	11928	27273	org.joda.time.LocalDateTime#237	1	0	16.0	17.0	18.0	org.joda.time.LocalDateTime#233	org.joda.time.LocalDateTime#237	org.joda.time.LocalDateTime#237
+Time	13	1328	10486	27262	org.joda.time.format.PeriodFormatterBuilder#1098	0	0	13.0	13.0	13.0	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1098	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1098	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1098
+Time	13	1328	10486	27262	org.joda.time.format.PeriodFormatterBuilder#1133	1	0	734.5	734.5	734.5	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1133	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1133	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1133
+Time	13	1328	10486	27262	org.joda.time.format.PeriodFormatterBuilder#1142	1	0	734.5	734.5	734.5	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1142	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1142	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1142
+Time	14	2040	14607	27215	org.joda.time.chrono.BasicMonthOfYearDateTimeField#209	1	0	8.0	10.0	8.0	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210
+Time	14	2040	14607	27215	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	1	0	8.0	10.0	8.0	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210
+Time	15	954	306	27212	org.joda.time.field.FieldUtils#138	1	1	955	955	955			
+Time	16	2184	14649	27214	org.joda.time.format.DateTimeFormatter#709	0	1	2185	2185	2185
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1167	0	0	1.0	1.0	1.0
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1168	0	0	5.0	5.0	5.0
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1169	0	0	12.0	12.0	12.0
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1174	0	0	8.0	8.0	8.0
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1175	0	0	6.0	6.0	6.0
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1178	1	0	1.0	1.0	1.0	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1179	1	0	1.0	1.0	1.0	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1180	1	0	1.0	1.0	1.0	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167
+Time	18	1093	9395	27171	org.joda.time.chrono.GJChronology#364	1	0	11.0	11.0	11.0	org.joda.time.chrono.GJChronology#364	org.joda.time.chrono.GJChronology#364	org.joda.time.chrono.GJChronology#364
+Time	18	1093	9395	27171	org.joda.time.chrono.GJChronology#367	1	0	11.0	11.0	11.0	org.joda.time.chrono.GJChronology#364	org.joda.time.chrono.GJChronology#364	org.joda.time.chrono.GJChronology#364
+Time	19	1407	11854	27156	org.joda.time.DateTimeZone#900	0	0	785.5	785.5	785.5
+Time	2	1700	12079	27789	org.joda.time.Partial#218	0	0	23.0	23.0	23.0
+Time	2	1700	12079	27789	org.joda.time.Partial#449	1	1	1701	1701	1701			
+Time	2	1700	12079	27789	org.joda.time.field.UnsupportedDurationField#227	1	0	6.0	6.0	6.0	org.joda.time.field.UnsupportedDurationField#227	org.joda.time.field.UnsupportedDurationField#227	org.joda.time.field.UnsupportedDurationField#227
+Time	20	1348	11623	27150	org.joda.time.format.DateTimeFormatterBuilder#2544	0	0	6.0	6.0	6.0	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544
+Time	20	1348	11623	27150	org.joda.time.format.DateTimeFormatterBuilder#2545	0	0	11.0	11.0	11.0	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2545	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2545	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2545
+Time	20	1348	11623	27150	org.joda.time.format.DateTimeFormatterBuilder#2542	1	0	6.0	6.0	6.0	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544
+Time	20	1348	11623	27150	org.joda.time.format.DateTimeFormatterBuilder#2547	1	0	5.0	5.0	5.0	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2547	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2547	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2547
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#72	0	0	2.0	2.0	2.0
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#76	0	0	48.0	45.0	46.0
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#77	0	1	1024	1024	1024
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#79	0	0	24.0	28.0	27.0
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#80	0	1	1024	1024	1024
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#81	0	0	15.0	9.0	12.0
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#66	1	0	2.0	2.0	2.0	org.joda.time.tz.DefaultNameProvider#72	org.joda.time.tz.DefaultNameProvider#72	org.joda.time.tz.DefaultNameProvider#72
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#71	1	0	2.0	2.0	2.0	org.joda.time.tz.DefaultNameProvider#72	org.joda.time.tz.DefaultNameProvider#72	org.joda.time.tz.DefaultNameProvider#72
+Time	22	1050	9562	26876	org.joda.time.base.BasePeriod#222	0	0	11.0	10.0	10.0
+Time	22	1050	9562	26876	org.joda.time.base.BasePeriod#224	1	0	31.0	62.0	45.0	org.joda.time.Period#382	org.joda.time.Period#382	org.joda.time.Period#382
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#572	0	0	40.0	40.0	40.0
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#575	0	0	38.0	38.0	38.0
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#577	0	0	154.5	154.5	154.5
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#578	0	0	19.0	19.0	19.0
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#581	0	0	9.0	9.0	9.0
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#583	0	0	1.0	1.0	1.0
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#586	0	0	20.0	20.0	20.0
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#588	0	0	33.0	33.0	33.0
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#564	1	0	1.0	1.0	1.0	org.joda.time.DateTimeZone#583	org.joda.time.DateTimeZone#583	org.joda.time.DateTimeZone#583
+Time	24	2038	15676	26849	org.joda.time.format.DateTimeParserBucket#355	1	0	1110.0	1110.0	1110.0	org.joda.time.format.DateTimeParserBucket#352	org.joda.time.format.DateTimeParserBucket#352	org.joda.time.format.DateTimeParserBucket#352
+Time	25	1434	11684	26796	org.joda.time.DateTimeZone#899	1	0	109.0	67.0	96.0	org.joda.time.DateTimeZone#900	org.joda.time.DateTimeZone#900	org.joda.time.DateTimeZone#900
+Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#436	0	1	2025	2025	2025
+Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#448	0	1	2025	2025	2025
+Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#460	0	1	2025	2025	2025
+Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#467	0	0	80.0	105.0	73.0	org.joda.time.chrono.ZonedChronology$ZonedDateTimeField#467	org.joda.time.chrono.ZonedChronology$ZonedDateTimeField#467	org.joda.time.chrono.ZonedChronology$ZonedDateTimeField#467
+Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#481	0	1	2025	2025	2025
+Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#528	0	1	2025	2025	2025
+Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#540	0	1	2025	2025	2025
+Time	27	2371	12191	26589	org.joda.time.format.PeriodFormatterBuilder#801	1	1	2372	2372	2372			
+Time	27	2371	12191	26589	org.joda.time.format.PeriodFormatterBuilder#804	1	1	2372	2372	2372			
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#639	1	0	1805.0	1805.0	1805.0	org.joda.time.MutableDateTime#639	org.joda.time.MutableDateTime#639	org.joda.time.MutableDateTime#639
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#640	1	0	1803.0	1803.0	1803.0	org.joda.time.MutableDateTime#640	org.joda.time.MutableDateTime#640	org.joda.time.MutableDateTime#640
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#660	1	0	42.0	28.0	33.0	org.joda.time.MutableDateTime#660	org.joda.time.MutableDateTime#660	org.joda.time.MutableDateTime#660
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#661	1	0	27.0	16.0	25.0	org.joda.time.MutableDateTime#661	org.joda.time.MutableDateTime#661	org.joda.time.MutableDateTime#661
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#681	1	1	1809	1809	1809			
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#682	1	1	1809	1809	1809			
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#702	1	0	13.0	10.0	10.0	org.joda.time.MutableDateTime#702	org.joda.time.MutableDateTime#702	org.joda.time.MutableDateTime#702
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#703	1	0	13.0	10.0	10.0	org.joda.time.MutableDateTime#702	org.joda.time.MutableDateTime#702	org.joda.time.MutableDateTime#702
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#723	1	0	6.0	4.0	6.0	org.joda.time.MutableDateTime#723	org.joda.time.MutableDateTime#723	org.joda.time.MutableDateTime#723
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#724	1	0	6.0	4.0	6.0	org.joda.time.MutableDateTime#723	org.joda.time.MutableDateTime#723	org.joda.time.MutableDateTime#723
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#764	1	0	11.0	7.0	9.0	org.joda.time.MutableDateTime#764	org.joda.time.MutableDateTime#764	org.joda.time.MutableDateTime#764
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#765	1	0	9.0	6.0	7.0	org.joda.time.MutableDateTime#765	org.joda.time.MutableDateTime#765	org.joda.time.MutableDateTime#765
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#785	1	0	1.0	1.0	2.0	org.joda.time.MutableDateTime#785	org.joda.time.MutableDateTime#785	org.joda.time.MutableDateTime#785
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#786	1	0	1.0	1.0	1.0	org.joda.time.MutableDateTime#785	org.joda.time.MutableDateTime#785	org.joda.time.MutableDateTime#786
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#816	1	1	1809	1809	1809			
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#817	1	1	1809	1809	1809			
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#847	1	1	1809	1809	1809			
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#848	1	1	1809	1809	1809			
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#880	1	1	1809	1809	1809			
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#881	1	1	1809	1809	1809			
+Time	4	1706	15547	27767	org.joda.time.Partial#464	0	0	16.0	16.0	16.0
+Time	5	1203	9011	27658	org.joda.time.Period#1628	0	0	7.0	9.0	8.0
+Time	5	1203	9011	27658	org.joda.time.Period#1629	0	0	42.0	32.0	38.0
+Time	5	1203	9011	27658	org.joda.time.Period#1630	0	0	12.0	37.0	15.0
+Time	5	1203	9011	27658	org.joda.time.Period#1631	0	0	2.0	2.0	2.0
+Time	5	1203	9011	27658	org.joda.time.Period#1633	0	1	1204	1204	1204
+Time	5	1203	9011	27658	org.joda.time.Period#1634	0	1	1204	1204	1204
+Time	6	1285	10806	27583	org.joda.time.chrono.GJChronology#196	1	0	713.0	713.0	713.0	org.joda.time.chrono.GJChronology#195	org.joda.time.chrono.GJChronology#195	org.joda.time.chrono.GJChronology#195
+Time	6	1285	10806	27583	org.joda.time.chrono.GJChronology#979	1	0	5.0	8.0	5.0	org.joda.time.chrono.GJChronology$ImpreciseCutoverField#978	org.joda.time.chrono.GJChronology$ImpreciseCutoverField#978	org.joda.time.chrono.GJChronology$ImpreciseCutoverField#978
+Time	6	1285	10806	27583	org.joda.time.chrono.GJChronology#1001	1	1	1286	1286	1286			
+Time	7	1969	14789	27414	org.joda.time.format.DateTimeFormatter#710	0	0	49.0	47.0	48.0
+Time	7	1969	14789	27414	org.joda.time.format.DateTimeFormatter#708	1	0	49.0	47.0	48.0	org.joda.time.format.DateTimeFormatter#710	org.joda.time.format.DateTimeFormatter#710	org.joda.time.format.DateTimeFormatter#710
+Time	8	461	6691	27347	org.joda.time.DateTimeZone#279	0	0	269.0	269.0	269.0
+Time	8	461	6691	27347	org.joda.time.DateTimeZone#286	0	1	462	462	462
+Time	8	461	6691	27347	org.joda.time.DateTimeZone#282	1	0	10.0	10.0	10.0	org.joda.time.DateTimeZone#284	org.joda.time.DateTimeZone#284	org.joda.time.DateTimeZone#284
+Time	9	462	6685	27341	org.joda.time.DateTimeZone#263	0	0	31.0	31.0	31.0
+Time	9	462	6685	27341	org.joda.time.DateTimeZone#265	0	0	5.0	5.0	5.0
+Time	9	462	6685	27341	org.joda.time.DateTimeZone#267	0	0	11.0	11.0	11.0
+Time	9	462	6685	27341	org.joda.time.DateTimeZone#258	1	0	16.0	16.0	16.0	org.joda.time.DateTimeZone#258	org.joda.time.DateTimeZone#258	org.joda.time.DateTimeZone#258
+Time	9	462	6685	27341	org.joda.time.DateTimeZone#283	1	0	26.0	26.0	26.0	org.joda.time.DateTimeZone#283	org.joda.time.DateTimeZone#283	org.joda.time.DateTimeZone#283
