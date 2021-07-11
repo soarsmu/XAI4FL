@@ -1,0 +1,289 @@
+project_id	bug_id	temp_len	sloc	sloc_total	buggy_line	is_omission	is_not_found	shap_max	shap_min	shap_mean	buggy_line_max	buggy_line_min	buggy_line_mean
+Chart	1	629	13269	96382	org.jfree.chart.renderer.category.AbstractCategoryItemRenderer#1797	0	0	42	42	42			
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#755	1	0	51	48	50	org.jfree.data.general.DatasetUtilities#757	org.jfree.data.general.DatasetUtilities#757	org.jfree.data.general.DatasetUtilities#757
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#757	1	0	51	48	50	org.jfree.data.general.DatasetUtilities#757	org.jfree.data.general.DatasetUtilities#757	org.jfree.data.general.DatasetUtilities#757
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#761	1	0	115.5	115.5	115.5	org.jfree.data.general.DatasetUtilities#760	org.jfree.data.general.DatasetUtilities#760	org.jfree.data.general.DatasetUtilities#760
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#1242	1	0	115.5	115.5	115.5	org.jfree.data.general.DatasetUtilities#1242	org.jfree.data.general.DatasetUtilities#1242	org.jfree.data.general.DatasetUtilities#1242
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#1244	1	0	115.5	115.5	115.5	org.jfree.data.general.DatasetUtilities#1244	org.jfree.data.general.DatasetUtilities#1244	org.jfree.data.general.DatasetUtilities#1244
+Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#1248	1	0	115.5	115.5	115.5	org.jfree.data.general.DatasetUtilities#1247	org.jfree.data.general.DatasetUtilities#1247	org.jfree.data.general.DatasetUtilities#1247
+Chart	3	143	1571	96317	org.jfree.data.time.TimeSeries#1057	1	0	7	7	7	org.jfree.data.time.TimeSeries#1058	org.jfree.data.time.TimeSeries#1058	org.jfree.data.time.TimeSeries#1058
+Chart	4	2371	46751	94583	org.jfree.chart.plot.XYPlot#4493	1	0	241	280	285	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493
+Chart	4	2371	46751	94583	org.jfree.chart.plot.XYPlot#4501	1	0	241	280	285	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493
+Lang	1	38	2880	21779	org.apache.commons.lang3.math.NumberUtils#468	0	0	3	3	3			
+Lang	1	38	2880	21779	org.apache.commons.lang3.math.NumberUtils#471	0	0	7	7	7			
+Lang	1	38	2880	21779	org.apache.commons.lang3.math.NumberUtils#467	1	0	6	6	6	org.apache.commons.lang3.math.NumberUtils#467	org.apache.commons.lang3.math.NumberUtils#467	org.apache.commons.lang3.math.NumberUtils#467
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#304	0	0	161	161	161			
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#307	0	0	161	161	161			
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#308	0	0	34	57	43			
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#309	0	0	161	161	161			
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#310	0	0	161	161	161			
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#311	1	0	34	57	43	org.apache.commons.lang3.time.FastDateParser#308	org.apache.commons.lang3.time.FastDateParser#308	org.apache.commons.lang3.time.FastDateParser#308
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#313	1	0	34	57	43	org.apache.commons.lang3.time.FastDateParser#308	org.apache.commons.lang3.time.FastDateParser#308	org.apache.commons.lang3.time.FastDateParser#308
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#314	0	0	161	161	161			
+Lang	11	11	105	20342	org.apache.commons.lang3.RandomStringUtils#245	1	0	1	1	1	org.apache.commons.lang3.RandomStringUtils#234	org.apache.commons.lang3.RandomStringUtils#234	org.apache.commons.lang3.RandomStringUtils#234
+Lang	12	17	98	20335	org.apache.commons.lang3.RandomStringUtils#230	1	0	6	9	8	org.apache.commons.lang3.RandomStringUtils#231	org.apache.commons.lang3.RandomStringUtils#231	org.apache.commons.lang3.RandomStringUtils#231
+Lang	12	17	98	20335	org.apache.commons.lang3.RandomStringUtils#232	1	0	6	7	6	org.apache.commons.lang3.RandomStringUtils#231	org.apache.commons.lang3.RandomStringUtils#232	org.apache.commons.lang3.RandomStringUtils#232
+Lang	12	17	98	20335	org.apache.commons.lang3.RandomStringUtils#238	1	0	6	7	6	org.apache.commons.lang3.RandomStringUtils#231	org.apache.commons.lang3.RandomStringUtils#232	org.apache.commons.lang3.RandomStringUtils#232
+Lang	13	29	127	20224	org.apache.commons.lang3.SerializationUtils#252	0	0	8	8	8	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#252	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#252	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#252
+Lang	13	29	127	20224	org.apache.commons.lang3.SerializationUtils#268	1	0	3	3	3	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267
+Lang	13	29	127	20224	org.apache.commons.lang3.SerializationUtils#269	1	0	3	3	3	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267
+Lang	14	5	2176	19630	org.apache.commons.lang3.StringUtils#788	1	0	1	1	1	org.apache.commons.lang3.StringUtils#788	org.apache.commons.lang3.StringUtils#788	org.apache.commons.lang3.StringUtils#788
+Lang	14	5	2176	19630	org.apache.commons.lang3.StringUtils#789	1	0	1	1	1	org.apache.commons.lang3.StringUtils#788	org.apache.commons.lang3.StringUtils#788	org.apache.commons.lang3.StringUtils#788
+Lang	15	420	4001	19511	org.apache.commons.lang3.reflect.TypeUtils#219	0	0	417	417	417			
+Lang	15	420	4001	19511	org.apache.commons.lang3.reflect.TypeUtils#220	0	0	403	403	403			
+Lang	15	420	4001	19511	org.apache.commons.lang3.reflect.TypeUtils#221	0	0	411	411	411			
+Lang	15	420	4001	19511	org.apache.commons.lang3.reflect.TypeUtils#675	0	0	250.5	250.5	250.5			
+Lang	16	100	2927	19873	org.apache.commons.lang3.math.NumberUtils#458	0	0	8	8	8			
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#83	0	0	105.5	105.5	105.5			
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#102	0	0	105.5	105.5	105.5			
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#89	1	0	19	19	19	org.apache.commons.lang3.text.translate.CharSequenceTranslator#87	org.apache.commons.lang3.text.translate.CharSequenceTranslator#87	org.apache.commons.lang3.text.translate.CharSequenceTranslator#87
+Lang	18	276	1007	18997	org.apache.commons.lang3.time.FastDateFormat#495	0	0	168.5	168.5	168.5			
+Lang	18	276	1007	18997	org.apache.commons.lang3.time.FastDateFormat#496	0	0	168.5	168.5	168.5			
+Lang	18	276	1007	18997	org.apache.commons.lang3.time.FastDateFormat#497	1	0	168.5	168.5	168.5	org.apache.commons.lang3.time.FastDateFormat#495	org.apache.commons.lang3.time.FastDateFormat#495	org.apache.commons.lang3.time.FastDateFormat#495
+Lang	18	276	1007	18997	org.apache.commons.lang3.time.FastDateFormat#499	1	0	46	46	46	org.apache.commons.lang3.time.FastDateFormat#498	org.apache.commons.lang3.time.FastDateFormat#498	org.apache.commons.lang3.time.FastDateFormat#498
+Lang	19	26	116	18970	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#40	0	0	16	16	16			
+Lang	19	26	116	18970	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#54	0	0	9	9	9			
+Lang	19	26	116	18970	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#50	1	0	6	5	6	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#47	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#47	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#47
+Lang	2	29	161	21748	org.apache.commons.lang3.LocaleUtils#92	1	0	16	16	16	org.apache.commons.lang3.LocaleUtils#89	org.apache.commons.lang3.LocaleUtils#89	org.apache.commons.lang3.LocaleUtils#89
+Lang	20	48	2103	18967	org.apache.commons.lang3.StringUtils#3298	0	0	15	15	15			
+Lang	20	48	2103	18967	org.apache.commons.lang3.StringUtils#3383	0	0	4	4	4			
+Lang	22	69	437	18870	org.apache.commons.lang3.math.Fraction#584	0	0	27	26	26			
+Lang	22	69	437	18870	org.apache.commons.lang3.math.Fraction#583	1	0	27	26	26	org.apache.commons.lang3.math.Fraction#584	org.apache.commons.lang3.math.Fraction#584	org.apache.commons.lang3.math.Fraction#584
+Lang	23	135	836	18802	org.apache.commons.lang3.text.ExtendedMessageFormat#73	0	0	26	26	26	org.apache.commons.lang3.text.ExtendedMessageFormat#173	org.apache.commons.lang3.text.ExtendedMessageFormat#173	org.apache.commons.lang3.text.ExtendedMessageFormat#173
+Lang	24	160	2653	18777	org.apache.commons.lang3.math.NumberUtils#1413	0	0	111	111	111			
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#74	1	0	9	9	9	org.apache.commons.lang3.text.translate.EntityArrays#374	org.apache.commons.lang3.text.translate.EntityArrays#374	org.apache.commons.lang3.text.translate.EntityArrays#374
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#75	0	0	9	9	9	org.apache.commons.lang3.text.translate.EntityArrays#375	org.apache.commons.lang3.text.translate.EntityArrays#375	org.apache.commons.lang3.text.translate.EntityArrays#375
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#77	0	0	9	9	9	org.apache.commons.lang3.text.translate.EntityArrays#377	org.apache.commons.lang3.text.translate.EntityArrays#377	org.apache.commons.lang3.text.translate.EntityArrays#377
+Lang	26	130	832	18452	org.apache.commons.lang3.time.FastDateFormat#820	0	0	11	11	11			
+Lang	27	216	2849	18382	org.apache.commons.lang3.math.NumberUtils#479	0	0	24	24	24			
+Lang	27	216	2849	18382	org.apache.commons.lang3.math.NumberUtils#489	1	0	141	141	141	org.apache.commons.lang3.math.NumberUtils#489	org.apache.commons.lang3.math.NumberUtils#489	org.apache.commons.lang3.math.NumberUtils#489
+Lang	28	31	107	17806	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63	1	0	1	1	1	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63
+Lang	28	31	107	17806	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#64	1	0	1	1	1	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63
+Lang	3	56	2870	21713	org.apache.commons.lang3.math.NumberUtils#593	1	0	8	8	8	org.apache.commons.lang3.math.NumberUtils#593	org.apache.commons.lang3.math.NumberUtils#593	org.apache.commons.lang3.math.NumberUtils#593
+Lang	3	56	2870	21713	org.apache.commons.lang3.math.NumberUtils#597	1	0	8	8	8	org.apache.commons.lang3.math.NumberUtils#593	org.apache.commons.lang3.math.NumberUtils#593	org.apache.commons.lang3.math.NumberUtils#593
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1455	0	0	40	35	37			
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1576	0	0	4	3	3			
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1376	0	0	71	71	71			
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1377	0	0	66	65	66			
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1381	1	0	61.5	52	61.5	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1382	1	0	61.5	52	61.5	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1383	1	0	61.5	52	61.5	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1533	0	0	25	23	23			
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1539	1	0	28	24	26	org.apache.commons.lang3.StringUtils#1539	org.apache.commons.lang3.StringUtils#1539	org.apache.commons.lang3.StringUtils#1539
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1540	1	0	28	24	26	org.apache.commons.lang3.StringUtils#1539	org.apache.commons.lang3.StringUtils#1539	org.apache.commons.lang3.StringUtils#1539
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1578	1	0	4	3	3	org.apache.commons.lang3.StringUtils#1576	org.apache.commons.lang3.StringUtils#1576	org.apache.commons.lang3.StringUtils#1576
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1678	0	0	9	10	10			
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1679	0	0	18	22	20			
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1683	1	0	2	2	2	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1684	1	0	2	2	2	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1686	1	0	2	2	2	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685
+Lang	31	32	3663	17591	org.apache.commons.lang3.StringUtils#1446	0	0	5	5	5			
+Lang	31	32	3663	17591	org.apache.commons.lang3.StringUtils#1450	1	0	8	8	8	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449
+Lang	31	32	3663	17591	org.apache.commons.lang3.StringUtils#1451	1	0	8	8	8	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449
+Lang	31	32	3663	17591	org.apache.commons.lang3.StringUtils#1453	1	0	8	8	8	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#104	0	0	40.5	40.5	40.5			
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#107	0	0	4	4	4	org.apache.commons.lang3.builder.HashCodeBuilder$1#107	org.apache.commons.lang3.builder.HashCodeBuilder$1#107	org.apache.commons.lang3.builder.HashCodeBuilder$1#107
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#152	0	0	40.5	40.5	40.5			
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#538	0	0	40.5	40.5	40.5			
+Lang	32	77	2079	17301	org.apache.commons.lang3.builder.HashCodeBuilder#522	1	0	40.5	40.5	40.5	org.apache.commons.lang3.builder.HashCodeBuilder#522	org.apache.commons.lang3.builder.HashCodeBuilder#522	org.apache.commons.lang3.builder.HashCodeBuilder#522
+Lang	34	456	1496	17310	org.apache.commons.lang3.builder.ToStringStyle#148	0	0	267	267	267			
+Lang	34	456	1496	17310	org.apache.commons.lang3.builder.ToStringStyle#164	0	0	74	62	64			
+Lang	35	27	1606	17078	org.apache.commons.lang3.ArrayUtils#3295	0	0	1	1	1			
+Lang	4	23	115	21685	org.apache.commons.lang3.text.translate.LookupTranslator#46	0	0	13	13	13			
+Lang	4	23	115	21685	org.apache.commons.lang3.text.translate.LookupTranslator#51	0	0	13	13	13			
+Lang	4	23	115	21685	org.apache.commons.lang3.text.translate.LookupTranslator#77	0	0	13	13	13			
+Lang	6	130	5033	21481	org.apache.commons.lang3.text.translate.CharSequenceTranslator#95	0	0	72	72	72			
+Lang	7	217	3039	21495	org.apache.commons.lang3.math.NumberUtils#452	0	0	149	149	149			
+Lang	7	217	3039	21495	org.apache.commons.lang3.math.NumberUtils#453	0	0	22.5	22.5	22.5			
+Lang	7	217	3039	21495	org.apache.commons.lang3.math.NumberUtils#454	1	0	22.5	22.5	22.5	org.apache.commons.lang3.math.NumberUtils#453	org.apache.commons.lang3.math.NumberUtils#453	org.apache.commons.lang3.math.NumberUtils#453
+Lang	7	217	3039	21495	org.apache.commons.lang3.math.NumberUtils#721	1	0	149	149	149	org.apache.commons.lang3.math.NumberUtils#718	org.apache.commons.lang3.math.NumberUtils#718	org.apache.commons.lang3.math.NumberUtils#718
+Lang	7	217	3039	21495	org.apache.commons.lang3.math.NumberUtils#725	1	0	149	149	149	org.apache.commons.lang3.math.NumberUtils#725	org.apache.commons.lang3.math.NumberUtils#725	org.apache.commons.lang3.math.NumberUtils#725
+Lang	8	317	1379	20363	org.apache.commons.lang3.time.FastDatePrinter#1112	0	0	11	11	11	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1112	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1112	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1112
+Lang	8	317	1379	20363	org.apache.commons.lang3.time.FastDatePrinter#1134	1	0	12	12	12	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1134	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1134	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1134
+Lang	9	212	1449	20433	org.apache.commons.lang3.time.FastDateParser#144	1	0	62	64	63	org.apache.commons.lang3.time.FastDateParser#144	org.apache.commons.lang3.time.FastDateParser#144	org.apache.commons.lang3.time.FastDateParser#144
+Mockito	1	1172	7335	10517	org.mockito.internal.invocation.InvocationMatcher#123	0	0	1	1	1			
+Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99	0	0	9	9	9			
+Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#103	1	0	9	9	9	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99
+Mockito	11	239	2772	10472	org.mockito.internal.creation.DelegatingMethod#55	1	0	1	1	1	org.mockito.internal.creation.DelegatingMethod#55	org.mockito.internal.creation.DelegatingMethod#55	org.mockito.internal.creation.DelegatingMethod#55
+Mockito	11	239	2772	10472	org.mockito.internal.creation.DelegatingMethod#56	1	0	1	1	1	org.mockito.internal.creation.DelegatingMethod#55	org.mockito.internal.creation.DelegatingMethod#55	org.mockito.internal.creation.DelegatingMethod#55
+Mockito	12	279	4110	7284	org.mockito.internal.util.reflection.GenericMaster#20	1	0	39	267	69	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20
+Mockito	12	279	4110	7284	org.mockito.internal.util.reflection.GenericMaster#21	1	0	39	267	69	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20
+Mockito	12	279	4110	7284	org.mockito.internal.util.reflection.GenericMaster#22	1	0	39	267	69	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20	org.mockito.internal.util.reflection.GenericMaster#20
+Mockito	13	625	4211	7287	org.mockito.internal.MockHandler#77	0	0	83	83	83			
+Mockito	13	625	4211	7287	org.mockito.internal.MockHandler#81	1	0	83	83	83	org.mockito.internal.MockHandler#77	org.mockito.internal.MockHandler#77	org.mockito.internal.MockHandler#77
+Mockito	13	625	4211	7287	org.mockito.internal.MockHandler#83	1	0	83	83	83	org.mockito.internal.MockHandler#77	org.mockito.internal.MockHandler#77	org.mockito.internal.MockHandler#77
+Mockito	14	626	3818	7161	org.mockito.internal.MockitoCore#73	0	0	370	370	370			
+Mockito	14	626	3818	7161	org.mockito.internal.MockHandler#20	1	0	370	370	370	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76
+Mockito	14	626	3818	7161	org.mockito.internal.MockHandler#76	1	0	370	370	370	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76
+Mockito	14	626	3818	7161	org.mockito.internal.MockHandler#79	1	0	370	370	370	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76	org.mockito.internal.MockHandler#76
+Mockito	14	626	3818	7161	org.mockito.internal.MockitoCore#23	1	0	370	370	370	org.mockito.internal.MockitoCore#73	org.mockito.internal.MockitoCore#73	org.mockito.internal.MockitoCore#73
+Mockito	15	475	3342	7562	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#4	1	0	276.5	276.5	276.5	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#34	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#34	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#34
+Mockito	15	475	3342	7562	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#25	1	0	276.5	276.5	276.5	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25
+Mockito	15	475	3342	7562	org.mockito.internal.configuration.injection.FinalMockCandidateFilter#26	1	0	276.5	276.5	276.5	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25	org.mockito.internal.configuration.injection.FinalMockCandidateFilter$1#25
+Mockito	16	458	3219	6372	org.mockito.Mockito#827	0	0	268.5	268.5	268.5			
+Mockito	16	458	3219	6372	org.mockito.internal.MockitoCore#32	0	0	4	4	4			
+Mockito	16	458	3219	6372	org.mockito.internal.MockitoCore#35	1	0	268.5	268.5	268.5	org.mockito.internal.MockitoCore#35	org.mockito.internal.MockitoCore#35	org.mockito.internal.MockitoCore#35
+Mockito	16	458	3219	6372	org.mockito.internal.MockitoCore#36	1	0	268.5	268.5	268.5	org.mockito.internal.MockitoCore#36	org.mockito.internal.MockitoCore#36	org.mockito.internal.MockitoCore#36
+Mockito	17	213	2780	6364	org.mockito.internal.creation.MockSettingsImpl#22	0	0	2	2	2			
+Mockito	17	213	2780	6364	org.mockito.internal.creation.MockSettingsImpl#20	1	0	2	2	2	org.mockito.internal.creation.MockSettingsImpl#22	org.mockito.internal.creation.MockSettingsImpl#22	org.mockito.internal.creation.MockSettingsImpl#22
+Mockito	17	213	2780	6364	org.mockito.internal.util.MockUtil#19	1	0	139.5	139.5	139.5	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45
+Mockito	17	213	2780	6364	org.mockito.internal.util.MockUtil#45	1	0	139.5	139.5	139.5	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45
+Mockito	17	213	2780	6364	org.mockito.internal.util.MockUtil#46	1	0	139.5	139.5	139.5	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45	org.mockito.internal.util.MockUtil#45
+Mockito	18	303	2942	10518	org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues#87	1	0	1	1	1	org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues#87	org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues#87	org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues#87
+Mockito	2	293	3970	10998	org.mockito.internal.util.Timer#3	1	0	16	16	16	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10
+Mockito	2	293	3970	10998	org.mockito.internal.util.Timer#10	1	0	16	16	16	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10
+Mockito	2	293	3970	10998	org.mockito.internal.util.Timer#28	1	0	16	16	16	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10	org.mockito.internal.util.Timer#10
+Mockito	20	937	6328	11629	org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker#34	0	0	217	261	252			
+Mockito	20	937	6328	11629	org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker#32	1	0	217	257	252	org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker#34	org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker#32	org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker#34
+Mockito	21	224	2743	10721	org.mockito.internal.creation.instance.ConstructorInstantiator#17	0	0	8	8	8			
+Mockito	21	224	2743	10721	org.mockito.internal.creation.instance.ConstructorInstantiator#24	0	0	2	2	2			
+Mockito	21	224	2743	10721	org.mockito.internal.creation.instance.ConstructorInstantiator#25	0	0	3	3	3			
+Mockito	21	224	2743	10721	org.mockito.internal.creation.instance.ConstructorInstantiator#29	1	0	3	3	3	org.mockito.internal.creation.instance.ConstructorInstantiator#25	org.mockito.internal.creation.instance.ConstructorInstantiator#25	org.mockito.internal.creation.instance.ConstructorInstantiator#25
+Mockito	21	224	2743	10721	org.mockito.internal.creation.instance.ConstructorInstantiator#36	1	0	2	2	2	org.mockito.internal.creation.instance.ConstructorInstantiator#24	org.mockito.internal.creation.instance.ConstructorInstantiator#24	org.mockito.internal.creation.instance.ConstructorInstantiator#24
+Mockito	22	211	2705	10498	org.mockito.internal.matchers.Equality#13	0	0	9	9	9			
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#44	0	0	319.5	319.5	319.5			
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#45	0	0	319.5	319.5	319.5			
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114	0	0	319.5	319.5	319.5			
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#52	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#52	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#52	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#52
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#59	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#60	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#51
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#100	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#99
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#123	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114
+Mockito	23	679	5134	10405	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#124	1	0	319.5	319.5	319.5	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#114
+Mockito	24	651	8614	10400	org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues#76	0	0	1	1	1			
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#53	0	0	355	355	355			
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	0	0	355	355	355			
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#82	0	0	355	355	355			
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#83	0	0	58	50	56			
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#7	1	0	355	355	355	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#57	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#57	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#57
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#19	1	0	355	355	355	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#77	1	0	355	355	355	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#78	1	0	355	355	355	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#79	1	0	355	355	355	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68
+Mockito	25	618	8349	10035	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#80	1	0	355	355	355	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#68
+Mockito	26	761	7826	9506	org.mockito.internal.util.Primitives#66	0	0	41	133	96			
+Mockito	27	597	4026	8316	org.mockito.internal.util.MockUtil#64	0	0	557	557	557			
+Mockito	27	597	4026	8316	org.mockito.internal.util.MockUtil#65	0	0	3	3	3			
+Mockito	28	559	3381	7597	org.mockito.internal.configuration.DefaultInjectionEngine#93	0	0	316	316	316			
+Mockito	3	954	8626	10512	org.mockito.internal.invocation.InvocationMatcher#127	0	0	4	38	9			
+Mockito	3	954	8626	10512	org.mockito.internal.invocation.InvocationMatcher#128	0	0	3	34	5			
+Mockito	3	954	8626	10512	org.mockito.internal.invocation.InvocationMatcher#130	0	0	5	13	3			
+Mockito	3	954	8626	10512	org.mockito.internal.invocation.InvocationMatcher#143	1	0	4	38	9	org.mockito.internal.invocation.InvocationMatcher#127	org.mockito.internal.invocation.InvocationMatcher#127	org.mockito.internal.invocation.InvocationMatcher#127
+Mockito	30	277	2116	7570	org.mockito.exceptions.Reporter#442	1	0	6	6	6	org.mockito.exceptions.Reporter#439	org.mockito.exceptions.Reporter#439	org.mockito.exceptions.Reporter#439
+Mockito	31	238	2087	7568	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls#60	0	0	1	1	1	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60
+Mockito	31	238	2087	7568	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls#9	1	0	1	1	1	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60	org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls$ThrowingInterceptor#60
+Mockito	32	688	4093	7356	org.mockito.internal.configuration.SpyAnnotationEngine#49	0	0	348.5	348.5	348.5			
+Mockito	32	688	4093	7356	org.mockito.internal.configuration.SpyAnnotationEngine#19	1	0	348.5	348.5	348.5	org.mockito.internal.configuration.SpyAnnotationEngine#49	org.mockito.internal.configuration.SpyAnnotationEngine#49	org.mockito.internal.configuration.SpyAnnotationEngine#49
+Mockito	33	686	3980	7332	org.mockito.internal.invocation.InvocationMatcher#99	0	0	84	144	126			
+Mockito	33	686	3980	7332	org.mockito.internal.invocation.InvocationMatcher#98	1	0	84	144	126	org.mockito.internal.invocation.InvocationMatcher#99	org.mockito.internal.invocation.InvocationMatcher#99	org.mockito.internal.invocation.InvocationMatcher#99
+Mockito	34	572	5400	6373	org.mockito.internal.invocation.InvocationMatcher#106	0	0	42	112	73			
+Mockito	35	433	3575	6161	org.mockito.Matchers#362	0	0	65	57	60			
+Mockito	35	433	3575	6161	org.mockito.Matchers#479	0	0	10	10	10			
+Mockito	35	433	3575	6161	org.mockito.Matchers#516	0	0	9	6	9			
+Mockito	37	460	3222	6061	org.mockito.internal.stubbing.answers.AnswersValidator#28	1	0	10	12	11	org.mockito.internal.stubbing.answers.AnswersValidator#24	org.mockito.internal.stubbing.answers.AnswersValidator#28	org.mockito.internal.stubbing.answers.AnswersValidator#24
+Mockito	37	460	3222	6061	org.mockito.internal.stubbing.answers.AnswersValidator#30	1	0	10	12	11	org.mockito.internal.stubbing.answers.AnswersValidator#24	org.mockito.internal.stubbing.answers.AnswersValidator#28	org.mockito.internal.stubbing.answers.AnswersValidator#24
+Mockito	6	879	6583	10903	org.mockito.Matchers#122	0	0	9	6	9			
+Mockito	6	879	6583	10903	org.mockito.Matchers#137	0	0	19	14	19			
+Mockito	6	879	6583	10903	org.mockito.Matchers#152	0	0	18	13	18			
+Mockito	6	879	6583	10903	org.mockito.Matchers#167	0	0	15	11	15			
+Mockito	6	879	6583	10903	org.mockito.Matchers#182	0	0	8	5	6			
+Mockito	6	879	6583	10903	org.mockito.Matchers#197	0	0	17	12	17			
+Mockito	6	879	6583	10903	org.mockito.Matchers#212	0	0	54	33	44			
+Mockito	6	879	6583	10903	org.mockito.Matchers#227	0	0	104	60	85			
+Mockito	6	879	6583	10903	org.mockito.Matchers#244	0	0	94	51	70			
+Mockito	6	879	6583	10903	org.mockito.Matchers#324	0	0	875	62	875			
+Mockito	6	879	6583	10903	org.mockito.Matchers#339	0	0	10	9	10			
+Mockito	6	879	6583	10903	org.mockito.Matchers#373	0	0	7	8	7			
+Mockito	6	879	6583	10903	org.mockito.Matchers#407	0	0	2	1	2			
+Mockito	6	879	6583	10903	org.mockito.Matchers#442	0	0	4	4	4			
+Mockito	7	646	5105	10901	org.mockito.internal.util.reflection.GenericMetadataSupport#379	1	0	37	37	37	org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType#379	org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType#379	org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType#379
+Time	1	1002	8195	27795	org.joda.time.Partial#221	0	0	30	30	30			
+Time	1	1002	8195	27795	org.joda.time.field.UnsupportedDurationField#227	0	0	15	15	15			
+Time	1	1002	8195	27795	org.joda.time.field.UnsupportedDurationField#228	0	0	4	4	4			
+Time	1	1002	8195	27795	org.joda.time.Partial#217	1	0	24	24	24	org.joda.time.Partial#216	org.joda.time.Partial#216	org.joda.time.Partial#216
+Time	10	1620	14769	27340	org.joda.time.base.BaseSingleFieldPeriod#104	0	0	861.5	861.5	861.5			
+Time	10	1620	14769	27340	org.joda.time.base.BaseSingleFieldPeriod#52	1	0	861.5	861.5	861.5	org.joda.time.base.BaseSingleFieldPeriod#104	org.joda.time.base.BaseSingleFieldPeriod#104	org.joda.time.base.BaseSingleFieldPeriod#104
+Time	11	1260	9705	27329	org.joda.time.tz.ZoneInfoCompiler#68	0	0	663.5	663.5	663.5			
+Time	11	1260	9705	27329	org.joda.time.tz.ZoneInfoCompiler#69	1	0	663.5	663.5	663.5	org.joda.time.tz.ZoneInfoCompiler#70	org.joda.time.tz.ZoneInfoCompiler#70	org.joda.time.tz.ZoneInfoCompiler#70
+Time	11	1260	9705	27329	org.joda.time.tz.ZoneInfoCompiler#70	0	0	663.5	663.5	663.5			
+Time	11	1260	9705	27329	org.joda.time.tz.ZoneInfoCompiler#71	1	0	663.5	663.5	663.5	org.joda.time.tz.ZoneInfoCompiler#71	org.joda.time.tz.ZoneInfoCompiler#71	org.joda.time.tz.ZoneInfoCompiler#71
+Time	12	1541	11928	27273	org.joda.time.LocalDateTime#201	0	0	1	1	1	org.joda.time.LocalDateTime#2016	org.joda.time.LocalDateTime#2016	org.joda.time.LocalDateTime#2016
+Time	12	1541	11928	27273	org.joda.time.LocalDate#210	1	0	35	29	33	org.joda.time.LocalDate#211	org.joda.time.LocalDate#211	org.joda.time.LocalDate#211
+Time	12	1541	11928	27273	org.joda.time.LocalDate#243	1	0	47	39	45	org.joda.time.LocalDate#244	org.joda.time.LocalDate#244	org.joda.time.LocalDate#244
+Time	12	1541	11928	27273	org.joda.time.LocalDate#244	1	0	47	39	45	org.joda.time.LocalDate#244	org.joda.time.LocalDate#244	org.joda.time.LocalDate#244
+Time	12	1541	11928	27273	org.joda.time.LocalDateTime#199	1	0	1	1	1	org.joda.time.LocalDateTime#2016	org.joda.time.LocalDateTime#2016	org.joda.time.LocalDateTime#2016
+Time	12	1541	11928	27273	org.joda.time.LocalDateTime#236	1	0	16	17	18	org.joda.time.LocalDateTime#233	org.joda.time.LocalDateTime#237	org.joda.time.LocalDateTime#237
+Time	12	1541	11928	27273	org.joda.time.LocalDateTime#237	1	0	16	17	18	org.joda.time.LocalDateTime#233	org.joda.time.LocalDateTime#237	org.joda.time.LocalDateTime#237
+Time	13	1328	10486	27262	org.joda.time.format.PeriodFormatterBuilder#1098	0	0	13	13	13	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1098	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1098	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1098
+Time	13	1328	10486	27262	org.joda.time.format.PeriodFormatterBuilder#1133	1	0	734.5	734.5	734.5	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1133	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1133	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1133
+Time	13	1328	10486	27262	org.joda.time.format.PeriodFormatterBuilder#1142	1	0	734.5	734.5	734.5	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1142	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1142	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1142
+Time	14	2040	14607	27215	org.joda.time.chrono.BasicMonthOfYearDateTimeField#209	1	0	8	10	8	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210
+Time	14	2040	14607	27215	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	1	0	8	10	8	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210
+Time	15	7	306	27212	org.joda.time.field.FieldUtils#138	1	0	1	1	1	org.joda.time.field.FieldUtils#138	org.joda.time.field.FieldUtils#138	org.joda.time.field.FieldUtils#138
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1167	0	0	1	1	1			
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1168	0	0	5	5	5			
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1169	0	0	12	12	12			
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1174	0	0	8	8	8			
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1175	0	0	6	6	6			
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1178	1	0	1	1	1	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1179	1	0	1	1	1	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167
+Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1180	1	0	1	1	1	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167	org.joda.time.DateTimeZone#1167
+Time	18	1093	9395	27171	org.joda.time.chrono.GJChronology#364	1	0	11	11	11	org.joda.time.chrono.GJChronology#364	org.joda.time.chrono.GJChronology#364	org.joda.time.chrono.GJChronology#364
+Time	18	1093	9395	27171	org.joda.time.chrono.GJChronology#367	1	0	11	11	11	org.joda.time.chrono.GJChronology#364	org.joda.time.chrono.GJChronology#364	org.joda.time.chrono.GJChronology#364
+Time	19	1407	11854	27156	org.joda.time.DateTimeZone#900	0	0	785.5	785.5	785.5			
+Time	2	1700	12079	27789	org.joda.time.Partial#218	0	0	23	23	23			
+Time	2	1700	12079	27789	org.joda.time.field.UnsupportedDurationField#227	1	0	6	6	6	org.joda.time.field.UnsupportedDurationField#227	org.joda.time.field.UnsupportedDurationField#227	org.joda.time.field.UnsupportedDurationField#227
+Time	20	1348	11623	27150	org.joda.time.format.DateTimeFormatterBuilder#2544	0	0	6	6	6	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544
+Time	20	1348	11623	27150	org.joda.time.format.DateTimeFormatterBuilder#2545	0	0	11	11	11	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2545	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2545	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2545
+Time	20	1348	11623	27150	org.joda.time.format.DateTimeFormatterBuilder#2542	1	0	6	6	6	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2544
+Time	20	1348	11623	27150	org.joda.time.format.DateTimeFormatterBuilder#2547	1	0	5	5	5	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2547	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2547	org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId#2547
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#72	0	0	2	2	2			
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#76	0	0	48	45	46			
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#79	0	0	24	28	27			
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#81	0	0	15	9	12			
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#66	1	0	2	2	2	org.joda.time.tz.DefaultNameProvider#72	org.joda.time.tz.DefaultNameProvider#72	org.joda.time.tz.DefaultNameProvider#72
+Time	21	1023	7535	27140	org.joda.time.tz.DefaultNameProvider#71	1	0	2	2	2	org.joda.time.tz.DefaultNameProvider#72	org.joda.time.tz.DefaultNameProvider#72	org.joda.time.tz.DefaultNameProvider#72
+Time	22	1050	9562	26876	org.joda.time.base.BasePeriod#222	0	0	11	10	10			
+Time	22	1050	9562	26876	org.joda.time.base.BasePeriod#224	1	0	31	62	45	org.joda.time.Period#382	org.joda.time.Period#382	org.joda.time.Period#382
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#572	0	0	40	40	40			
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#575	0	0	38	38	38			
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#577	0	0	154.5	154.5	154.5			
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#578	0	0	19	19	19			
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#581	0	0	9	9	9			
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#583	0	0	1	1	1			
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#586	0	0	20	20	20			
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#588	0	0	33	33	33			
+Time	23	260	3051	26871	org.joda.time.DateTimeZone#564	1	0	1	1	1	org.joda.time.DateTimeZone#583	org.joda.time.DateTimeZone#583	org.joda.time.DateTimeZone#583
+Time	24	2038	15676	26849	org.joda.time.format.DateTimeParserBucket#355	1	0	1110	1110	1110	org.joda.time.format.DateTimeParserBucket#352	org.joda.time.format.DateTimeParserBucket#352	org.joda.time.format.DateTimeParserBucket#352
+Time	25	1434	11684	26796	org.joda.time.DateTimeZone#899	1	0	109	67	96	org.joda.time.DateTimeZone#900	org.joda.time.DateTimeZone#900	org.joda.time.DateTimeZone#900
+Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#467	0	0	80	105	73	org.joda.time.chrono.ZonedChronology$ZonedDateTimeField#467	org.joda.time.chrono.ZonedChronology$ZonedDateTimeField#467	org.joda.time.chrono.ZonedChronology$ZonedDateTimeField#467
+Time	27	1380	12191	26589	org.joda.time.format.PeriodFormatterBuilder#801	1	0	759	759	759	org.joda.time.format.PeriodFormatterBuilder#801	org.joda.time.format.PeriodFormatterBuilder#801	org.joda.time.format.PeriodFormatterBuilder#801
+Time	27	1380	12191	26589	org.joda.time.format.PeriodFormatterBuilder#804	1	0	759	759	759	org.joda.time.format.PeriodFormatterBuilder#800	org.joda.time.format.PeriodFormatterBuilder#800	org.joda.time.format.PeriodFormatterBuilder#800
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#639	1	0	1805	1805	1805	org.joda.time.MutableDateTime#639	org.joda.time.MutableDateTime#639	org.joda.time.MutableDateTime#639
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#640	1	0	1803	1803	1803	org.joda.time.MutableDateTime#640	org.joda.time.MutableDateTime#640	org.joda.time.MutableDateTime#640
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#660	1	0	42	28	33	org.joda.time.MutableDateTime#660	org.joda.time.MutableDateTime#660	org.joda.time.MutableDateTime#660
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#661	1	0	27	16	25	org.joda.time.MutableDateTime#661	org.joda.time.MutableDateTime#661	org.joda.time.MutableDateTime#661
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#702	1	0	13	10	10	org.joda.time.MutableDateTime#702	org.joda.time.MutableDateTime#702	org.joda.time.MutableDateTime#702
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#703	1	0	13	10	10	org.joda.time.MutableDateTime#702	org.joda.time.MutableDateTime#702	org.joda.time.MutableDateTime#702
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#723	1	0	6	4	6	org.joda.time.MutableDateTime#723	org.joda.time.MutableDateTime#723	org.joda.time.MutableDateTime#723
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#724	1	0	6	4	6	org.joda.time.MutableDateTime#723	org.joda.time.MutableDateTime#723	org.joda.time.MutableDateTime#723
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#764	1	0	11	7	9	org.joda.time.MutableDateTime#764	org.joda.time.MutableDateTime#764	org.joda.time.MutableDateTime#764
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#765	1	0	9	6	7	org.joda.time.MutableDateTime#765	org.joda.time.MutableDateTime#765	org.joda.time.MutableDateTime#765
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#785	1	0	1	1	2	org.joda.time.MutableDateTime#785	org.joda.time.MutableDateTime#785	org.joda.time.MutableDateTime#785
+Time	3	1808	12172	27767	org.joda.time.MutableDateTime#786	1	0	1	1	1	org.joda.time.MutableDateTime#785	org.joda.time.MutableDateTime#785	org.joda.time.MutableDateTime#786
+Time	4	1706	15547	27767	org.joda.time.Partial#464	0	0	16	16	16			
+Time	5	1203	9011	27658	org.joda.time.Period#1628	0	0	7	9	8			
+Time	5	1203	9011	27658	org.joda.time.Period#1629	0	0	42	32	38			
+Time	5	1203	9011	27658	org.joda.time.Period#1630	0	0	12	37	15			
+Time	5	1203	9011	27658	org.joda.time.Period#1631	0	0	2	2	2			
+Time	6	1285	10806	27583	org.joda.time.chrono.GJChronology#196	1	0	713	713	713	org.joda.time.chrono.GJChronology#195	org.joda.time.chrono.GJChronology#195	org.joda.time.chrono.GJChronology#195
+Time	6	1285	10806	27583	org.joda.time.chrono.GJChronology#979	1	0	5	8	5	org.joda.time.chrono.GJChronology$ImpreciseCutoverField#978	org.joda.time.chrono.GJChronology$ImpreciseCutoverField#978	org.joda.time.chrono.GJChronology$ImpreciseCutoverField#978
+Time	7	1969	14789	27414	org.joda.time.format.DateTimeFormatter#710	0	0	49	47	48			
+Time	7	1969	14789	27414	org.joda.time.format.DateTimeFormatter#708	1	0	49	47	48	org.joda.time.format.DateTimeFormatter#710	org.joda.time.format.DateTimeFormatter#710	org.joda.time.format.DateTimeFormatter#710
+Time	8	461	6691	27347	org.joda.time.DateTimeZone#279	0	0	269	269	269			
+Time	8	461	6691	27347	org.joda.time.DateTimeZone#282	1	0	10	10	10	org.joda.time.DateTimeZone#284	org.joda.time.DateTimeZone#284	org.joda.time.DateTimeZone#284
+Time	9	462	6685	27341	org.joda.time.DateTimeZone#263	0	0	31	31	31			
+Time	9	462	6685	27341	org.joda.time.DateTimeZone#265	0	0	5	5	5			
+Time	9	462	6685	27341	org.joda.time.DateTimeZone#267	0	0	11	11	11			
+Time	9	462	6685	27341	org.joda.time.DateTimeZone#258	1	0	16	16	16	org.joda.time.DateTimeZone#258	org.joda.time.DateTimeZone#258	org.joda.time.DateTimeZone#258
+Time	9	462	6685	27341	org.joda.time.DateTimeZone#283	1	0	26	26	26	org.joda.time.DateTimeZone#283	org.joda.time.DateTimeZone#283	org.joda.time.DateTimeZone#283

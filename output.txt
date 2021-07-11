@@ -11,6 +11,119 @@ Chart	2	162	2515	96344	org.jfree.data.general.DatasetUtilities#1248	1	0	115.5	11
 Chart	3	143	1571	96317	org.jfree.data.time.TimeSeries#1057	1	0	7.0	7.0	7.0	org.jfree.data.time.TimeSeries#1058	org.jfree.data.time.TimeSeries#1058	org.jfree.data.time.TimeSeries#1058
 Chart	4	2371	46751	94583	org.jfree.chart.plot.XYPlot#4493	1	0	241.0	280.0	285.0	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493
 Chart	4	2371	46751	94583	org.jfree.chart.plot.XYPlot#4501	1	0	241.0	280.0	285.0	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493	org.jfree.chart.plot.XYPlot#4493
+Lang	1	38	2880	21779	org.apache.commons.lang3.math.NumberUtils#468	0	0	3.0	3.0	3.0
+Lang	1	38	2880	21779	org.apache.commons.lang3.math.NumberUtils#471	0	0	7.0	7.0	7.0
+Lang	1	38	2880	21779	org.apache.commons.lang3.math.NumberUtils#467	1	0	6.0	6.0	6.0	org.apache.commons.lang3.math.NumberUtils#467	org.apache.commons.lang3.math.NumberUtils#467	org.apache.commons.lang3.math.NumberUtils#467
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#304	0	0	161.0	161.0	161.0
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#307	0	0	161.0	161.0	161.0
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#308	0	0	34.0	57.0	43.0
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#309	0	0	161.0	161.0	161.0
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#310	0	0	161.0	161.0	161.0
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#311	1	0	34.0	57.0	43.0	org.apache.commons.lang3.time.FastDateParser#308	org.apache.commons.lang3.time.FastDateParser#308	org.apache.commons.lang3.time.FastDateParser#308
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#312	0	1	269	269	269
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#313	1	0	34.0	57.0	43.0	org.apache.commons.lang3.time.FastDateParser#308	org.apache.commons.lang3.time.FastDateParser#308	org.apache.commons.lang3.time.FastDateParser#308
+Lang	10	268	1458	20442	org.apache.commons.lang3.time.FastDateParser#314	0	0	161.0	161.0	161.0
+Lang	11	11	105	20342	org.apache.commons.lang3.RandomStringUtils#245	1	0	1.0	1.0	1.0	org.apache.commons.lang3.RandomStringUtils#234	org.apache.commons.lang3.RandomStringUtils#234	org.apache.commons.lang3.RandomStringUtils#234
+Lang	12	17	98	20335	org.apache.commons.lang3.RandomStringUtils#230	1	0	6.0	9.0	8.0	org.apache.commons.lang3.RandomStringUtils#231	org.apache.commons.lang3.RandomStringUtils#231	org.apache.commons.lang3.RandomStringUtils#231
+Lang	12	17	98	20335	org.apache.commons.lang3.RandomStringUtils#232	1	0	6.0	7.0	6.0	org.apache.commons.lang3.RandomStringUtils#231	org.apache.commons.lang3.RandomStringUtils#232	org.apache.commons.lang3.RandomStringUtils#232
+Lang	12	17	98	20335	org.apache.commons.lang3.RandomStringUtils#238	1	0	6.0	7.0	6.0	org.apache.commons.lang3.RandomStringUtils#231	org.apache.commons.lang3.RandomStringUtils#232	org.apache.commons.lang3.RandomStringUtils#232
+Lang	13	29	127	20224	org.apache.commons.lang3.SerializationUtils#239	0	1	30	30	30
+Lang	13	29	127	20224	org.apache.commons.lang3.SerializationUtils#252	0	0	8.0	8.0	8.0	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#252	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#252	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#252
+Lang	13	29	127	20224	org.apache.commons.lang3.SerializationUtils#268	1	0	3.0	3.0	3.0	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267
+Lang	13	29	127	20224	org.apache.commons.lang3.SerializationUtils#269	1	0	3.0	3.0	3.0	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267	org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream#267
+Lang	14	5	2176	19630	org.apache.commons.lang3.StringUtils#788	1	0	1.0	1.0	1.0	org.apache.commons.lang3.StringUtils#788	org.apache.commons.lang3.StringUtils#788	org.apache.commons.lang3.StringUtils#788
+Lang	14	5	2176	19630	org.apache.commons.lang3.StringUtils#789	1	0	1.0	1.0	1.0	org.apache.commons.lang3.StringUtils#788	org.apache.commons.lang3.StringUtils#788	org.apache.commons.lang3.StringUtils#788
+Lang	15	420	4001	19511	org.apache.commons.lang3.reflect.TypeUtils#219	0	0	417.0	417.0	417.0
+Lang	15	420	4001	19511	org.apache.commons.lang3.reflect.TypeUtils#220	0	0	403.0	403.0	403.0
+Lang	15	420	4001	19511	org.apache.commons.lang3.reflect.TypeUtils#221	0	0	411.0	411.0	411.0
+Lang	15	420	4001	19511	org.apache.commons.lang3.reflect.TypeUtils#675	0	0	250.5	250.5	250.5
+Lang	16	100	2927	19873	org.apache.commons.lang3.math.NumberUtils#458	0	0	8.0	8.0	8.0
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#83	0	0	105.5	105.5	105.5
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#90	1	1	132	132	132			
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#94	0	1	132	132	132
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#96	1	1	132	132	132			
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#97	0	1	132	132	132
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#98	1	1	132	132	132			
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#99	0	1	132	132	132
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#100	0	1	132	132	132
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#102	0	0	105.5	105.5	105.5
+Lang	17	131	2497	18999	org.apache.commons.lang3.text.translate.CharSequenceTranslator#89	1	0	19.0	19.0	19.0	org.apache.commons.lang3.text.translate.CharSequenceTranslator#87	org.apache.commons.lang3.text.translate.CharSequenceTranslator#87	org.apache.commons.lang3.text.translate.CharSequenceTranslator#87
+Lang	18	276	1007	18997	org.apache.commons.lang3.time.FastDateFormat#495	0	0	168.5	168.5	168.5
+Lang	18	276	1007	18997	org.apache.commons.lang3.time.FastDateFormat#496	0	0	168.5	168.5	168.5
+Lang	18	276	1007	18997	org.apache.commons.lang3.time.FastDateFormat#497	1	0	168.5	168.5	168.5	org.apache.commons.lang3.time.FastDateFormat#495	org.apache.commons.lang3.time.FastDateFormat#495	org.apache.commons.lang3.time.FastDateFormat#495
+Lang	18	276	1007	18997	org.apache.commons.lang3.time.FastDateFormat#499	1	0	46.0	46.0	46.0	org.apache.commons.lang3.time.FastDateFormat#498	org.apache.commons.lang3.time.FastDateFormat#498	org.apache.commons.lang3.time.FastDateFormat#498
+Lang	19	26	116	18970	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#40	0	0	16.0	16.0	16.0
+Lang	19	26	116	18970	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#54	0	0	9.0	9.0	9.0
+Lang	19	26	116	18970	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#80	0	1	27	27	27
+Lang	19	26	116	18970	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#50	1	0	6.0	5.0	6.0	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#47	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#47	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#47
+Lang	19	26	116	18970	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#79	1	1	27	27	27			
+Lang	2	29	161	21748	org.apache.commons.lang3.LocaleUtils#92	1	0	16.0	16.0	16.0	org.apache.commons.lang3.LocaleUtils#89	org.apache.commons.lang3.LocaleUtils#89	org.apache.commons.lang3.LocaleUtils#89
+Lang	20	48	2103	18967	org.apache.commons.lang3.StringUtils#3298	0	0	15.0	15.0	15.0
+Lang	20	48	2103	18967	org.apache.commons.lang3.StringUtils#3383	0	0	4.0	4.0	4.0
+Lang	21	4	582	18855	org.apache.commons.lang3.time.DateUtils#265	0	1	5	5	5
+Lang	22	69	437	18870	org.apache.commons.lang3.math.Fraction#584	0	0	27.0	26.0	26.0
+Lang	22	69	437	18870	org.apache.commons.lang3.math.Fraction#583	1	0	27.0	26.0	26.0	org.apache.commons.lang3.math.Fraction#584	org.apache.commons.lang3.math.Fraction#584	org.apache.commons.lang3.math.Fraction#584
+Lang	23	135	836	18802	org.apache.commons.lang3.text.ExtendedMessageFormat#73	0	0	26.0	26.0	26.0	org.apache.commons.lang3.text.ExtendedMessageFormat#173	org.apache.commons.lang3.text.ExtendedMessageFormat#173	org.apache.commons.lang3.text.ExtendedMessageFormat#173
+Lang	23	135	836	18802	org.apache.commons.lang3.text.ExtendedMessageFormat#263	0	1	136	136	136
+Lang	23	135	836	18802	org.apache.commons.lang3.text.ExtendedMessageFormat#269	0	1	136	136	136
+Lang	24	160	2653	18777	org.apache.commons.lang3.math.NumberUtils#1413	0	0	111.0	111.0	111.0
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#74	1	0	9.0	9.0	9.0	org.apache.commons.lang3.text.translate.EntityArrays#374	org.apache.commons.lang3.text.translate.EntityArrays#374	org.apache.commons.lang3.text.translate.EntityArrays#374
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#75	0	0	9.0	9.0	9.0	org.apache.commons.lang3.text.translate.EntityArrays#375	org.apache.commons.lang3.text.translate.EntityArrays#375	org.apache.commons.lang3.text.translate.EntityArrays#375
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#76	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#77	0	0	9.0	9.0	9.0	org.apache.commons.lang3.text.translate.EntityArrays#377	org.apache.commons.lang3.text.translate.EntityArrays#377	org.apache.commons.lang3.text.translate.EntityArrays#377
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#78	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#79	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#80	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#81	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#82	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#83	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#84	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#85	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#86	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#87	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#88	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#89	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#90	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#91	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#92	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#93	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#94	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#95	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#96	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#97	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#98	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#99	0	1	17	17	17
+Lang	25	16	293	18775	org.apache.commons.lang3.text.translate.EntityArrays#100	0	1	17	17	17
+Lang	26	130	832	18452	org.apache.commons.lang3.time.FastDateFormat#820	0	0	11.0	11.0	11.0
+Lang	27	216	2849	18382	org.apache.commons.lang3.math.NumberUtils#479	0	0	24.0	24.0	24.0
+Lang	27	216	2849	18382	org.apache.commons.lang3.math.NumberUtils#489	1	0	141.0	141.0	141.0	org.apache.commons.lang3.math.NumberUtils#489	org.apache.commons.lang3.math.NumberUtils#489	org.apache.commons.lang3.math.NumberUtils#489
+Lang	28	31	107	17806	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63	1	0	1.0	1.0	1.0	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63
+Lang	28	31	107	17806	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#64	1	0	1.0	1.0	1.0	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63	org.apache.commons.lang3.text.translate.NumericEntityUnescaper#63
+Lang	29	136	1962	17794	org.apache.commons.lang3.SystemUtils#1672	0	1	137	137	137
+Lang	3	56	2870	21713	org.apache.commons.lang3.math.NumberUtils#593	1	0	8.0	8.0	8.0	org.apache.commons.lang3.math.NumberUtils#593	org.apache.commons.lang3.math.NumberUtils#593	org.apache.commons.lang3.math.NumberUtils#593
+Lang	3	56	2870	21713	org.apache.commons.lang3.math.NumberUtils#597	1	0	8.0	8.0	8.0	org.apache.commons.lang3.math.NumberUtils#593	org.apache.commons.lang3.math.NumberUtils#593	org.apache.commons.lang3.math.NumberUtils#593
+Lang	3	56	2870	21713	org.apache.commons.lang3.math.NumberUtils#601	1	1	57	57	57			
+Lang	3	56	2870	21713	org.apache.commons.lang3.math.NumberUtils#605	1	1	57	57	57			
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1443	0	1	73	73	73
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1455	0	0	40.0	35.0	37.0
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1457	0	1	73	73	73
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1497	0	1	73	73	73
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1576	0	0	4.0	3.0	3.0
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1376	0	0	71.0	71.0	71.0
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1377	0	0	66.0	65.0	66.0
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1381	1	0	61.5	52.0	61.5	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1382	1	0	61.5	52.0	61.5	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1383	1	0	61.5	52.0	61.5	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382	org.apache.commons.lang3.StringUtils#1382
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1533	0	0	25.0	23.0	23.0
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1534	0	1	73	73	73
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1539	1	0	28.0	24.0	26.0	org.apache.commons.lang3.StringUtils#1539	org.apache.commons.lang3.StringUtils#1539	org.apache.commons.lang3.StringUtils#1539
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1540	1	0	28.0	24.0	26.0	org.apache.commons.lang3.StringUtils#1539	org.apache.commons.lang3.StringUtils#1539	org.apache.commons.lang3.StringUtils#1539
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1578	1	0	4.0	3.0	3.0	org.apache.commons.lang3.StringUtils#1576	org.apache.commons.lang3.StringUtils#1576	org.apache.commons.lang3.StringUtils#1576
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1678	0	0	9.0	10.0	10.0
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1679	0	0	18.0	22.0	20.0
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1683	1	0	2.0	2.0	2.0	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1684	1	0	2.0	2.0	2.0	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685
+Lang	30	72	3678	17622	org.apache.commons.lang3.StringUtils#1686	1	0	2.0	2.0	2.0	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685	org.apache.commons.lang3.StringUtils#1685
 Lang	31	32	3663	17591	org.apache.commons.lang3.StringUtils#1446	0	0	5.0	5.0	5.0
 Lang	31	32	3663	17591	org.apache.commons.lang3.StringUtils#1450	1	0	8.0	8.0	8.0	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449
 Lang	31	32	3663	17591	org.apache.commons.lang3.StringUtils#1451	1	0	8.0	8.0	8.0	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449	org.apache.commons.lang3.StringUtils#1449
@@ -29,6 +142,123 @@ Lang	34	456	1496	17310	org.apache.commons.lang3.builder.ToStringStyle#148	0	0	26
 Lang	34	456	1496	17310	org.apache.commons.lang3.builder.ToStringStyle#164	0	0	74.0	62.0	64.0
 Lang	35	27	1606	17078	org.apache.commons.lang3.ArrayUtils#3295	0	0	1.0	1.0	1.0
 Lang	35	27	1606	17078	org.apache.commons.lang3.ArrayUtils#3574	0	1	28	28	28
+Lang	36	257	2708	17072	org.apache.commons.lang3.math.NumberUtils#491	0	0	161.5	161.5	161.5
+Lang	36	257	2708	17072	org.apache.commons.lang3.math.NumberUtils#1387	1	0	161.5	161.5	161.5	org.apache.commons.lang3.math.NumberUtils#1379	org.apache.commons.lang3.math.NumberUtils#1379	org.apache.commons.lang3.math.NumberUtils#1379
+Lang	37	26	1584	17058	org.apache.commons.lang3.ArrayUtils#2962	1	0	4.0	4.0	4.0	org.apache.commons.lang3.ArrayUtils#2964	org.apache.commons.lang3.ArrayUtils#2964	org.apache.commons.lang3.ArrayUtils#2964
+Lang	37	26	1584	17058	org.apache.commons.lang3.ArrayUtils#2963	1	0	4.0	4.0	4.0	org.apache.commons.lang3.ArrayUtils#2964	org.apache.commons.lang3.ArrayUtils#2964	org.apache.commons.lang3.ArrayUtils#2964
+Lang	37	26	1584	17058	org.apache.commons.lang3.ArrayUtils#2964	1	0	4.0	4.0	4.0	org.apache.commons.lang3.ArrayUtils#2964	org.apache.commons.lang3.ArrayUtils#2964	org.apache.commons.lang3.ArrayUtils#2964
+Lang	38	161	1003	17048	org.apache.commons.lang3.time.FastDateFormat#872	1	0	4.0	4.0	4.0	org.apache.commons.lang3.time.FastDateFormat#872	org.apache.commons.lang3.time.FastDateFormat#872	org.apache.commons.lang3.time.FastDateFormat#872
+Lang	39	51	1836	16983	org.apache.commons.lang3.StringUtils#3676	1	0	35.5	35.5	35.5	org.apache.commons.lang3.StringUtils#3675	org.apache.commons.lang3.StringUtils#3675	org.apache.commons.lang3.StringUtils#3675
+Lang	4	23	115	21685	org.apache.commons.lang3.text.translate.LookupTranslator#31	0	1	24	24	24
+Lang	4	23	115	21685	org.apache.commons.lang3.text.translate.LookupTranslator#46	0	0	13.0	13.0	13.0
+Lang	4	23	115	21685	org.apache.commons.lang3.text.translate.LookupTranslator#51	0	0	13.0	13.0	13.0
+Lang	4	23	115	21685	org.apache.commons.lang3.text.translate.LookupTranslator#77	0	0	13.0	13.0	13.0
+Lang	40	4	1798	17428	org.apache.commons.lang.StringUtils#1048	0	0	2.0	2.0	2.0
+Lang	41	50	440	17349	org.apache.commons.lang.ClassUtils#203	0	0	10.0	10.0	10.0
+Lang	41	50	440	17349	org.apache.commons.lang.ClassUtils#245	0	0	6.0	6.0	6.0
+Lang	41	50	440	17349	org.apache.commons.lang.ClassUtils#191	0	1	51	51	51
+Lang	41	50	440	17349	org.apache.commons.lang.ClassUtils#193	1	0	17.0	17.0	17.0	org.apache.commons.lang.ClassUtils#196	org.apache.commons.lang.ClassUtils#196	org.apache.commons.lang.ClassUtils#196
+Lang	41	50	440	17349	org.apache.commons.lang.ClassUtils#194	1	0	17.0	17.0	17.0	org.apache.commons.lang.ClassUtils#196	org.apache.commons.lang.ClassUtils#196	org.apache.commons.lang.ClassUtils#196
+Lang	41	50	440	17349	org.apache.commons.lang.ClassUtils#195	1	0	17.0	17.0	17.0	org.apache.commons.lang.ClassUtils#196	org.apache.commons.lang.ClassUtils#196	org.apache.commons.lang.ClassUtils#196
+Lang	41	50	440	17349	org.apache.commons.lang.ClassUtils#250	1	0	6.0	6.0	6.0	org.apache.commons.lang.ClassUtils#245	org.apache.commons.lang.ClassUtils#245	org.apache.commons.lang.ClassUtils#245
+Lang	41	50	440	17349	org.apache.commons.lang.ClassUtils#251	1	0	6.0	6.0	6.0	org.apache.commons.lang.ClassUtils#245	org.apache.commons.lang.ClassUtils#245	org.apache.commons.lang.ClassUtils#245
+Lang	42	145	1180	18817	org.apache.commons.lang.Entities#828	0	0	11.0	11.0	11.0
+Lang	42	145	1180	18817	org.apache.commons.lang.Entities#831	0	0	3.0	3.0	3.0
+Lang	43	27	547	18817	org.apache.commons.lang.text.ExtendedMessageFormat#422	1	0	3.0	3.0	3.0	org.apache.commons.lang.text.ExtendedMessageFormat#421	org.apache.commons.lang.text.ExtendedMessageFormat#421	org.apache.commons.lang.text.ExtendedMessageFormat#421
+Lang	44	22	331	18814	org.apache.commons.lang.NumberUtils#145	1	0	5.0	5.0	5.0	org.apache.commons.lang.NumberUtils#145	org.apache.commons.lang.NumberUtils#145	org.apache.commons.lang.NumberUtils#145
+Lang	45	24	2063	18777	org.apache.commons.lang.WordUtils#616	1	0	1.0	1.0	1.0	org.apache.commons.lang.WordUtils#623	org.apache.commons.lang.WordUtils#623	org.apache.commons.lang.WordUtils#623
+Lang	46	22	438	18013	org.apache.commons.lang.StringEscapeUtils#86	0	0	2.0	2.0	2.0
+Lang	46	22	438	18013	org.apache.commons.lang.StringEscapeUtils#102	0	1	23	23	23
+Lang	46	22	438	18013	org.apache.commons.lang.StringEscapeUtils#127	0	1	23	23	23
+Lang	46	22	438	18013	org.apache.commons.lang.StringEscapeUtils#143	0	1	23	23	23
+Lang	46	22	438	18013	org.apache.commons.lang.StringEscapeUtils#154	0	1	23	23	23
+Lang	46	22	438	18013	org.apache.commons.lang.StringEscapeUtils#160	0	0	5.0	5.0	5.0
+Lang	46	22	438	18013	org.apache.commons.lang.StringEscapeUtils#178	0	1	23	23	23
+Lang	46	22	438	18013	org.apache.commons.lang.StringEscapeUtils#244	1	0	1.0	1.0	1.0	org.apache.commons.lang.StringEscapeUtils#244	org.apache.commons.lang.StringEscapeUtils#244	org.apache.commons.lang.StringEscapeUtils#244
+Lang	46	22	438	18013	org.apache.commons.lang.StringEscapeUtils#245	1	0	1.0	1.0	1.0	org.apache.commons.lang.StringEscapeUtils#244	org.apache.commons.lang.StringEscapeUtils#244	org.apache.commons.lang.StringEscapeUtils#244
+Lang	47	39	1749	18490	org.apache.commons.lang.text.StrBuilder#1186	1	0	19.5	19.5	19.5	org.apache.commons.lang.text.StrBuilder#1186	org.apache.commons.lang.text.StrBuilder#1186	org.apache.commons.lang.text.StrBuilder#1186
+Lang	47	39	1749	18490	org.apache.commons.lang.text.StrBuilder#1230	1	0	19.5	19.5	19.5	org.apache.commons.lang.text.StrBuilder#1230	org.apache.commons.lang.text.StrBuilder#1230	org.apache.commons.lang.text.StrBuilder#1230
+Lang	48	12	373	18220	org.apache.commons.lang.builder.EqualsBuilder#380	1	0	2.0	2.0	2.0	org.apache.commons.lang.builder.EqualsBuilder#381	org.apache.commons.lang.builder.EqualsBuilder#381	org.apache.commons.lang.builder.EqualsBuilder#381
+Lang	48	12	373	18220	org.apache.commons.lang.builder.EqualsBuilder#382	1	0	2.0	2.0	2.0	org.apache.commons.lang.builder.EqualsBuilder#381	org.apache.commons.lang.builder.EqualsBuilder#381	org.apache.commons.lang.builder.EqualsBuilder#381
+Lang	49	46	428	17974	org.apache.commons.lang.math.Fraction#466	1	0	2.0	2.0	2.0	org.apache.commons.lang.math.Fraction#466	org.apache.commons.lang.math.Fraction#466	org.apache.commons.lang.math.Fraction#466
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#285	0	0	12.0	12.0	12.0
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#286	0	0	122.5	122.5	122.5
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#292	0	0	33.5	32.0	33.5
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#293	0	0	45.0	44.0	45.0
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#294	1	0	33.5	32.0	33.5	org.apache.commons.lang.time.FastDateFormat#292	org.apache.commons.lang.time.FastDateFormat#292	org.apache.commons.lang.time.FastDateFormat#292
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#465	0	0	20.0	17.0	20.0
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#466	0	0	15.0	14.0	14.0
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#471	0	0	122.5	122.5	122.5
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#472	0	0	23.5	23.5	23.5
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#473	1	0	23.5	23.5	23.5	org.apache.commons.lang.time.FastDateFormat#472	org.apache.commons.lang.time.FastDateFormat#472	org.apache.commons.lang.time.FastDateFormat#472
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#289	1	0	122.5	122.5	122.5	org.apache.commons.lang.time.FastDateFormat#286	org.apache.commons.lang.time.FastDateFormat#286	org.apache.commons.lang.time.FastDateFormat#286
+Lang	50	204	826	17764	org.apache.commons.lang.time.FastDateFormat#468	1	0	15.0	14.0	14.0	org.apache.commons.lang.time.FastDateFormat#466	org.apache.commons.lang.time.FastDateFormat#466	org.apache.commons.lang.time.FastDateFormat#466
+Lang	51	19	291	17028	org.apache.commons.lang.BooleanUtils#682	1	0	2.0	2.0	2.0	org.apache.commons.lang.BooleanUtils#671	org.apache.commons.lang.BooleanUtils#671	org.apache.commons.lang.BooleanUtils#671
+Lang	52	27	369	17024	org.apache.commons.lang.StringEscapeUtils#236	1	0	16.0	16.0	16.0	org.apache.commons.lang.StringEscapeUtils#237	org.apache.commons.lang.StringEscapeUtils#237	org.apache.commons.lang.StringEscapeUtils#237
+Lang	53	40	390	16979	org.apache.commons.lang.time.DateUtils#645	1	0	23.0	23.0	23.0	org.apache.commons.lang.time.DateUtils#641	org.apache.commons.lang.time.DateUtils#641	org.apache.commons.lang.time.DateUtils#641
+Lang	53	40	390	16979	org.apache.commons.lang.time.DateUtils#654	1	0	13.0	13.0	13.0	org.apache.commons.lang.time.DateUtils#658	org.apache.commons.lang.time.DateUtils#658	org.apache.commons.lang.time.DateUtils#658
+Lang	53	40	390	16979	org.apache.commons.lang.time.DateUtils#643	1	1	41	41	41			
+Lang	53	40	390	16979	org.apache.commons.lang.time.DateUtils#652	1	1	41	41	41			
+Lang	54	19	134	16921	org.apache.commons.lang.LocaleUtils#114	1	0	1.0	1.0	1.0	org.apache.commons.lang.LocaleUtils#113	org.apache.commons.lang.LocaleUtils#113	org.apache.commons.lang.LocaleUtils#113
+Lang	55	22	93	16919	org.apache.commons.lang.time.StopWatch#118	1	0	16.0	16.0	16.0	org.apache.commons.lang.time.StopWatch#118	org.apache.commons.lang.time.StopWatch#118	org.apache.commons.lang.time.StopWatch#118
+Lang	55	22	93	16919	org.apache.commons.lang.time.StopWatch#119	1	0	9.0	9.0	9.0	org.apache.commons.lang.time.StopWatch#119	org.apache.commons.lang.time.StopWatch#119	org.apache.commons.lang.time.StopWatch#119
+Lang	56	138	996	16957	org.apache.commons.lang.time.FastDateFormat#140	0	0	81.5	81.5	81.5	org.apache.commons.lang.time.FastDateFormat$TwoDigitMonthField#1405	org.apache.commons.lang.time.FastDateFormat$TwoDigitMonthField#1405	org.apache.commons.lang.time.FastDateFormat$TwoDigitMonthField#1405
+Lang	56	138	996	16957	org.apache.commons.lang.time.FastDateFormat#144	0	1	139	139	139
+Lang	56	138	996	16957	org.apache.commons.lang.time.FastDateFormat#1022	0	1	139	139	139
+Lang	58	54	2269	16961	org.apache.commons.lang.math.NumberUtils#454	0	1	55	55	55
+Lang	58	54	2269	16961	org.apache.commons.lang.math.NumberUtils#455	0	1	55	55	55
+Lang	59	12	1526	16943	org.apache.commons.lang.text.StrBuilder#884	0	0	1.0	1.0	1.0
+Lang	6	130	5033	21481	org.apache.commons.lang3.text.translate.CharSequenceTranslator#95	0	0	72.0	72.0	72.0
+Lang	60	64	1653	16920	org.apache.commons.lang.text.StrBuilder#1673	0	0	6.0	6.0	6.0
+Lang	60	64	1653	16920	org.apache.commons.lang.text.StrBuilder#1730	0	1	65	65	65
+Lang	61	67	1653	16920	org.apache.commons.lang.text.StrBuilder#1776	0	0	27.0	26.0	27.0
+Lang	62	101	779	16911	org.apache.commons.lang.Entities#850	1	0	6.0	6.0	6.0	org.apache.commons.lang.Entities#848	org.apache.commons.lang.Entities#848	org.apache.commons.lang.Entities#848
+Lang	62	101	779	16911	org.apache.commons.lang.Entities#920	1	1	102	102	102			
+Lang	62	101	779	16911	org.apache.commons.lang.Entities#925	1	1	102	102	102			
+Lang	62	101	779	16911	org.apache.commons.lang.Entities#926	1	1	102	102	102			
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#306	0	0	4.0	4.0	4.0
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#318	0	0	31.5	31.5	31.5
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#319	0	0	5.0	5.0	5.0
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#320	0	0	76.5	76.5	76.5
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#321	0	0	76.5	76.5	76.5
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#322	0	0	21.5	21.5	21.5
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#323	0	0	19.5	19.5	19.5
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#324	0	0	13.0	13.0	13.0
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#431	0	1	116	116	116
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#432	0	1	116	116	116
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#433	0	0	16.0	16.0	16.0
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#434	0	0	28.5	28.5	28.5
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#435	0	0	10.5	10.5	10.5
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#436	0	0	76.5	76.5	76.5
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#437	0	0	76.5	76.5	76.5
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#438	0	0	76.5	76.5	76.5
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#439	0	0	2.0	2.0	2.0
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#440	0	1	116	116	116
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#441	0	0	25.0	25.0	25.0
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#442	0	1	116	116	116
+Lang	63	115	1893	16791	org.apache.commons.lang.time.DurationFormatUtils#313	1	0	19.5	19.5	19.5	org.apache.commons.lang.time.DurationFormatUtils#312	org.apache.commons.lang.time.DurationFormatUtils#312	org.apache.commons.lang.time.DurationFormatUtils#312
+Lang	64	42	2034	16694	org.apache.commons.lang.enums.ValuedEnum#183	1	0	1.0	1.0	1.0	org.apache.commons.lang.enums.ValuedEnum#183	org.apache.commons.lang.enums.ValuedEnum#183	org.apache.commons.lang.enums.ValuedEnum#183
+Lang	64	42	2034	16694	org.apache.commons.lang.enums.ValuedEnum#192	0	1	43	43	43
+Lang	64	42	2034	16694	org.apache.commons.lang.enums.ValuedEnum#193	0	1	43	43	43
+Lang	64	42	2034	16694	org.apache.commons.lang.enums.ValuedEnum#194	0	1	43	43	43
+Lang	64	42	2034	16694	org.apache.commons.lang.enums.ValuedEnum#195	0	1	43	43	43
+Lang	65	23	360	16593	org.apache.commons.lang.time.DateUtils#624	1	0	20.0	20.0	20.0	org.apache.commons.lang.time.DateUtils#644	org.apache.commons.lang.time.DateUtils#644	org.apache.commons.lang.time.DateUtils#644
+Lang	65	23	360	16593	org.apache.commons.lang.time.DateUtils#631	0	1	24	24	24
+Lang	65	23	360	16593	org.apache.commons.lang.time.DateUtils#633	0	1	24	24	24
+Lang	65	23	360	16593	org.apache.commons.lang.time.DateUtils#635	0	1	24	24	24
+Lang	65	23	360	16593	org.apache.commons.lang.time.DateUtils#637	0	1	24	24	24
+Lang	65	23	360	16593	org.apache.commons.lang.time.DateUtils#639	1	0	4.0	4.0	4.0	org.apache.commons.lang.time.DateUtils#643	org.apache.commons.lang.time.DateUtils#643	org.apache.commons.lang.time.DateUtils#643
+Lang	65	23	360	16593	org.apache.commons.lang.time.DateUtils#709	1	0	6.0	6.0	6.0	org.apache.commons.lang.time.DateUtils#709	org.apache.commons.lang.time.DateUtils#709	org.apache.commons.lang.time.DateUtils#709
+Lang	65	23	360	16593	org.apache.commons.lang.time.DateUtils#710	1	0	6.0	6.0	6.0	org.apache.commons.lang.time.DateUtils#709	org.apache.commons.lang.time.DateUtils#709	org.apache.commons.lang.time.DateUtils#709
+Lang	7	217	3039	21495	org.apache.commons.lang3.math.NumberUtils#452	0	0	149.0	149.0	149.0
+Lang	7	217	3039	21495	org.apache.commons.lang3.math.NumberUtils#453	0	0	22.5	22.5	22.5
+Lang	7	217	3039	21495	org.apache.commons.lang3.math.NumberUtils#454	1	0	22.5	22.5	22.5	org.apache.commons.lang3.math.NumberUtils#453	org.apache.commons.lang3.math.NumberUtils#453	org.apache.commons.lang3.math.NumberUtils#453
+Lang	7	217	3039	21495	org.apache.commons.lang3.math.NumberUtils#721	1	0	149.0	149.0	149.0	org.apache.commons.lang3.math.NumberUtils#718	org.apache.commons.lang3.math.NumberUtils#718	org.apache.commons.lang3.math.NumberUtils#718
+Lang	7	217	3039	21495	org.apache.commons.lang3.math.NumberUtils#725	1	0	149.0	149.0	149.0	org.apache.commons.lang3.math.NumberUtils#725	org.apache.commons.lang3.math.NumberUtils#725	org.apache.commons.lang3.math.NumberUtils#725
+Lang	8	317	1379	20363	org.apache.commons.lang3.time.FastDatePrinter#1098	0	1	318	318	318
+Lang	8	317	1379	20363	org.apache.commons.lang3.time.FastDatePrinter#1112	0	0	11.0	11.0	11.0	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1112	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1112	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1112
+Lang	8	317	1379	20363	org.apache.commons.lang3.time.FastDatePrinter#1134	1	0	12.0	12.0	12.0	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1134	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1134	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1134
+Lang	9	212	1449	20433	org.apache.commons.lang3.time.FastDateParser#144	1	0	62.0	64.0	63.0	org.apache.commons.lang3.time.FastDateParser#144	org.apache.commons.lang3.time.FastDateParser#144	org.apache.commons.lang3.time.FastDateParser#144
 Mockito	1	1172	7335	10517	org.mockito.internal.invocation.InvocationMatcher#123	0	0	1.0	1.0	1.0
 Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#71	0	1	511	511	511
 Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#87	0	1	511	511	511
@@ -193,7 +423,7 @@ Time	13	1328	10486	27262	org.joda.time.format.PeriodFormatterBuilder#1133	1	0	73
 Time	13	1328	10486	27262	org.joda.time.format.PeriodFormatterBuilder#1142	1	0	734.5	734.5	734.5	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1142	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1142	org.joda.time.format.PeriodFormatterBuilder$FieldFormatter#1142
 Time	14	2040	14607	27215	org.joda.time.chrono.BasicMonthOfYearDateTimeField#209	1	0	8.0	10.0	8.0	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210
 Time	14	2040	14607	27215	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	1	0	8.0	10.0	8.0	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210	org.joda.time.chrono.BasicMonthOfYearDateTimeField#210
-Time	15	954	306	27212	org.joda.time.field.FieldUtils#138	1	1	955	955	955			
+Time	15	7	306	27212	org.joda.time.field.FieldUtils#138	1	0	1.0	1.0	1.0	org.joda.time.field.FieldUtils#138	org.joda.time.field.FieldUtils#138	org.joda.time.field.FieldUtils#138
 Time	16	2184	14649	27214	org.joda.time.format.DateTimeFormatter#709	0	1	2185	2185	2185
 Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1167	0	0	1.0	1.0	1.0
 Time	17	1058	8537	27185	org.joda.time.DateTimeZone#1168	0	0	5.0	5.0	5.0
@@ -241,8 +471,8 @@ Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#467	0	0	80.0	105.0
 Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#481	0	1	2025	2025	2025
 Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#528	0	1	2025	2025	2025
 Time	26	2024	13800	26795	org.joda.time.chrono.ZonedChronology#540	0	1	2025	2025	2025
-Time	27	2371	12191	26589	org.joda.time.format.PeriodFormatterBuilder#801	1	1	2372	2372	2372			
-Time	27	2371	12191	26589	org.joda.time.format.PeriodFormatterBuilder#804	1	1	2372	2372	2372			
+Time	27	1380	12191	26589	org.joda.time.format.PeriodFormatterBuilder#801	1	0	759.0	759.0	759.0	org.joda.time.format.PeriodFormatterBuilder#801	org.joda.time.format.PeriodFormatterBuilder#801	org.joda.time.format.PeriodFormatterBuilder#801
+Time	27	1380	12191	26589	org.joda.time.format.PeriodFormatterBuilder#804	1	0	759.0	759.0	759.0	org.joda.time.format.PeriodFormatterBuilder#800	org.joda.time.format.PeriodFormatterBuilder#800	org.joda.time.format.PeriodFormatterBuilder#800
 Time	3	1808	12172	27767	org.joda.time.MutableDateTime#639	1	0	1805.0	1805.0	1805.0	org.joda.time.MutableDateTime#639	org.joda.time.MutableDateTime#639	org.joda.time.MutableDateTime#639
 Time	3	1808	12172	27767	org.joda.time.MutableDateTime#640	1	0	1803.0	1803.0	1803.0	org.joda.time.MutableDateTime#640	org.joda.time.MutableDateTime#640	org.joda.time.MutableDateTime#640
 Time	3	1808	12172	27767	org.joda.time.MutableDateTime#660	1	0	42.0	28.0	33.0	org.joda.time.MutableDateTime#660	org.joda.time.MutableDateTime#660	org.joda.time.MutableDateTime#660

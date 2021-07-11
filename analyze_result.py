@@ -15,6 +15,9 @@ data = df.to_numpy()
 print(data)
 all_result = [['project_id', 'bug_id', 'rank_mean_best', 'rank_min_best', 'rank_max_best', 'rank_mean_average', 'rank_min_average', 'rank_max_average', 'rank_mean_worst', 'rank_min_worst', 'rank_max_worst', 'exam_mean_best', 'exam_min_best', 'exam_max_best', 'exam_mean_average', 'exam_min_average', 'exam_max_average', 'exam_mean_worst', 'exam_min_worst', 'exam_max_worst' ]]
 i = 0
+top_200_mean, top_200_min, top_200_max = 0, 0, 0
+top_10_mean, top_10_min, top_10_max = 0, 0, 0
+top_5_mean, top_5_min, top_5_max = 0, 0, 0
 while i < len(data):
 	#print(data[i])
 	project = data[i][0]
@@ -49,6 +52,38 @@ while i < len(data):
 		half_size = 1
 	else:
 		half_size = int(size / 2)
+
+	if temp_mean_best[0] <= 5:
+		top_5_mean += 1
+		top_10_mean += 1
+		top_200_mean += 1
+	elif temp_mean_best[0] <= 10:
+		top_10_mean += 1
+		top_200_mean += 1
+	elif temp_mean_best[0] <= 200:
+		top_200_mean += 1
+
+
+	if temp_min_best[0] <= 5:
+		top_5_min += 1
+		top_10_min += 1
+		top_200_min += 1
+	elif temp_min_best[0] <= 10:
+		top_10_min += 1
+		top_200_min += 1
+	elif temp_min_best[0] <= 200:
+		top_200_min += 1
+
+
+	if temp_max_best[0] <= 5:
+		top_5_max += 1
+		top_10_max += 1
+		top_200_max += 1
+	elif temp_max_best[0] <= 10:
+		top_10_max += 1
+		top_200_max += 1
+	elif temp_max_best[0] <= 200:
+		top_200_max += 1
 	temp_array = [project, bug] 
 	temp_array.extend([temp_mean_best[0], temp_min_best[0],temp_max_best[0]])
 	temp_array.extend([temp_mean_best[int(len(temp_mean_best)/2)], temp_min_best[int(len(temp_min_best)/2)],temp_max_best[int(len(temp_max_best)/2)]])
@@ -60,7 +95,18 @@ while i < len(data):
 	all_result.append(temp_array)
 
 size_all = len(all_result)
-#print(tarantula_best)
+print(size_all)
+
+all_name = ["MEAN", "MIN", "MAX"]
+top_name = ["TOP 5: ", "TOP 10: ", "TOP 200: "]
+top_list = [[top_5_mean, top_10_mean, top_200_mean], [top_5_min, top_10_min, top_200_min], [top_5_max, top_10_max, top_200_max]]
+
+for i, n in enumerate(all_name):
+	print(n)
+	for j, top in enumerate(top_list[i]):
+		temp_string = top_name[j]
+		print(temp_string+ str(top) + "(" + str((100 * float(top)/float(size_all))) + "%)")
+
 
 
 output_name = "combine.txt"
