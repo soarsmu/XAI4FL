@@ -9,11 +9,13 @@ Original file is located at
 
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from google.colab import files
+#from google.colab import files
 import pandas as pd
 import json
 import re
 import ast
+import sys
+import shap
 
 def process_spectra(file_obj, file_name):
     file_string = str(file_obj[file_name])
@@ -47,20 +49,24 @@ def make_line_in_txt_shap(shap_value_exp_obj_instance, instance_name):
         new_list.append(";".join([list(x.columns)[i], str(shap_value_exp_obj_instance[i].values)]))
     return new_list
 
-spectra_file = files.upload()
+def write_output_file(filename, obj, is_reverse=False):
+    with open(filename, 'w') as file:
+        sorted_dict = sorted(obj.items(), key=lambda x: x[1], reverse=is_reverse)
+        for i in sorted_dict:
+            file.write(";".join([i[0], str(i[1])]) + "\n")
 
-spectra_list = process_spectra(spectra_file, list(spectra_file.keys())[0])
-spectra_list[-1] = "Pass/Fail"
-spectra_list[0] = spectra_list[0].replace("b'", "")
 
-matrix_list = process_matrix(matrix_file, list(matrix_file.keys())[0])
+f = open(sys.argv[1], "r")
+spectra_list = [line.rstrip('\n') for line in f]
+spectra_list.append("Pass/Fail")
+f.close()
 
-matrix_list.pop()
-
-df = pd.DataFrame(data=matrix_list, columns=spectra_list)
-
+df = pd.read_csv(sys.argv[2], sep=' ', names=spectra_list, header=None)
+df = df.replace(["-","+"], ["FAIL","PASS"])
 x = df[spectra_list[:len(spectra_list)-1]]
 y = df["Pass/Fail"]
+print(spectra_list)
+print(df)
 
 fails = []
 passes = []
@@ -124,12 +130,12 @@ for i in shap_lines_output_val:
 for i in shap_means:
     shap_means[i] = sum(shap_means[i]) / len(shap_means[i])
 
-with open("Lang-37_shap_results.txt", "w") as file:
+with open(sys.argv[3]+"_shap_results.txt", "w") as file:
     for i in shap_to_txt:
         file.write(str(i) + "\n")
         for j in range(len(shap_to_txt[i])):
             file.write(shap_to_txt[i][j] + "\n")
 
-write_output_file('Lang-37_shap_mean.txt', shap_means, is_reverse=True)
-write_output_file('Lang-37_shap_min.txt', shap_min, is_reverse=True)
-write_output_file('Lang-37_shap_max.txt', shap_max, is_reverse=True)
+write_output_file(sys.argv[3]+'_shap_mean.txt', shap_means, is_reverse=True)
+write_output_file(sys.argv[3]+'_shap_min.txt', shap_min, is_reverse=True)
+write_output_file(sys.argv[3]+'_shap_max.txt', shap_max, is_reverse=True)
