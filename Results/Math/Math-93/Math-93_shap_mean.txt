@@ -1,0 +1,11 @@
+org.apache.commons.math.util.MathUtils#394;0.12183890436600613
+org.apache.commons.math.util.MathUtils#345;0.11567825280688389
+org.apache.commons.math.util.MathUtils#350;0.10437750156930052
+org.apache.commons.math.util.MathUtils#401;0.08876813729889531
+org.apache.commons.math.util.MathUtils#346;0.0749525763922117
+org.apache.commons.math.util.MathUtils#377;0.07125007369884337
+org.apache.commons.math.util.MathUtils#399;0.06581940487496044
+org.apache.commons.math.util.MathUtils#397;0.05353031445545422
+org.apache.commons.math.util.MathUtils#374;0.049248100739531175
+org.apache.commons.math.util.MathUtils#398;0.0389310652935845
+org.apache.commons.math.util.MathUtils#316;0.0
