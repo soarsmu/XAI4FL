@@ -7,6 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1vdBs9o9kyVs4JsnsKCxvknJJmxl-oDzW
 """
 
+# Please specify the file name of spectra, matrix and output file when running the code
+# python agnositc_model_testing.py <spectra_file_location> <matrix_file_location> <output_file_name>
+# e.g., python agnositc_model_testing.py F:\Defects4J\Closure\1\spectra F:\Defects4J\Closure\1\matrix Closure-1 
+
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 #from google.colab import files
@@ -17,27 +21,6 @@ import ast
 import sys
 import shap
 
-def process_spectra(file_obj, file_name):
-    file_string = str(file_obj[file_name])
-
-    return file_string.split("\\n")
-
-def process_matrix(file_obj, file_name):
-    file_string = str(file_obj[file_name])
-
-    result = file_string.split("\\n")
-    result[0] = result[0].replace("b'", "")
-
-    for i in range(len(result)):
-        result[i] = result[i].split(" ")
-        result[i] = [int(x) if x.isdigit() else x for x in result[i]]
-        lastel = result[i][-1]
-        if lastel == "+":
-            result[i][-1] = "PASS"
-        elif lastel == "-":
-            result[i][-1] = "FAIL"
-    
-    return result
 
 def make_line_in_txt_shap(shap_value_exp_obj_instance, instance_name):
     feature_indexes = []
