@@ -44,6 +44,19 @@ spectra_list = [line.rstrip('\n') for line in f]
 spectra_list.append("Pass/Fail")
 f.close()
 
+#case if there are duplicate in list
+seen = {}
+for i, x in enumerate(spectra_list):
+    if x not in seen:
+        seen[x] = 1
+    else:
+        seen[x] += 1
+        num = seen[x]
+        temp = x.split('#')
+        temp_name = temp[0] + str(num) + temp[1]
+        spectra_list[i] = temp_name 
+
+
 df = pd.read_csv(sys.argv[2], sep=' ', names=spectra_list, header=None)
 df = df.replace(["-","+"], ["FAIL","PASS"])
 x = df[spectra_list[:len(spectra_list)-1]]
