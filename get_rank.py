@@ -66,12 +66,14 @@ def get_buggy_line(all_rank):
 				file_name_candidates = project+'-'+bug_number+'.candidates'
 				if os.path.isfile(os.path.join(path, file_name_candidates)):
 					file = open(os.path.join(path, file_name_candidates), 'r')
+					print(file_name_candidates)
 					lines = file.readlines()
 					for line in lines:
 						temp_split = line.rstrip().split(',')
 						first = process_line(temp_split[0])
 						second = process_line(temp_split[1])
-						temp_read[first].append(second)
+						if first in temp_read:
+							temp_read[first].append(second)
 					file.close()
 				buggy_line[project][bug_number] = temp_read
 	return buggy_line

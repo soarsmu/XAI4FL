@@ -259,6 +259,398 @@ Lang	8	317	1379	20363	org.apache.commons.lang3.time.FastDatePrinter#1098	0	1	318
 Lang	8	317	1379	20363	org.apache.commons.lang3.time.FastDatePrinter#1112	0	0	11.0	11.0	11.0	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1112	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1112	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1112
 Lang	8	317	1379	20363	org.apache.commons.lang3.time.FastDatePrinter#1134	1	0	12.0	12.0	12.0	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1134	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1134	org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule#1134
 Lang	9	212	1449	20433	org.apache.commons.lang3.time.FastDateParser#144	1	0	62.0	64.0	63.0	org.apache.commons.lang3.time.FastDateParser#144	org.apache.commons.lang3.time.FastDateParser#144	org.apache.commons.lang3.time.FastDateParser#144
+Math	1	534	3966	84317	org.apache.commons.math3.fraction.Fraction#215	1	0	29.0	25.0	29.0	org.apache.commons.math3.fraction.Fraction#215	org.apache.commons.math3.fraction.Fraction#215	org.apache.commons.math3.fraction.Fraction#215
+Math	1	534	3966	84317	org.apache.commons.math3.fraction.BigFraction#306	1	0	6.0	4.0	5.0	org.apache.commons.math3.fraction.BigFraction#306	org.apache.commons.math3.fraction.BigFraction#306	org.apache.commons.math3.fraction.BigFraction#306
+Math	10	341	3560	78085	org.apache.commons.math3.analysis.differentiation.DSCompiler#1419	1	0	11.0	11.0	11.0	org.apache.commons.math3.analysis.differentiation.DSCompiler#1401	org.apache.commons.math3.analysis.differentiation.DSCompiler#1401	org.apache.commons.math3.analysis.differentiation.DSCompiler#1401
+Math	100	232	1158	16489	org.apache.commons.math.estimation.AbstractEstimator#166	0	0	5.0	5.0	5.0
+Math	100	232	1158	16489	org.apache.commons.math.estimation.AbstractEstimator#202	0	1	233	233	233
+Math	100	232	1158	16489	org.apache.commons.math.estimation.AbstractEstimator#207	0	1	233	233	233
+Math	101	63	240	16482	org.apache.commons.math.complex.ComplexFormat#377	0	0	15.0	15.0	15.0
+Math	102	205	2140	15793	org.apache.commons.math.stat.inference.ChiSquareTestImpl#74	0	0	3.0	2.0	3.0
+Math	102	205	2140	15793	org.apache.commons.math.stat.inference.ChiSquareTestImpl#77	1	0	2.0	3.0	2.0	org.apache.commons.math.stat.inference.ChiSquareTestImpl#77	org.apache.commons.math.stat.inference.ChiSquareTestImpl#77	org.apache.commons.math.stat.inference.ChiSquareTestImpl#77
+Math	102	205	2140	15793	org.apache.commons.math.stat.inference.ChiSquareTestImpl#79	1	0	2.0	3.0	2.0	org.apache.commons.math.stat.inference.ChiSquareTestImpl#77	org.apache.commons.math.stat.inference.ChiSquareTestImpl#77	org.apache.commons.math.stat.inference.ChiSquareTestImpl#77
+Math	103	75	522	15381	org.apache.commons.math.distribution.NormalDistributionImpl#109	1	0	30.0	30.0	30.0	org.apache.commons.math.distribution.NormalDistributionImpl#109	org.apache.commons.math.distribution.NormalDistributionImpl#109	org.apache.commons.math.distribution.NormalDistributionImpl#109
+Math	103	75	522	15381	org.apache.commons.math.distribution.NormalDistributionImpl#111	1	0	30.0	30.0	30.0	org.apache.commons.math.distribution.NormalDistributionImpl#109	org.apache.commons.math.distribution.NormalDistributionImpl#109	org.apache.commons.math.distribution.NormalDistributionImpl#109
+Math	104	62	334	15297	org.apache.commons.math.special.Gamma#37	0	0	5.0	5.0	5.0	org.apache.commons.math.special.Gamma#237	org.apache.commons.math.special.Gamma#237	org.apache.commons.math.special.Gamma#237
+Math	105	25	129	9929	org.apache.commons.math.stat.regression.SimpleRegression#264	0	0	13.0	13.0	13.0
+Math	106	72	333	9471	org.apache.commons.math.fraction.ProperFractionFormat#165	1	0	19.0	19.0	19.0	org.apache.commons.math.fraction.ProperFractionFormat#168	org.apache.commons.math.fraction.ProperFractionFormat#168	org.apache.commons.math.fraction.ProperFractionFormat#168
+Math	106	72	333	9471	org.apache.commons.math.fraction.ProperFractionFormat#166	1	0	19.0	19.0	19.0	org.apache.commons.math.fraction.ProperFractionFormat#168	org.apache.commons.math.fraction.ProperFractionFormat#168	org.apache.commons.math.fraction.ProperFractionFormat#168
+Math	106	72	333	9471	org.apache.commons.math.fraction.ProperFractionFormat#200	1	0	8.0	8.0	8.0	org.apache.commons.math.fraction.ProperFractionFormat#192	org.apache.commons.math.fraction.ProperFractionFormat#192	org.apache.commons.math.fraction.ProperFractionFormat#192
+Math	106	72	333	9471	org.apache.commons.math.fraction.ProperFractionFormat#201	1	0	8.0	8.0	8.0	org.apache.commons.math.fraction.ProperFractionFormat#192	org.apache.commons.math.fraction.ProperFractionFormat#192	org.apache.commons.math.fraction.ProperFractionFormat#192
+Math	11	574	18752	77745	org.apache.commons.math3.distribution.MultivariateNormalDistribution#183	0	0	300.5	300.5	300.5
+Math	12	445	10334	77743	org.apache.commons.math3.random.BitsStreamGenerator#29	0	1	446	446	446
+Math	12	445	10334	77743	org.apache.commons.math3.random.BitsStreamGenerator#19	0	1	446	446	446
+Math	12	445	10334	77743	org.apache.commons.math3.random.BitsStreamGenerator#31	0	1	446	446	446
+Math	13	206	13655	77734	org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer#562	1	0	133.0	133.0	133.0	org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer#562	org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer#562	org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer#562
+Math	13	206	13655	77734	org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer#564	1	0	133.0	133.0	133.0	org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer#562	org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer#562	org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer#562
+Math	14	167	11986	77731	org.apache.commons.math3.optim.nonlinear.vector.Weight#43	0	0	43.0	43.0	43.0
+Math	14	167	11986	77731	org.apache.commons.math3.optim.nonlinear.vector.Weight#44	0	1	168	168	168
+Math	14	167	11986	77731	org.apache.commons.math3.optim.nonlinear.vector.Weight#45	0	1	168	168	168
+Math	14	167	11986	77731	org.apache.commons.math3.optim.nonlinear.vector.Weight#46	1	0	43.0	43.0	43.0	org.apache.commons.math3.optim.nonlinear.vector.Weight#43	org.apache.commons.math3.optim.nonlinear.vector.Weight#43	org.apache.commons.math3.optim.nonlinear.vector.Weight#43
+Math	14	167	11986	77731	org.apache.commons.math3.optim.nonlinear.vector.jacobian.AbstractLeastSquaresOptimizer#267	1	1	168	168	168			
+Math	14	167	11986	77731	org.apache.commons.math3.optim.nonlinear.vector.jacobian.AbstractLeastSquaresOptimizer#269	1	1	168	168	168			
+Math	15	796	10428	70317	org.apache.commons.math3.util.FastMath#1541	0	0	2.0	2.0	2.0
+Math	15	796	10428	70317	org.apache.commons.math3.util.FastMath#313	0	1	797	797	797
+Math	16	705	10409	70295	org.apache.commons.math3.util.FastMath#397	0	0	16.0	14.0	15.0
+Math	16	705	10409	70295	org.apache.commons.math3.util.FastMath#458	0	1	706	706	706
+Math	16	705	10409	70295	org.apache.commons.math3.util.FastMath#82	0	0	41.0	38.0	39.0	org.apache.commons.math3.util.FastMath#829	org.apache.commons.math3.util.FastMath#829	org.apache.commons.math3.util.FastMath#829
+Math	16	705	10409	70295	org.apache.commons.math3.util.FastMath#394	1	0	10.0	9.0	9.0	org.apache.commons.math3.util.FastMath#395	org.apache.commons.math3.util.FastMath#395	org.apache.commons.math3.util.FastMath#395
+Math	16	705	10409	70295	org.apache.commons.math3.util.FastMath#395	1	0	10.0	9.0	9.0	org.apache.commons.math3.util.FastMath#395	org.apache.commons.math3.util.FastMath#395	org.apache.commons.math3.util.FastMath#395
+Math	16	705	10409	70295	org.apache.commons.math3.util.FastMath#399	1	0	4.0	4.0	4.0	org.apache.commons.math3.util.FastMath#399	org.apache.commons.math3.util.FastMath#399	org.apache.commons.math3.util.FastMath#399
+Math	16	705	10409	70295	org.apache.commons.math3.util.FastMath#400	1	0	4.0	4.0	4.0	org.apache.commons.math3.util.FastMath#399	org.apache.commons.math3.util.FastMath#399	org.apache.commons.math3.util.FastMath#399
+Math	16	705	10409	70295	org.apache.commons.math3.util.FastMath#455	1	1	706	706	706			
+Math	16	705	10409	70295	org.apache.commons.math3.util.FastMath#456	1	1	706	706	706			
+Math	16	705	10409	70295	org.apache.commons.math3.util.FastMath#460	1	1	706	706	706			
+Math	16	705	10409	70295	org.apache.commons.math3.util.FastMath#461	1	1	706	706	706			
+Math	17	717	1844	68952	org.apache.commons.math3.dfp.Dfp#1603	1	0	386.0	386.0	386.0	org.apache.commons.math3.dfp.Dfp#1603	org.apache.commons.math3.dfp.Dfp#1603	org.apache.commons.math3.dfp.Dfp#1603
+Math	17	717	1844	68952	org.apache.commons.math3.dfp.Dfp#1604	1	0	386.0	386.0	386.0	org.apache.commons.math3.dfp.Dfp#1603	org.apache.commons.math3.dfp.Dfp#1603	org.apache.commons.math3.dfp.Dfp#1603
+Math	18	1111	18833	68684	org.apache.commons.math3.optimization.direct.CMAESOptimizer#932	0	0	3.0	3.0	3.0	org.apache.commons.math3.optimization.direct.CMAESOptimizer$FitnessFunction#932	org.apache.commons.math3.optimization.direct.CMAESOptimizer$FitnessFunction#932	org.apache.commons.math3.optimization.direct.CMAESOptimizer$FitnessFunction#932
+Math	18	1111	18833	68684	org.apache.commons.math3.optimization.direct.CMAESOptimizer#958	0	0	46.0	46.0	46.0	org.apache.commons.math3.optimization.direct.CMAESOptimizer$FitnessFunction#958	org.apache.commons.math3.optimization.direct.CMAESOptimizer$FitnessFunction#958	org.apache.commons.math3.optimization.direct.CMAESOptimizer$FitnessFunction#958
+Math	18	1111	18833	68684	org.apache.commons.math3.optimization.direct.CMAESOptimizer#992	0	1	1112	1112	1112
+Math	18	1111	18833	68684	org.apache.commons.math3.optimization.direct.CMAESOptimizer#995	0	1	1112	1112	1112
+Math	18	1111	18833	68684	org.apache.commons.math3.optimization.direct.CMAESOptimizer#990	1	1	1112	1112	1112			
+Math	19	668	4708	68532	org.apache.commons.math3.optimization.direct.CMAESOptimizer#540	1	0	366.0	366.0	366.0	org.apache.commons.math3.optimization.direct.CMAESOptimizer#537	org.apache.commons.math3.optimization.direct.CMAESOptimizer#537	org.apache.commons.math3.optimization.direct.CMAESOptimizer#537
+Math	2	138	9606	83799	org.apache.commons.math3.distribution.HypergeometricDistribution#268	0	0	93.5	93.5	93.5
+Math	21	214	9287	67850	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#69	0	0	54.0	54.0	54.0
+Math	21	214	9287	67850	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#79	0	0	11.0	11.0	11.0
+Math	21	214	9287	67850	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#82	0	0	8.0	8.0	8.0
+Math	21	214	9287	67850	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#83	0	0	143.0	143.0	143.0
+Math	21	214	9287	67850	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#84	0	0	9.0	9.0	9.0
+Math	21	214	9287	67850	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#90	0	0	68.0	68.0	68.0
+Math	21	214	9287	67850	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#91	0	0	69.0	69.0	69.0
+Math	21	214	9287	67850	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#92	0	0	71.0	71.0	71.0
+Math	21	214	9287	67850	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#93	0	0	143.0	143.0	143.0
+Math	21	214	9287	67850	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#128	0	0	20.5	20.5	20.5
+Math	21	214	9287	67850	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#124	1	0	6.0	6.0	6.0	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#124	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#124	org.apache.commons.math3.linear.RectangularCholeskyDecomposition#124
+Math	22	292	10137	67816	org.apache.commons.math3.distribution.UniformRealDistribution#184	0	0	1.0	1.0	1.0
+Math	22	292	10137	67816	org.apache.commons.math3.distribution.FDistribution#275	0	0	5.0	5.0	5.0
+Math	23	304	3953	67725	org.apache.commons.math3.optimization.univariate.BrentOptimizer#237	0	1	305	305	305
+Math	23	304	3953	67725	org.apache.commons.math3.optimization.univariate.BrentOptimizer#274	0	0	41.0	41.0	41.0
+Math	23	304	3953	67725	org.apache.commons.math3.optimization.univariate.BrentOptimizer#151	1	0	184.0	184.0	184.0	org.apache.commons.math3.optimization.univariate.BrentOptimizer#233	org.apache.commons.math3.optimization.univariate.BrentOptimizer#233	org.apache.commons.math3.optimization.univariate.BrentOptimizer#233
+Math	23	304	3953	67725	org.apache.commons.math3.optimization.univariate.BrentOptimizer#234	1	0	184.0	184.0	184.0	org.apache.commons.math3.optimization.univariate.BrentOptimizer#233	org.apache.commons.math3.optimization.univariate.BrentOptimizer#233	org.apache.commons.math3.optimization.univariate.BrentOptimizer#233
+Math	23	304	3953	67725	org.apache.commons.math3.optimization.univariate.BrentOptimizer#277	1	0	41.0	41.0	41.0	org.apache.commons.math3.optimization.univariate.BrentOptimizer#274	org.apache.commons.math3.optimization.univariate.BrentOptimizer#274	org.apache.commons.math3.optimization.univariate.BrentOptimizer#274
+Math	24	311	3933	67559	org.apache.commons.math3.optimization.univariate.BrentOptimizer#230	0	1	312	312	312
+Math	24	311	3933	67559	org.apache.commons.math3.optimization.univariate.BrentOptimizer#267	0	0	71.0	71.0	71.0
+Math	25	72	806	66355	org.apache.commons.math3.optimization.fitting.HarmonicFitter#323	1	0	2.0	2.0	2.0	org.apache.commons.math3.optimization.fitting.HarmonicFitter$ParameterGuesser#326	org.apache.commons.math3.optimization.fitting.HarmonicFitter$ParameterGuesser#326	org.apache.commons.math3.optimization.fitting.HarmonicFitter$ParameterGuesser#326
+Math	25	72	806	66355	org.apache.commons.math3.optimization.fitting.HarmonicFitter#325	1	0	2.0	2.0	2.0	org.apache.commons.math3.optimization.fitting.HarmonicFitter$ParameterGuesser#326	org.apache.commons.math3.optimization.fitting.HarmonicFitter$ParameterGuesser#326	org.apache.commons.math3.optimization.fitting.HarmonicFitter$ParameterGuesser#326
+Math	26	448	3623	64715	org.apache.commons.math3.fraction.Fraction#181	0	0	28.0	28.0	28.0
+Math	26	448	3623	64715	org.apache.commons.math3.fraction.Fraction#209	0	0	24.0	24.0	24.0
+Math	27	66	3118	64715	org.apache.commons.math3.fraction.Fraction#597	0	0	2.0	2.0	2.0
+Math	28	412	10336	64711	org.apache.commons.math3.optimization.linear.SimplexSolver#119	1	0	33.0	33.0	33.0	org.apache.commons.math3.optimization.linear.SimplexSolver#119	org.apache.commons.math3.optimization.linear.SimplexSolver#119	org.apache.commons.math3.optimization.linear.SimplexSolver#119
+Math	28	412	10336	64711	org.apache.commons.math3.optimization.linear.SimplexSolver#128	1	0	33.0	33.0	33.0	org.apache.commons.math3.optimization.linear.SimplexSolver#119	org.apache.commons.math3.optimization.linear.SimplexSolver#119	org.apache.commons.math3.optimization.linear.SimplexSolver#119
+Math	28	412	10336	64711	org.apache.commons.math3.optimization.linear.SimplexSolver#138	1	0	22.0	22.0	22.0	org.apache.commons.math3.optimization.linear.SimplexSolver#138	org.apache.commons.math3.optimization.linear.SimplexSolver#138	org.apache.commons.math3.optimization.linear.SimplexSolver#138
+Math	28	412	10336	64711	org.apache.commons.math3.optimization.linear.SimplexSolver#152	1	0	22.0	22.0	22.0	org.apache.commons.math3.optimization.linear.SimplexSolver#138	org.apache.commons.math3.optimization.linear.SimplexSolver#138	org.apache.commons.math3.optimization.linear.SimplexSolver#138
+Math	29	206	5688	63611	org.apache.commons.math3.linear.OpenMapRealVector#349	0	0	3.0	2.0	2.0
+Math	29	206	5688	63611	org.apache.commons.math3.linear.OpenMapRealVector#350	0	0	156.0	156.0	156.0
+Math	29	206	5688	63611	org.apache.commons.math3.linear.OpenMapRealVector#351	0	0	69.0	64.0	65.0
+Math	29	206	5688	63611	org.apache.commons.math3.linear.OpenMapRealVector#352	0	0	12.0	10.0	10.0
+Math	29	206	5688	63611	org.apache.commons.math3.linear.OpenMapRealVector#374	1	0	4.0	3.0	4.0	org.apache.commons.math3.linear.OpenMapRealVector#374	org.apache.commons.math3.linear.OpenMapRealVector#374	org.apache.commons.math3.linear.OpenMapRealVector#374
+Math	3	18	962	82747	org.apache.commons.math3.util.MathArrays#821	1	0	7.0	7.0	7.0	org.apache.commons.math3.util.MathArrays#823	org.apache.commons.math3.util.MathArrays#823	org.apache.commons.math3.util.MathArrays#823
+Math	3	18	962	82747	org.apache.commons.math3.util.MathArrays#822	1	0	7.0	7.0	7.0	org.apache.commons.math3.util.MathArrays#823	org.apache.commons.math3.util.MathArrays#823	org.apache.commons.math3.util.MathArrays#823
+Math	30	349	10597	63604	org.apache.commons.math3.stat.inference.MannWhitneyUTest#173	0	0	24.5	24.5	24.5
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#134	0	0	96.0	105.0	104.0
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#135	0	0	92.0	109.0	103.0
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#143	0	0	304.0	304.0	304.0
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#144	0	0	304.0	304.0	304.0
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#145	0	0	304.0	304.0	304.0
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#146	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#147	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#148	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#149	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#150	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#151	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#152	1	1	492	492	492			
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#153	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#154	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#155	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#156	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#157	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#158	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#159	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#160	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#161	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#162	1	1	492	492	492			
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#163	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#164	0	1	492	492	492
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#165	1	1	492	492	492			
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#166	1	1	492	492	492			
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#169	0	0	304.0	304.0	304.0
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#170	0	0	81.0	111.0	99.0
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#185	0	0	304.0	304.0	304.0
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#186	0	0	304.0	304.0	304.0
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#187	0	0	304.0	304.0	304.0
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#188	0	0	304.0	304.0	304.0
+Math	31	491	11386	63423	org.apache.commons.math3.util.ContinuedFraction#189	0	0	304.0	304.0	304.0
+Math	32	1405	6766	63399	org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet#136	0	0	64.5	64.5	64.5
+Math	33	406	9991	62768	org.apache.commons.math3.optimization.linear.SimplexTableau#338	0	0	51.0	51.0	51.0
+Math	34	33	498	62729	org.apache.commons.math3.genetics.ListPopulation#209	0	0	1.0	1.0	1.0
+Math	35	18	800	62696	org.apache.commons.math3.genetics.ElitisticListPopulation#51	0	0	6.0	6.0	6.0
+Math	35	18	800	62696	org.apache.commons.math3.genetics.ElitisticListPopulation#65	0	0	11.0	11.0	11.0
+Math	36	358	1033	62954	org.apache.commons.math.fraction.BigFraction#686	1	0	3.0	3.0	3.0	org.apache.commons.math.fraction.BigFraction#688	org.apache.commons.math.fraction.BigFraction#688	org.apache.commons.math.fraction.BigFraction#688
+Math	36	358	1033	62954	org.apache.commons.math.fraction.BigFraction#688	1	0	3.0	3.0	3.0	org.apache.commons.math.fraction.BigFraction#688	org.apache.commons.math.fraction.BigFraction#688	org.apache.commons.math.fraction.BigFraction#688
+Math	36	358	1033	62954	org.apache.commons.math.fraction.BigFraction#733	1	0	1.0	1.0	1.0	org.apache.commons.math.fraction.BigFraction#735	org.apache.commons.math.fraction.BigFraction#735	org.apache.commons.math.fraction.BigFraction#735
+Math	36	358	1033	62954	org.apache.commons.math.fraction.BigFraction#735	1	0	1.0	1.0	1.0	org.apache.commons.math.fraction.BigFraction#735	org.apache.commons.math.fraction.BigFraction#735	org.apache.commons.math.fraction.BigFraction#735
+Math	38	291	8735	62802	org.apache.commons.math.optimization.direct.BOBYQAOptimizer#1660	0	1	292	292	292
+Math	38	291	8735	62802	org.apache.commons.math.optimization.direct.BOBYQAOptimizer#1662	0	0	7.5	7.5	7.5
+Math	38	291	8735	62802	org.apache.commons.math.optimization.direct.BOBYQAOptimizer#1663	0	0	15.0	15.0	15.0
+Math	38	291	8735	62802	org.apache.commons.math.optimization.direct.BOBYQAOptimizer#1752	0	0	2.0	2.0	2.0
+Math	39	513	10250	62791	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#250	1	0	289.0	289.0	289.0	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#249	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#249	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#249
+Math	4	314	5420	82488	org.apache.commons.math3.geometry.euclidean.threed.SubLine#114	1	0	12.0	11.0	12.0	org.apache.commons.math3.geometry.euclidean.threed.SubLine#113	org.apache.commons.math3.geometry.euclidean.threed.SubLine#113	org.apache.commons.math3.geometry.euclidean.threed.SubLine#113
+Math	4	314	5420	82488	org.apache.commons.math3.geometry.euclidean.twod.SubLine#118	1	0	2.0	2.0	2.0	org.apache.commons.math3.geometry.euclidean.twod.SubLine#120	org.apache.commons.math3.geometry.euclidean.twod.SubLine#120	org.apache.commons.math3.geometry.euclidean.twod.SubLine#120
+Math	40	183	3340	63088	org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver#235	0	0	126.5	126.5	126.5
+Math	40	183	3340	63088	org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver#238	0	1	184	184	184
+Math	41	116	2953	63106	org.apache.commons.math.stat.descriptive.moment.Variance#520	0	0	14.0	14.0	14.0
+Math	42	376	9954	63104	org.apache.commons.math.optimization.linear.SimplexTableau#413	0	0	236.5	236.5	236.5
+Math	42	376	9954	63104	org.apache.commons.math.optimization.linear.SimplexTableau#410	1	0	67.0	67.0	67.0	org.apache.commons.math.optimization.linear.SimplexTableau#409	org.apache.commons.math.optimization.linear.SimplexTableau#409	org.apache.commons.math.optimization.linear.SimplexTableau#409
+Math	43	338	9877	62837	org.apache.commons.math.stat.descriptive.SummaryStatistics#158	0	0	96.0	110.0	105.0
+Math	43	338	9877	62837	org.apache.commons.math.stat.descriptive.SummaryStatistics#161	0	0	221.0	221.0	221.0
+Math	43	338	9877	62837	org.apache.commons.math.stat.descriptive.SummaryStatistics#164	0	0	221.0	221.0	221.0
+Math	44	817	11243	62418	org.apache.commons.math.ode.AbstractIntegrator#280	0	0	474.5	474.5	474.5
+Math	44	817	11243	62418	org.apache.commons.math.ode.AbstractIntegrator#334	1	1	818	818	818			
+Math	44	817	11243	62418	org.apache.commons.math.ode.AbstractIntegrator#343	1	0	13.0	13.0	13.0	org.apache.commons.math.ode.AbstractIntegrator#343	org.apache.commons.math.ode.AbstractIntegrator#343	org.apache.commons.math.ode.AbstractIntegrator#343
+Math	45	10	2754	61766	org.apache.commons.math.linear.OpenMapRealMatrix#50	1	0	1.0	1.0	1.0	org.apache.commons.math.linear.OpenMapRealMatrix#49	org.apache.commons.math.linear.OpenMapRealMatrix#49	org.apache.commons.math.linear.OpenMapRealMatrix#49
+Math	46	352	4124	54098	org.apache.commons.math.complex.Complex#260	0	0	1.0	8.0	3.0
+Math	46	352	4124	54098	org.apache.commons.math.complex.Complex#297	0	1	353	353	353
+Math	47	402	4122	54096	org.apache.commons.math.complex.Complex#256	0	0	1.0	4.0	3.0
+Math	47	402	4122	54096	org.apache.commons.math.complex.Complex#257	0	0	4.0	2.0	4.0
+Math	47	402	4122	54096	org.apache.commons.math.complex.Complex#293	0	1	403	403	403
+Math	47	402	4122	54096	org.apache.commons.math.complex.Complex#82	1	0	1.0	2.0	3.0	org.apache.commons.math.complex.Complex#256	org.apache.commons.math.complex.Complex#257	org.apache.commons.math.complex.Complex#256
+Math	47	402	4122	54096	org.apache.commons.math.complex.Complex#105	1	0	1.0	2.0	3.0	org.apache.commons.math.complex.Complex#256	org.apache.commons.math.complex.Complex#257	org.apache.commons.math.complex.Complex#256
+Math	48	742	4881	54132	org.apache.commons.math.analysis.solvers.BaseSecantSolver#189	1	0	412.5	412.5	412.5	org.apache.commons.math.analysis.solvers.BaseSecantSolver#189	org.apache.commons.math.analysis.solvers.BaseSecantSolver#189	org.apache.commons.math.analysis.solvers.BaseSecantSolver#189
+Math	49	424	5082	54340	org.apache.commons.math.linear.OpenMapRealVector#345	0	1	425	425	425
+Math	49	424	5082	54340	org.apache.commons.math.linear.OpenMapRealVector#358	0	1	425	425	425
+Math	49	424	5082	54340	org.apache.commons.math.linear.OpenMapRealVector#370	0	0	5.0	5.0	5.0
+Math	49	424	5082	54340	org.apache.commons.math.linear.OpenMapRealVector#383	0	1	425	425	425
+Math	5	20	526	81192	org.apache.commons.math3.complex.Complex#305	0	0	2.0	2.0	2.0
+Math	50	392	4852	54352	org.apache.commons.math.analysis.solvers.BaseSecantSolver#187	0	0	5.0	5.0	5.0
+Math	50	392	4852	54352	org.apache.commons.math.analysis.solvers.BaseSecantSolver#188	0	0	1.0	1.0	1.0
+Math	50	392	4852	54352	org.apache.commons.math.analysis.solvers.BaseSecantSolver#189	0	0	3.0	3.0	3.0
+Math	50	392	4852	54352	org.apache.commons.math.analysis.solvers.BaseSecantSolver#190	1	0	1.0	1.0	1.0	org.apache.commons.math.analysis.solvers.BaseSecantSolver#188	org.apache.commons.math.analysis.solvers.BaseSecantSolver#188	org.apache.commons.math.analysis.solvers.BaseSecantSolver#188
+Math	51	409	4364	54296	org.apache.commons.math.analysis.solvers.BaseSecantSolver#185	1	0	29.0	29.0	29.0	org.apache.commons.math.analysis.solvers.BaseSecantSolver#192	org.apache.commons.math.analysis.solvers.BaseSecantSolver#192	org.apache.commons.math.analysis.solvers.BaseSecantSolver#192
+Math	51	409	4364	54296	org.apache.commons.math.analysis.solvers.BaseSecantSolver#187	1	0	29.0	29.0	29.0	org.apache.commons.math.analysis.solvers.BaseSecantSolver#192	org.apache.commons.math.analysis.solvers.BaseSecantSolver#192	org.apache.commons.math.analysis.solvers.BaseSecantSolver#192
+Math	51	409	4364	54296	org.apache.commons.math.analysis.solvers.BaseSecantSolver#189	1	0	29.0	29.0	29.0	org.apache.commons.math.analysis.solvers.BaseSecantSolver#192	org.apache.commons.math.analysis.solvers.BaseSecantSolver#192	org.apache.commons.math.analysis.solvers.BaseSecantSolver#192
+Math	52	412	4540	52112	org.apache.commons.math.geometry.euclidean.threed.Rotation#344	0	0	9.0	9.0	9.0
+Math	52	412	4540	52112	org.apache.commons.math.geometry.euclidean.threed.Rotation#353	0	1	413	413	413
+Math	52	412	4540	52112	org.apache.commons.math.geometry.euclidean.threed.Rotation#359	0	1	413	413	413
+Math	53	20	1601	50306	org.apache.commons.math.complex.Complex#153	1	0	2.0	2.0	2.0	org.apache.commons.math.complex.Complex#152	org.apache.commons.math.complex.Complex#152	org.apache.commons.math.complex.Complex#152
+Math	54	672	4073	45424	org.apache.commons.math.dfp.Dfp#2319	0	0	11.0	11.0	11.0
+Math	54	672	4073	45424	org.apache.commons.math.dfp.Dfp#273	1	0	362.0	362.0	362.0	org.apache.commons.math.dfp.Dfp#1273	org.apache.commons.math.dfp.Dfp#1273	org.apache.commons.math.dfp.Dfp#1273
+Math	55	36	2922	45063	org.apache.commons.math.geometry.Vector3D#473	0	0	1.0	1.0	1.0
+Math	55	36	2922	45063	org.apache.commons.math.geometry.Vector3D#459	1	0	1.0	1.0	1.0	org.apache.commons.math.geometry.Vector3D#473	org.apache.commons.math.geometry.Vector3D#473	org.apache.commons.math.geometry.Vector3D#473
+Math	55	36	2922	45063	org.apache.commons.math.geometry.Vector3D#462	1	0	1.0	1.0	1.0	org.apache.commons.math.geometry.Vector3D#473	org.apache.commons.math.geometry.Vector3D#473	org.apache.commons.math.geometry.Vector3D#473
+Math	55	36	2922	45063	org.apache.commons.math.geometry.Vector3D#470	1	0	1.0	1.0	1.0	org.apache.commons.math.geometry.Vector3D#473	org.apache.commons.math.geometry.Vector3D#473	org.apache.commons.math.geometry.Vector3D#473
+Math	55	36	2922	45063	org.apache.commons.math.geometry.Vector3D#471	1	0	1.0	1.0	1.0	org.apache.commons.math.geometry.Vector3D#473	org.apache.commons.math.geometry.Vector3D#473	org.apache.commons.math.geometry.Vector3D#473
+Math	56	352	3861	45071	org.apache.commons.math.util.MultidimensionalCounter#237	0	0	27.5	27.5	27.5
+Math	56	352	3861	45071	org.apache.commons.math.util.MultidimensionalCounter#238	0	0	7.0	7.0	7.0
+Math	56	352	3861	45071	org.apache.commons.math.util.MultidimensionalCounter#239	0	0	192.5	192.5	192.5
+Math	56	352	3861	45071	org.apache.commons.math.util.MultidimensionalCounter#240	0	0	12.0	12.0	12.0
+Math	56	352	3861	45071	org.apache.commons.math.util.MultidimensionalCounter#241	1	0	7.0	7.0	7.0	org.apache.commons.math.util.MultidimensionalCounter#238	org.apache.commons.math.util.MultidimensionalCounter#238	org.apache.commons.math.util.MultidimensionalCounter#238
+Math	56	352	3861	45071	org.apache.commons.math.util.MultidimensionalCounter#242	0	0	4.5	4.5	4.5
+Math	56	352	3861	45071	org.apache.commons.math.util.MultidimensionalCounter#243	0	0	7.0	7.0	7.0
+Math	58	1183	4241	44864	org.apache.commons.math.optimization.fitting.GaussianFitter#121	0	0	629.0	629.0	629.0
+Math	59	921	4143	44061	org.apache.commons.math.util.FastMath#3482	0	0	1.0	1.0	1.0
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer#191	0	0	1564.5	1564.5	1564.5
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer#193	0	0	1564.5	1564.5	1564.5
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer#227	0	1	2785	2785	2785
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer#214	0	0	1564.5	1564.5	1564.5
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer#217	0	0	1564.5	1564.5	1564.5
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer#223	0	0	285.0	244.0	253.0
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer#277	0	0	1564.5	1564.5	1564.5
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer#158	0	0	1564.5	1564.5	1564.5
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer#175	0	0	1564.5	1564.5	1564.5
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer#106	0	0	1564.5	1564.5	1564.5
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer#108	0	0	1564.5	1564.5	1564.5
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer#160	0	0	1564.5	1564.5	1564.5
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.BaseOptimizer#51	0	0	1564.5	1564.5	1564.5
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer#322	0	0	2672.0	2673.0	2673.0
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer#325	0	0	2754.0	2763.0	2755.0
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer#489	0	1	2785	2785	2785
+Math	6	2784	22547	80941	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer#388	1	0	1564.5	1564.5	1564.5	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer#387	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer#387	org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer#387
+Math	60	479	3256	43606	org.apache.commons.math.distribution.NormalDistributionImpl#126	1	0	17.0	17.0	17.0	org.apache.commons.math.distribution.NormalDistributionImpl#127	org.apache.commons.math.distribution.NormalDistributionImpl#127	org.apache.commons.math.distribution.NormalDistributionImpl#127
+Math	60	479	3256	43606	org.apache.commons.math.distribution.NormalDistributionImpl#129	0	1	480	480	480
+Math	60	479	3256	43606	org.apache.commons.math.distribution.NormalDistributionImpl#130	0	1	480	480	480
+Math	60	479	3256	43606	org.apache.commons.math.distribution.NormalDistributionImpl#131	0	1	480	480	480
+Math	60	479	3256	43606	org.apache.commons.math.distribution.NormalDistributionImpl#132	0	1	480	480	480
+Math	60	479	3256	43606	org.apache.commons.math.distribution.NormalDistributionImpl#133	0	1	480	480	480
+Math	60	479	3256	43606	org.apache.commons.math.distribution.NormalDistributionImpl#134	1	1	480	480	480			
+Math	60	479	3256	43606	org.apache.commons.math.distribution.NormalDistributionImpl#135	0	1	480	480	480
+Math	60	479	3256	43606	org.apache.commons.math.distribution.NormalDistributionImpl#136	1	1	480	480	480			
+Math	60	479	3256	43606	org.apache.commons.math.distribution.NormalDistributionImpl#137	1	1	480	480	480			
+Math	61	599	3691	46842	org.apache.commons.math.distribution.PoissonDistributionImpl#22	0	1	600	600	600
+Math	61	599	3691	46842	org.apache.commons.math.distribution.PoissonDistributionImpl#94	0	0	331.0	331.0	331.0
+Math	63	10	2695	43924	org.apache.commons.math.util.MathUtils#417	0	0	1.0	1.0	1.0
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#278	0	0	224.0	224.0	224.0
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#316	0	0	224.0	224.0	224.0
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#346	0	0	224.0	224.0	224.0
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#365	0	0	224.0	224.0	224.0
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#442	1	1	382	382	382			
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#443	0	1	382	382	382
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#444	0	1	382	382	382
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#445	1	1	382	382	382			
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#258	0	0	224.0	224.0	224.0
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#270	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#270	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#270	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#270
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#324	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#322	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#322	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#322
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#344	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#343	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#343	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#343
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#421	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#420	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#420	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#420
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#423	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#420	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#420	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#420
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#424	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#420	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#420	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#420
+Math	64	381	1307	42149	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#434	1	0	16.0	16.0	16.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#432	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#432	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#432
+Math	65	414	7060	42040	org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer#240	0	0	242.5	242.5	242.5
+Math	65	414	7060	42040	org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer#241	0	0	242.5	242.5	242.5
+Math	65	414	7060	42040	org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer#242	0	0	70.0	70.0	70.0
+Math	65	414	7060	42040	org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer#243	0	0	242.5	242.5	242.5
+Math	65	414	7060	42040	org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer#244	1	0	70.0	70.0	70.0	org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer#242	org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer#242	org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer#242
+Math	65	414	7060	42040	org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer#245	0	0	242.5	242.5	242.5
+Math	65	414	7060	42040	org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer#258	0	0	242.5	242.5	242.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#44	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#46	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#47	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#57	0	1	621	621	621
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#58	1	0	384.5	384.5	384.5	org.apache.commons.math.optimization.univariate.BrentOptimizer#158	org.apache.commons.math.optimization.univariate.BrentOptimizer#158	org.apache.commons.math.optimization.univariate.BrentOptimizer#158
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#59	0	0	384.5	384.5	384.5	org.apache.commons.math.optimization.univariate.BrentOptimizer#159	org.apache.commons.math.optimization.univariate.BrentOptimizer#159	org.apache.commons.math.optimization.univariate.BrentOptimizer#159
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#60	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#62	0	0	384.5	384.5	384.5	org.apache.commons.math.optimization.univariate.BrentOptimizer#162	org.apache.commons.math.optimization.univariate.BrentOptimizer#162	org.apache.commons.math.optimization.univariate.BrentOptimizer#162
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#65	0	0	384.5	384.5	384.5	org.apache.commons.math.optimization.univariate.BrentOptimizer#165	org.apache.commons.math.optimization.univariate.BrentOptimizer#165	org.apache.commons.math.optimization.univariate.BrentOptimizer#165
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#66	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#67	0	0	620.0	620.0	620.0	org.apache.commons.math.optimization.univariate.BrentOptimizer#167	org.apache.commons.math.optimization.univariate.BrentOptimizer#167	org.apache.commons.math.optimization.univariate.BrentOptimizer#167
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#94	0	0	615.0	616.0	616.0	org.apache.commons.math.optimization.univariate.BrentOptimizer#194	org.apache.commons.math.optimization.univariate.BrentOptimizer#194	org.apache.commons.math.optimization.univariate.BrentOptimizer#194
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#95	0	1	621	621	621
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#119	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#120	1	0	384.5	384.5	384.5	org.apache.commons.math.optimization.univariate.BrentOptimizer#120	org.apache.commons.math.optimization.univariate.BrentOptimizer#120	org.apache.commons.math.optimization.univariate.BrentOptimizer#120
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#126	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#127	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#200	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#201	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#238	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#241	0	0	384.5	384.5	384.5
+Math	66	620	3340	41724	org.apache.commons.math.optimization.univariate.BrentOptimizer#243	0	1	621	621	621
+Math	68	376	1167	40748	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#303	0	1	377	377	377
+Math	68	376	1167	40748	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#419	0	0	224.0	224.0	224.0
+Math	68	376	1167	40748	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#166	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#166	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#166	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#166
+Math	68	376	1167	40748	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#247	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#419	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#419	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#419
+Math	68	376	1167	40748	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#252	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#252	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#252	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#252
+Math	68	376	1167	40748	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#345	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#419	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#419	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#419
+Math	68	376	1167	40748	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#413	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#415	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#415	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#415
+Math	68	376	1167	40748	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#414	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#415	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#415	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#415
+Math	68	376	1167	40748	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#421	1	0	224.0	224.0	224.0	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#415	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#415	org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer#415
+Math	69	254	6607	40752	org.apache.commons.math.stat.correlation.PearsonsCorrelation#171	0	0	154.5	154.5	154.5
+Math	7	986	11343	80661	org.apache.commons.math3.ode.AbstractIntegrator#346	0	0	553.0	553.0	553.0
+Math	7	986	11343	80661	org.apache.commons.math3.ode.AbstractIntegrator#347	0	0	553.0	553.0	553.0
+Math	7	986	11343	80661	org.apache.commons.math3.ode.AbstractIntegrator#357	0	1	987	987	987
+Math	7	986	11343	80661	org.apache.commons.math3.ode.AbstractIntegrator#358	0	1	987	987	987
+Math	7	986	11343	80661	org.apache.commons.math3.ode.AbstractIntegrator#359	0	1	987	987	987
+Math	7	986	11343	80661	org.apache.commons.math3.ode.AbstractIntegrator#363	0	0	553.0	553.0	553.0
+Math	7	986	11343	80661	org.apache.commons.math3.ode.AbstractIntegrator#370	0	0	46.0	46.0	46.0
+Math	7	986	11343	80661	org.apache.commons.math3.ode.AbstractIntegrator#371	0	1	987	987	987
+Math	7	986	11343	80661	org.apache.commons.math3.ode.AbstractIntegrator#372	0	1	987	987	987
+Math	70	30	440	40758	org.apache.commons.math.analysis.solvers.BisectionSolver#72	0	0	1.0	1.0	1.0
+Math	71	495	2284	39983	org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator#180	1	0	2.0	2.0	2.0	org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator#180	org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator#180	org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator#180
+Math	71	495	2284	39983	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#300	1	0	13.0	10.0	11.0	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#300	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#300	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#300
+Math	72	65	477	38818	org.apache.commons.math.analysis.solvers.BrentSolver#115	0	0	8.0	8.0	8.0
+Math	72	65	477	38818	org.apache.commons.math.analysis.solvers.BrentSolver#127	0	1	66	66	66
+Math	73	93	701	38814	org.apache.commons.math.analysis.solvers.BrentSolver#136	1	0	12.0	12.0	12.0	org.apache.commons.math.analysis.solvers.BrentSolver#138	org.apache.commons.math.analysis.solvers.BrentSolver#138	org.apache.commons.math.analysis.solvers.BrentSolver#138
+Math	74	1101	9171	39597	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#245	0	1	1102	1102	1102
+Math	74	1101	9171	39597	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#247	0	0	603.0	603.0	603.0
+Math	74	1101	9171	39597	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#248	0	0	603.0	603.0	603.0
+Math	74	1101	9171	39597	org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator#250	0	1	1102	1102	1102
+Math	75	53	240	39464	org.apache.commons.math.stat.Frequency#303	0	0	1.0	1.0	1.0
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#162	0	1	553	553	553
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#166	0	0	319.0	319.0	319.0
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#176	1	0	541.0	541.0	541.0	org.apache.commons.math.linear.SingularValueDecompositionImpl#171	org.apache.commons.math.linear.SingularValueDecompositionImpl#171	org.apache.commons.math.linear.SingularValueDecompositionImpl#171
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#178	0	0	60.0	51.0	54.0
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#248	0	1	553	553	553
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#252	0	1	553	553	553
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#261	1	1	553	553	553			
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#263	0	1	553	553	553
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#171	1	0	1.0	1.0	1.0	org.apache.commons.math.linear.SingularValueDecompositionImpl#168	org.apache.commons.math.linear.SingularValueDecompositionImpl#168	org.apache.commons.math.linear.SingularValueDecompositionImpl#168
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#180	1	0	1.0	1.0	1.0	org.apache.commons.math.linear.SingularValueDecompositionImpl#168	org.apache.commons.math.linear.SingularValueDecompositionImpl#168	org.apache.commons.math.linear.SingularValueDecompositionImpl#168
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#256	1	1	553	553	553			
+Math	76	552	9366	39458	org.apache.commons.math.linear.SingularValueDecompositionImpl#265	1	1	553	553	553			
+Math	77	136	8774	39407	org.apache.commons.math.linear.ArrayRealVector#721	0	0	19.0	19.0	19.0
+Math	77	136	8774	39407	org.apache.commons.math.linear.OpenMapRealVector#498	0	1	137	137	137
+Math	77	136	8774	39407	org.apache.commons.math.linear.OpenMapRealVector#499	0	0	23.0	23.0	23.0
+Math	77	136	8774	39407	org.apache.commons.math.linear.OpenMapRealVector#500	0	0	58.0	57.0	57.0
+Math	77	136	8774	39407	org.apache.commons.math.linear.OpenMapRealVector#501	0	0	55.0	55.0	55.0
+Math	77	136	8774	39407	org.apache.commons.math.linear.OpenMapRealVector#502	0	0	44.0	44.0	44.0
+Math	77	136	8774	39407	org.apache.commons.math.linear.OpenMapRealVector#503	0	0	106.5	106.5	106.5
+Math	77	136	8774	39407	org.apache.commons.math.linear.OpenMapRealVector#504	0	1	137	137	137
+Math	77	136	8774	39407	org.apache.commons.math.linear.OpenMapRealVector#505	0	0	106.5	106.5	106.5
+Math	77	136	8774	39407	org.apache.commons.math.linear.OpenMapRealVector#506	0	1	137	137	137
+Math	78	178	934	38954	org.apache.commons.math.ode.events.EventState#191	1	0	46.0	46.0	46.0	org.apache.commons.math.ode.events.EventState#201	org.apache.commons.math.ode.events.EventState#201	org.apache.commons.math.ode.events.EventState#201
+Math	78	178	934	38954	org.apache.commons.math.ode.events.EventState#198	1	0	46.0	46.0	46.0	org.apache.commons.math.ode.events.EventState#201	org.apache.commons.math.ode.events.EventState#201	org.apache.commons.math.ode.events.EventState#201
+Math	78	178	934	38954	org.apache.commons.math.ode.events.EventState#199	1	0	46.0	46.0	46.0	org.apache.commons.math.ode.events.EventState#201	org.apache.commons.math.ode.events.EventState#201	org.apache.commons.math.ode.events.EventState#201
+Math	79	40	930	38886	org.apache.commons.math.util.MathUtils#1624	0	0	37.5	37.5	37.5
+Math	79	40	930	38886	org.apache.commons.math.util.MathUtils#1626	0	0	12.0	12.0	12.0
+Math	8	125	2028	79951	org.apache.commons.math3.distribution.DiscreteDistribution#181	0	1	126	126	126
+Math	8	125	2028	79951	org.apache.commons.math3.distribution.DiscreteDistribution#187	0	0	3.0	3.0	3.0
+Math	80	620	8142	38845	org.apache.commons.math.linear.EigenDecompositionImpl#1135	0	0	69.0	69.0	69.0
+Math	81	459	8141	38844	org.apache.commons.math.linear.EigenDecompositionImpl#905	0	1	460	460	460
+Math	81	459	8141	38844	org.apache.commons.math.linear.EigenDecompositionImpl#906	0	1	460	460	460
+Math	81	459	8141	38844	org.apache.commons.math.linear.EigenDecompositionImpl#1543	0	0	46.0	46.0	46.0
+Math	81	459	8141	38844	org.apache.commons.math.linear.EigenDecompositionImpl#603	1	0	258.0	258.0	258.0	org.apache.commons.math.linear.EigenDecompositionImpl#603	org.apache.commons.math.linear.EigenDecompositionImpl#603	org.apache.commons.math.linear.EigenDecompositionImpl#603
+Math	82	252	4228	38254	org.apache.commons.math.optimization.linear.SimplexSolver#82	0	0	138.0	138.0	138.0
+Math	83	274	4227	38253	org.apache.commons.math.optimization.linear.SimplexTableau#292	0	0	174.5	174.5	174.5
+Math	83	274	4227	38253	org.apache.commons.math.optimization.linear.SimplexTableau#341	0	0	174.5	174.5	174.5
+Math	83	274	4227	38253	org.apache.commons.math.optimization.linear.SimplexTableau#345	0	0	69.0	69.0	69.0
+Math	85	111	1048	37903	org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils#198	0	0	79.0	79.0	79.0
+Math	86	194	3167	36135	org.apache.commons.math.linear.CholeskyDecompositionImpl#114	0	0	40.0	50.0	44.0
+Math	86	194	3167	36135	org.apache.commons.math.linear.CholeskyDecompositionImpl#115	0	1	195	195	195
+Math	86	194	3167	36135	org.apache.commons.math.linear.CholeskyDecompositionImpl#116	0	1	195	195	195
+Math	86	194	3167	36135	org.apache.commons.math.linear.CholeskyDecompositionImpl#137	1	0	40.0	50.0	44.0	org.apache.commons.math.linear.CholeskyDecompositionImpl#114	org.apache.commons.math.linear.CholeskyDecompositionImpl#114	org.apache.commons.math.linear.CholeskyDecompositionImpl#114
+Math	87	253	4211	36137	org.apache.commons.math.optimization.linear.SimplexTableau#275	0	0	37.5	37.5	37.5
+Math	87	253	4211	36137	org.apache.commons.math.optimization.linear.SimplexTableau#276	0	0	154.5	154.5	154.5
+Math	87	253	4211	36137	org.apache.commons.math.optimization.linear.SimplexTableau#278	1	1	254	254	254			
+Math	87	253	4211	36137	org.apache.commons.math.optimization.linear.SimplexTableau#280	0	1	254	254	254
+Math	88	267	4212	36116	org.apache.commons.math.optimization.linear.SimplexTableau#336	0	0	2.0	2.0	2.0
+Math	88	267	4212	36116	org.apache.commons.math.optimization.linear.SimplexTableau#337	0	0	161.5	161.5	161.5
+Math	88	267	4212	36116	org.apache.commons.math.optimization.linear.SimplexTableau#338	0	0	5.0	5.0	5.0
+Math	88	267	4212	36116	org.apache.commons.math.optimization.linear.SimplexTableau#339	0	0	1.0	1.0	1.0
+Math	88	267	4212	36116	org.apache.commons.math.optimization.linear.SimplexTableau#340	0	1	268	268	268
+Math	88	267	4212	36116	org.apache.commons.math.optimization.linear.SimplexTableau#341	0	1	268	268	268
+Math	88	267	4212	36116	org.apache.commons.math.optimization.linear.SimplexTableau#329	1	0	22.0	22.0	22.0	org.apache.commons.math.optimization.linear.SimplexTableau#333	org.apache.commons.math.optimization.linear.SimplexTableau#333	org.apache.commons.math.optimization.linear.SimplexTableau#333
+Math	88	267	4212	36116	org.apache.commons.math.optimization.linear.SimplexTableau#331	1	0	22.0	22.0	22.0	org.apache.commons.math.optimization.linear.SimplexTableau#333	org.apache.commons.math.optimization.linear.SimplexTableau#333	org.apache.commons.math.optimization.linear.SimplexTableau#333
+Math	88	267	4212	36116	org.apache.commons.math.optimization.linear.SimplexTableau#333	1	0	22.0	22.0	22.0	org.apache.commons.math.optimization.linear.SimplexTableau#333	org.apache.commons.math.optimization.linear.SimplexTableau#333	org.apache.commons.math.optimization.linear.SimplexTableau#333
+Math	89	4	188	30903	org.apache.commons.math.stat.Frequency#110	1	0	1.0	1.0	1.0	org.apache.commons.math.stat.Frequency#110	org.apache.commons.math.stat.Frequency#110	org.apache.commons.math.stat.Frequency#110
+Math	89	4	188	30903	org.apache.commons.math.stat.Frequency#111	1	0	1.0	1.0	1.0	org.apache.commons.math.stat.Frequency#110	org.apache.commons.math.stat.Frequency#110	org.apache.commons.math.stat.Frequency#110
+Math	9	113	3492	79676	org.apache.commons.math3.geometry.euclidean.threed.Line#87	0	0	3.0	3.0	3.0
+Math	90	8	185	30900	org.apache.commons.math.stat.Frequency#110	1	0	5.0	5.0	5.0	org.apache.commons.math.stat.Frequency#121	org.apache.commons.math.stat.Frequency#121	org.apache.commons.math.stat.Frequency#121
+Math	90	8	185	30900	org.apache.commons.math.stat.Frequency#121	1	0	5.0	5.0	5.0	org.apache.commons.math.stat.Frequency#121	org.apache.commons.math.stat.Frequency#121	org.apache.commons.math.stat.Frequency#121
+Math	91	39	884	29987	org.apache.commons.math.fraction.Fraction#259	0	0	1.0	1.0	1.0
+Math	91	39	884	29987	org.apache.commons.math.fraction.Fraction#260	0	0	3.0	3.0	3.0
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#184	0	0	14.0	14.0	14.0
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#185	0	0	1.0	1.0	1.0
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#186	0	1	29	29	29
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#187	0	1	29	29	29
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#188	0	1	29	29	29
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#236	0	0	17.0	17.0	17.0
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#190	1	0	1.0	1.0	1.0	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#196	1	0	1.0	1.0	1.0	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#197	1	0	1.0	1.0	1.0	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#199	1	0	1.0	1.0	1.0	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#205	1	0	1.0	1.0	1.0	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#208	1	0	1.0	1.0	1.0	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185	org.apache.commons.math.util.MathUtils#185
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#234	1	0	17.0	17.0	17.0	org.apache.commons.math.util.MathUtils#236	org.apache.commons.math.util.MathUtils#236	org.apache.commons.math.util.MathUtils#236
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#235	1	0	17.0	17.0	17.0	org.apache.commons.math.util.MathUtils#236	org.apache.commons.math.util.MathUtils#236	org.apache.commons.math.util.MathUtils#236
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#277	1	0	15.0	15.0	15.0	org.apache.commons.math.util.MathUtils#289	org.apache.commons.math.util.MathUtils#289	org.apache.commons.math.util.MathUtils#289
+Math	92	28	452	25424	org.apache.commons.math.util.MathUtils#282	1	0	15.0	15.0	15.0	org.apache.commons.math.util.MathUtils#289	org.apache.commons.math.util.MathUtils#289	org.apache.commons.math.util.MathUtils#289
+Math	93	11	444	25286	org.apache.commons.math.util.MathUtils#345	0	0	2.0	2.0	2.0
+Math	93	11	444	25286	org.apache.commons.math.util.MathUtils#346	0	0	5.0	5.0	5.0
+Math	93	11	444	25286	org.apache.commons.math.util.MathUtils#377	1	0	6.0	6.0	6.0	org.apache.commons.math.util.MathUtils#377	org.apache.commons.math.util.MathUtils#377	org.apache.commons.math.util.MathUtils#377
+Math	93	11	444	25286	org.apache.commons.math.util.MathUtils#396	1	0	8.0	8.0	8.0	org.apache.commons.math.util.MathUtils#397	org.apache.commons.math.util.MathUtils#397	org.apache.commons.math.util.MathUtils#397
+Math	94	21	439	25034	org.apache.commons.math.util.MathUtils#412	0	0	11.0	11.0	11.0
+Math	95	96	1003	19934	org.apache.commons.math.distribution.FDistributionImpl#144	0	1	97	97	97
+Math	95	96	1003	19934	org.apache.commons.math.distribution.FDistributionImpl#146	1	0	5.0	5.0	5.0	org.apache.commons.math.distribution.FDistributionImpl#148	org.apache.commons.math.distribution.FDistributionImpl#148	org.apache.commons.math.distribution.FDistributionImpl#148
+Math	95	96	1003	19934	org.apache.commons.math.distribution.FDistributionImpl#148	1	0	5.0	5.0	5.0	org.apache.commons.math.distribution.FDistributionImpl#148	org.apache.commons.math.distribution.FDistributionImpl#148	org.apache.commons.math.distribution.FDistributionImpl#148
+Math	96	24	251	19511	org.apache.commons.math.complex.Complex#258	0	0	6.0	6.0	6.0
+Math	97	48	429	16825	org.apache.commons.math.analysis.BrentSolver#138	0	0	40.0	40.0	40.0
+Math	97	48	429	16825	org.apache.commons.math.analysis.BrentSolver#145	1	0	9.0	9.0	9.0	org.apache.commons.math.analysis.BrentSolver#147	org.apache.commons.math.analysis.BrentSolver#147	org.apache.commons.math.analysis.BrentSolver#147
+Math	97	48	429	16825	org.apache.commons.math.analysis.BrentSolver#140	1	0	1.0	1.0	1.0	org.apache.commons.math.analysis.BrentSolver#141	org.apache.commons.math.analysis.BrentSolver#141	org.apache.commons.math.analysis.BrentSolver#141
+Math	97	48	429	16825	org.apache.commons.math.analysis.BrentSolver#148	1	0	9.0	9.0	9.0	org.apache.commons.math.analysis.BrentSolver#147	org.apache.commons.math.analysis.BrentSolver#147	org.apache.commons.math.analysis.BrentSolver#147
+Math	97	48	429	16825	org.apache.commons.math.analysis.BrentSolver#149	1	0	9.0	9.0	9.0	org.apache.commons.math.analysis.BrentSolver#147	org.apache.commons.math.analysis.BrentSolver#147	org.apache.commons.math.analysis.BrentSolver#147
+Math	98	60	1511	16725	org.apache.commons.math.linear.BigMatrixImpl#991	0	0	12.0	12.0	12.0
+Math	98	60	1511	16725	org.apache.commons.math.linear.RealMatrixImpl#779	0	0	3.0	3.0	3.0
+Math	99	31	662	27144	org.apache.commons.math.util.MathUtils#543	1	0	15.0	16.0	16.0	org.apache.commons.math.util.MathUtils#542	org.apache.commons.math.util.MathUtils#542	org.apache.commons.math.util.MathUtils#542
+Math	99	31	662	27144	org.apache.commons.math.util.MathUtils#714	1	0	1.0	1.0	1.0	org.apache.commons.math.util.MathUtils#713	org.apache.commons.math.util.MathUtils#713	org.apache.commons.math.util.MathUtils#713
 Mockito	1	1172	7335	10517	org.mockito.internal.invocation.InvocationMatcher#123	0	0	1.0	1.0	1.0
 Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#71	0	1	511	511	511
 Mockito	10	510	4933	10565	org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs#87	0	1	511	511	511
