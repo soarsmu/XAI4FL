@@ -53,7 +53,7 @@ for i, x in enumerate(spectra_list):
         seen[x] += 1
         num = seen[x]
         temp = x.split('#')
-        temp_name = temp[0] + str(num) + temp[1]
+        temp_name = temp[0] + str(num) + '#'+ temp[1]
         spectra_list[i] = temp_name 
 
 
