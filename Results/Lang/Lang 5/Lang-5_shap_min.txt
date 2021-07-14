@@ -1,0 +1,16 @@
+org.apache.commons.lang3.LocaleUtils#99;0.12649669713003045
+org.apache.commons.lang3.LocaleUtils#92;0.08534199134199133
+org.apache.commons.lang3.LocaleUtils#98;0.05869618706910374
+org.apache.commons.lang3.LocaleUtils#97;0.05344071669071668
+org.apache.commons.lang3.LocaleUtils#89;0.04399122474747474
+org.apache.commons.lang3.LocaleUtils#93;0.03967003367003366
+org.apache.commons.lang3.LocaleUtils#96;0.02551473063973064
+org.apache.commons.lang3.LocaleUtils$SyncAvoid#288;0.0
+org.apache.commons.lang3.LocaleUtils$SyncAvoid#295;0.0
+org.apache.commons.lang3.LocaleUtils$SyncAvoid#296;0.0
+org.apache.commons.lang3.LocaleUtils$SyncAvoid#297;0.0
+org.apache.commons.lang3.LocaleUtils$SyncAvoid#298;0.0
+org.apache.commons.lang3.LocaleUtils#42;0.0
+org.apache.commons.lang3.LocaleUtils#46;0.0
+org.apache.commons.lang3.LocaleUtils#193;0.0
+org.apache.commons.lang3.LocaleUtils#218;0.0
