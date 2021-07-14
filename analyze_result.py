@@ -94,7 +94,7 @@ while i < len(data):
 
 	all_result.append(temp_array)
 
-size_all = len(all_result)
+size_all = len(all_result) - 1
 print(size_all)
 
 all_name = ["MEAN", "MIN", "MAX"]
