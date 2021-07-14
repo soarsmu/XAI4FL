@@ -79,6 +79,11 @@ if len(fails) == 1:
     x = df[spectra_list[:len(spectra_list)-1]]
     y = df["Pass/Fail"]
 
+if (df.shape[0] < 6):
+    df = df.append(df)
+    x = df[spectra_list[:len(spectra_list)-1]]
+    y = df["Pass/Fail"]
+
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=1)
 
 model = RandomForestClassifier(n_estimators=100, bootstrap=True, max_features='sqrt', random_state=1)
