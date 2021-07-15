@@ -30,7 +30,8 @@ while i < len(data):
 	temp_max_best = []
 	# print(data[i])
 	while i < len(data) and data[i][0] == project and data[i][1] == bug:
-		if data[i][colnames['is_not_found']] == '1':
+		if data[i][colnames['is_not_found']] == 1:
+			print("NOT FOUNDDDDD")
 			not_found = ((sloc - temp_len) / 2) + temp_len
 			temp_mean_best.append(not_found)
 			temp_min_best.append(not_found)
