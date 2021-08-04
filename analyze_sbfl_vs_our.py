@@ -39,14 +39,14 @@ def improvement(a,b,name_a,name_b):
 	top_200 = 0
 	print("BEST-CASES IMPROVEMENT "+name_b+" Improve by "+name_a)
 	temp_value = [0,0,0,0,0,0]
+	values_store = {0:[], 1:[], 2:[], 3:[], 4:[], 5:[]}
 	for proj in a:
 		for bug in a[proj]:
 			if proj in b and bug in b[proj]:
 				val = b[proj][bug]
 				val_2 = a[proj][bug]
 				if val <= 1:
-					top_1 += 1
-					
+					top_1 += 1					
 				if val <= 5:
 					top_5 += 1
 				if val <= 10:
@@ -56,19 +56,26 @@ def improvement(a,b,name_a,name_b):
 				if val > 200:
 					if val_2 < 200 and val_2 > 10:
 						temp_value[0] += 1
+						values_store[0].append(proj+" "+str(bug))
 					elif val_2 <= 10 and val_2 > 5:
 						temp_value[1] += 1
+						values_store[1].append(proj+" "+str(bug))
 					elif val_2 <= 5:
 						temp_value[2] += 1
+						values_store[2].append(proj+" "+str(bug))
 				elif val <= 200 and val > 10:
 					if val_2 <= 10 and val_2 > 5:
 						temp_value[3] += 1
+						values_store[3].append(proj+" "+str(bug))
 					elif val_2 <= 5:
 						temp_value[4] += 1
+						values_store[4].append(proj+" "+str(bug))
 				elif val <= 10 and val > 5:
 					if val_2 <= 5:
 						temp_value[5] += 1
+						values_store[5].append(proj+" "+str(bug))
 	print(temp_value)
+	print(values_store)
 	print(name_b)
 	print(top_1)
 	print(top_5)
@@ -83,11 +90,42 @@ else:
 	df = pd.read_csv('combine.txt',sep='\t') 
 	df_sbfl = pd.read_csv('SBFL_Results/combine_sbfl.txt',sep='\t',index_col=False)
 #print(df_sbfl)
-print("DSTAR")
-top_print(df_sbfl[df_sbfl['formula']=='dstar2'], 'rank_best_case')
-print("RF+ SHAP (MEAN CASE)")
+temp_df = df_sbfl[df_sbfl['formula']=='dstar2']
+for a in ["Chart", "Closure", "Lang", "Math", "Mockito", "Time"]:
+	print("DSTAR "+a)
+	top_print(temp_df[temp_df['project']==a], 'rank_best_case')
+	print("RF+ SHAP (MEAN CASE) "+a)
+	top_print(df[df['project_id']==a], 'rank_mean_best')
+
+	temp_result = temp_df[temp_df['project']==a].values
+
+
+	dstar_process = {}
+	for i, val in enumerate(temp_result):
+		if val[0] in dstar_process:
+			dstar_process[val[0]][val[1]] = val[3]
+		else:	
+			dstar_process[val[0]] = {val[1] : val[3]}
+
+	temp_result = df[df['project_id']==a].values
+	rf_process = {}
+	for i, val in enumerate(temp_result):
+		if val[0] in rf_process:
+			rf_process[val[0]][val[1]] = val[2]
+		else:	
+			rf_process[val[0]] = {val[1] : val[2]}
+
+	improvement(dstar_process,rf_process,'DSTAR', 'RFSHAPMEAN')
+	improvement(rf_process,dstar_process,'RFSHAPMEAN','DSTAR')
+
+print("DSTAR ")
+top_print(temp_df, 'rank_best_case')
+print("RF+ SHAP (MEAN CASE) ")
 top_print(df, 'rank_mean_best')
-temp_result = df_sbfl[df_sbfl['formula']=='dstar2'].values
+
+temp_result = temp_df.values
+
+
 dstar_process = {}
 for i, val in enumerate(temp_result):
 	if val[0] in dstar_process:
