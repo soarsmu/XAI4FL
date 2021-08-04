@@ -33,19 +33,25 @@ while i < len(data):
 		if data[i][colnames['is_not_found']] == 1:
 			print("NOT FOUNDDDDD")
 			not_found = ((sloc - temp_len) / 2) + temp_len
-			temp_mean_best.append(not_found)
-			temp_min_best.append(not_found)
-			temp_max_best.append(not_found)
+			temp_mean_best.append([not_found, data[i][colnames['buggy_line']]])
+			temp_min_best.append([not_found, data[i][colnames['buggy_line']]])
+			temp_max_best.append([not_found, data[i][colnames['buggy_line']]])
 		else:
-			temp_mean_best.append(float(data[i][colnames['shap_mean']]))
-			temp_min_best.append(float(data[i][colnames['shap_min']]))
-			temp_max_best.append(float(data[i][colnames['shap_max']]))
+			if pd.isnull(data[i][colnames['buggy_line_max']]):
+				temp_mean_best.append([float(data[i][colnames['shap_mean']]), data[i][colnames['buggy_line']]])
+				temp_min_best.append([float(data[i][colnames['shap_min']]), data[i][colnames['buggy_line']]])
+				temp_max_best.append([float(data[i][colnames['shap_max']]), data[i][colnames['buggy_line']]])
+			else:
+				temp_mean_best.append([float(data[i][colnames['shap_mean']]), data[i][colnames['buggy_line_mean']]])
+				temp_min_best.append([float(data[i][colnames['shap_min']]), data[i][colnames['buggy_line_min']]])
+				temp_max_best.append([float(data[i][colnames['shap_max']]), data[i][colnames['buggy_line_max']]])
+			
 		i += 1
 	#cek ulang bagian sortingnya
-	temp_mean_best.sort()
-	temp_min_best.sort()
-	temp_max_best.sort()
-
+	print(temp_mean_best)
+	temp_mean_best.sort(key=lambda x: x[0])
+	temp_min_best.sort(key=lambda x: x[0])
+	temp_max_best.sort(key=lambda x: x[0])
 
 	#print(temp_tarantula_best)
 	size = len(temp_mean_best)
@@ -54,63 +60,25 @@ while i < len(data):
 	else:
 		half_size = int(size / 2)
 
-	if temp_mean_best[0] <= 5:
-		top_5_mean += 1
-		top_10_mean += 1
-		top_200_mean += 1
-	elif temp_mean_best[0] <= 10:
-		top_10_mean += 1
-		top_200_mean += 1
-	elif temp_mean_best[0] <= 200:
-		top_200_mean += 1
-
-
-	if temp_min_best[0] <= 5:
-		top_5_min += 1
-		top_10_min += 1
-		top_200_min += 1
-	elif temp_min_best[0] <= 10:
-		top_10_min += 1
-		top_200_min += 1
-	elif temp_min_best[0] <= 200:
-		top_200_min += 1
-
-
-	if temp_max_best[0] <= 5:
-		top_5_max += 1
-		top_10_max += 1
-		top_200_max += 1
-	elif temp_max_best[0] <= 10:
-		top_10_max += 1
-		top_200_max += 1
-	elif temp_max_best[0] <= 200:
-		top_200_max += 1
+	
 	temp_array = [project, bug] 
-	temp_array.extend([temp_mean_best[0], temp_min_best[0],temp_max_best[0]])
-	temp_array.extend([temp_mean_best[int(len(temp_mean_best)/2)], temp_min_best[int(len(temp_min_best)/2)],temp_max_best[int(len(temp_max_best)/2)]])
-	temp_array.extend([temp_mean_best[-1], temp_min_best[-1],temp_max_best[-1]])
-	temp_array.extend([temp_mean_best[0]/sloc, temp_min_best[0]/sloc, temp_max_best[0]/sloc])
-	temp_array.extend([float(sum(temp_mean_best[:half_size]) / len(temp_mean_best[:half_size])) / sloc, float(sum(temp_min_best[:half_size]) / len(temp_min_best[:half_size])) / sloc,float(sum(temp_max_best[:half_size]) / len(temp_max_best[:half_size])) / sloc])
-	temp_array.extend([float(sum(temp_mean_best) / len(temp_mean_best)) / sloc, float(sum(temp_min_best) / len(temp_min_best)) / sloc, float(sum(temp_max_best) / len(temp_max_best)) / sloc])
+	temp_array.extend([temp_mean_best[0][0], temp_min_best[0][0],temp_max_best[0][0]])
+	temp_array.extend([temp_mean_best[int(len(temp_mean_best)/2)][0], temp_min_best[int(len(temp_min_best)/2)][0],temp_max_best[int(len(temp_max_best)/2)][0]])
+	temp_array.extend([temp_mean_best[-1][0], temp_min_best[-1][0],temp_max_best[-1][0]])
+	#temp_array.extend([temp_mean_best[0][0]/sloc, temp_min_best[0][0]/sloc, temp_max_best[0][0]/sloc])
+	#temp_array.extend([float(sum(temp_mean_best[:half_size][0]) / len(temp_mean_best[:half_size])) / sloc, float(sum(temp_min_best[:half_size][0]) / len(temp_min_best[:half_size])) / sloc,float(sum(temp_max_best[:half_size][0]) / len(temp_max_best[:half_size])) / sloc])
+	#temp_array.extend([float(sum(temp_mean_best[:][0]) / len(temp_mean_best)) / sloc, float(sum(temp_min_best[:][0]) / len(temp_min_best)) / sloc, float(sum(temp_max_best[:][0]) / len(temp_max_best)) / sloc])
+	temp_array.extend([temp_mean_best[0][1], temp_min_best[0][1],temp_max_best[0][1]])
 
 	all_result.append(temp_array)
 
 size_all = len(all_result) - 1
 print(size_all)
 
-all_name = ["MEAN", "MIN", "MAX"]
-top_name = ["TOP 5: ", "TOP 10: ", "TOP 200: "]
-top_list = [[top_5_mean, top_10_mean, top_200_mean], [top_5_min, top_10_min, top_200_min], [top_5_max, top_10_max, top_200_max]]
-
-for i, n in enumerate(all_name):
-	print(n)
-	for j, top in enumerate(top_list[i]):
-		temp_string = top_name[j]
-		print(temp_string+ str(top) + "(" + str((100 * float(top)/float(size_all))) + "%)")
 
 
 
-output_name = "combine.txt"
+output_name = "combine_feat.txt"
 if len(sys.argv) > 2:
 	output_name = sys.argv[2]
 with open(output_name,'w', newline='', encoding='utf-8') as output:

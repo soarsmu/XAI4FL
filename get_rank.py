@@ -323,6 +323,9 @@ def get_rank(all_rank,buggy_line,sloc_data):
 									ranked_final[project][bug_number][stmts]['min'] = sorted_max[all_rank[project][bug_number]['min'][0].index(new_stmts)]
 									ranked_final[project][bug_number][stmts]['mean'] = sorted_max[all_rank[project][bug_number]['mean'][0].index(new_stmts)]
 									ranked_final[project][bug_number][stmts]['not_found'] = '0'
+									ranked_final[project][bug_number][stmts]['max_stmts'] = new_stmts
+									ranked_final[project][bug_number][stmts]['min_stmts'] = new_stmts
+									ranked_final[project][bug_number][stmts]['mean_stmts'] = new_stmts
 									print(ranked_final[project][bug_number][stmts]['max'])
 								else:
 									temp_stmts = new_stmts.split('#')
