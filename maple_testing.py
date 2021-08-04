@@ -47,6 +47,8 @@ def write_output_file(filename, obj, is_reverse=False):
         for i in sorted_dict:
             file.write(";".join([i[0], str(i[1])]) + "\n")
 
+#Input and process files into dataframe
+
 spectra_file = files.upload()
 matrix_file = files.upload()
 
@@ -60,7 +62,7 @@ matrix_list.pop()
 
 df = pd.DataFrame(data=matrix_list, columns=spectra_list)
 
-df
+#Split dataframe into variables and classes as well as handle any insufficient data
 
 x = df[spectra_list[:len(spectra_list)-1]]
 y = df["Pass/Fail"]
@@ -87,11 +89,17 @@ if (df.shape[0] < 6):
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=1)
 
+#Declare and train model
+
 model = RandomForestClassifier(n_estimators=100, bootstrap=True, max_features='sqrt', random_state=1)
 
 model.fit(x_train, y_train)
 
+#Declare MAPLE explainer object
+
 exp = MAPLE.MAPLE(np.array(x_train), np.array(model.predict(x_train)), np.array(x_test), np.array(model.predict(x_test)))
+
+#Explain each feature's contribution based on its coefficient
 
 feature_coefficients_based_on_error_instance = {}
 
@@ -101,6 +109,8 @@ for i in fails:
     for index, val in enumerate(cur_coefs[:-1]):
         test_string = spectra_list[index] + ";" + str(val)
         feature_coefficients_based_on_error_instance[i].append(test_string)
+
+#Process individual coefficient along with mean, min, and max values
 
 coef_values_on_predict = {}
 
@@ -122,6 +132,8 @@ for i in coef_values_on_predict:
     feature_coef_max[i] = max(coef_values_on_predict[i])
     feature_coef_min[i] = min(coef_values_on_predict[i])
 
+#Write output file
+
 with open("Math-8_maple_results.txt", "w") as file:
     for i in feature_coefficients_based_on_error_instance:
         file.write(str(i) + "\n")
@@ -129,7 +141,6 @@ with open("Math-8_maple_results.txt", "w") as file:
             file.write(feature_coefficients_based_on_error_instance[i][j] + "\n")
 
 write_output_file('Math-8_maple_mean.txt', feautre_coef_means)
-
 write_output_file('Math-8_maple_max.txt', feature_coef_max)
 write_output_file('Math-8_maple_min.txt', feature_coef_min)
 

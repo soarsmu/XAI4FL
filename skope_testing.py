@@ -44,6 +44,8 @@ def process_matrix(file_obj, file_name):
     
     return result
 
+#Input and process files into dataframe
+
 spectra_file = files.upload()
 matrix_file = files.upload()
 
@@ -57,7 +59,7 @@ matrix_list.pop()
 
 df = pd.DataFrame(data=matrix_list, columns=spectra_list)
 
-df
+#Split dataframe into variables and classes as well as handle any insufficient data
 
 x = df[spectra_list[:len(spectra_list)-1]]
 y = df["Pass/Fail"]
@@ -84,9 +86,13 @@ if (df.shape[0] < 6):
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=1)
 
+#Declare and train model
+
 model = RandomForestClassifier(n_estimators=100, bootstrap=True, max_features='sqrt', random_state=1)
 
 model.fit(x_train, y_train)
+
+#Create Skope Rules explanation model
 
 skope_rules_clf = SkopeRules(feature_names=spectra_list[:-1], random_state=42, n_estimators=30,
                                recall_min=0.05, precision_min=0.9,
@@ -95,8 +101,12 @@ skope_rules_clf = SkopeRules(feature_names=spectra_list[:-1], random_state=42, n
 
 skope_rules_clf.fit(x_train, y_train)
 
+#Print rules generated from explanation model
+
 for i_rule, rule in enumerate(skope_rules_clf.rules_):
     print(rule)
+
+#Write output file
 
 with open("Math-8-Skope-rules.txt", "w") as file:
     for i in skope_rules_clf.rules_:

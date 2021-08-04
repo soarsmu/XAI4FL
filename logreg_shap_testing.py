@@ -58,6 +58,8 @@ def write_output_file(filename, obj, is_reverse=False):
         for i in sorted_dict:
             file.write(";".join([i[0], str(i[1])]) + "\n")
 
+#Input and process files into dataframe
+
 spectra_file = files.upload()
 matrix_file = files.upload()
 
@@ -70,6 +72,8 @@ matrix_list = process_matrix(matrix_file, list(matrix_file.keys())[0])
 matrix_list.pop()
 
 df = pd.DataFrame(data=matrix_list, columns=spectra_list)
+
+#Split dataframe into variables and classes as well as handle any insufficient data
 
 x = df[spectra_list[:len(spectra_list)-1]]
 y = df["Pass/Fail"]
@@ -96,6 +100,8 @@ if (df.shape[0] < 6):
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=1)
 
+#Declare and train model
+
 model = LogisticRegression()
 
 model.fit(x_train, y_train)
@@ -103,6 +109,8 @@ model.fit(x_train, y_train)
 y_pred=model.predict(x_test)
 
 print(metrics.classification_report(y_test, y_pred))
+
+#Explain model using SHAP values
 
 shap_to_txt = {}
 
@@ -115,6 +123,8 @@ for i in fails:
         temp_list.append(spectra_list[index] + ";" + str(j))
     shap_to_txt[x.iloc[i].name] = temp_list
 
+#Process individual SHAP values as well as mean, max, and min values for each test case
+
 shap_lines_output_val = {}
 
 for i in shap_to_txt:
@@ -125,8 +135,6 @@ for i in shap_to_txt:
         if feature not in shap_lines_output_val:
             shap_lines_output_val[feature] = []
         shap_lines_output_val[feature].append(float(shapval))
-
-shap_lines_output_val
 
 shap_means = {}
 shap_max = {}
@@ -148,6 +156,8 @@ for i in shap_lines_output_val:
 
 for i in shap_means:
     shap_means[i] = sum(shap_means[i]) / len(shap_means[i])
+
+#Write output file
 
 with open("Math-8_logreg-shap_results.txt", "w") as file:
     for i in shap_to_txt:

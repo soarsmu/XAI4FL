@@ -59,6 +59,8 @@ def write_output_file(filename, obj, is_reverse=False):
         for i in sorted_dict:
             file.write(";".join([i[0], str(i[1])]) + "\n")
 
+#Input and process files into dataframe
+
 spectra_file = files.upload()
 matrix_file = files.upload()
 
@@ -72,7 +74,7 @@ matrix_list.pop()
 
 df = pd.DataFrame(data=matrix_list, columns=spectra_list)
 
-df
+#Split dataframe into variables and classes as well as handle any insufficient data
 
 x = df[spectra_list[:len(spectra_list)-1]]
 y = df["Pass/Fail"]
@@ -99,6 +101,8 @@ if (df.shape[0] < 6):
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=1)
 
+#Prepare data and parameters for model 
+
 data_train = xgb.DMatrix(x_train, label=y_train)
 data_test = xgb.DMatrix(x_test, label=y_test)
 
@@ -107,6 +111,8 @@ param = {
     'max_depth': 6,  
     'objective': 'multi:softprob',  
     'num_class': 2}
+
+#Declare and train model
 
 model = xgb.train(param, data_train)
 
@@ -118,6 +124,8 @@ print("Precision = {}".format(precision_score(y_test, best_preds, average='macro
 print("Recall = {}".format(recall_score(y_test, best_preds, average='macro')))
 print("Accuracy = {}".format(accuracy_score(y_test, best_preds)))
 
+#Explain model using SHAP values
+
 shap_to_txt = {}
 
 shap_values = shap.TreeExplainer(model).shap_values(x)
@@ -126,6 +134,8 @@ for i in fails:
     shap_value_exp_obj = shap.Explanation(shap_values[0][i], feature_names=list(x.columns))
     shap_to_txt[x.iloc[i].name] = []
     shap_to_txt[x.iloc[i].name] += make_line_in_txt_shap(list(shap_value_exp_obj), i)
+
+#Process individual SHAP values as well as mean, max, and min values for each test case
 
 shap_lines_output_val = {}
 
@@ -158,6 +168,8 @@ for i in shap_lines_output_val:
 
 for i in shap_means:
     shap_means[i] = sum(shap_means[i]) / len(shap_means[i])
+
+#Write output file
 
 with open("Math-8_xgb-shap_results.txt", "w") as file:
     for i in shap_to_txt:

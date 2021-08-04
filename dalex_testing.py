@@ -41,6 +41,8 @@ def process_matrix(file_obj, file_name):
     
     return result
 
+#Input and process files into dataframe
+
 spectra_file = files.upload()
 matrix_file = files.upload()
 
@@ -53,6 +55,8 @@ matrix_list = process_matrix(matrix_file, list(matrix_file.keys())[0])
 matrix_list.pop()
 
 df = pd.DataFrame(data=matrix_list, columns=spectra_list)
+
+#Split dataframe into variables and classes as well as handle any insufficient data
 
 x = df[spectra_list[:len(spectra_list)-1]]
 y = df["Pass/Fail"]
@@ -79,11 +83,17 @@ if (df.shape[0] < 6):
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=1)
 
+#Declare and train the model
+
 model = RandomForestClassifier(n_estimators=100, bootstrap=True, max_features='sqrt', random_state=1)
 
 model.fit(x_train, y_train)
 
+#Declare DALEX explainer object
+
 exp_dalex = dalex.Explainer(model, data=x_train, y=y_train, model_type="classification")
+
+#Explain variable's contribution using Dalex breakdown plot approach
 
 breakdown_fail = exp_dalex.predict_parts(x.iloc[18], type="break_down")
 breakdown_fail_interaction = exp_dalex.predict_parts(x.iloc[18], type="break_down_interactions")
@@ -94,6 +104,8 @@ for index, row in breakdown_fail.result.iterrows():
     if index == 0 or index == len(breakdown_fail.result) - 1:
         continue
     dalex_lines[row['variable_name']] = row['contribution']
+
+#Write output file
 
 with open("Math-8-dalex.txt", "w") as file:
     for i in dalex_lines:
