@@ -14,7 +14,6 @@ Remember to pip install skope-rules
 
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from google.colab import files
 import pandas as pd
 import json
 import re
@@ -46,18 +45,26 @@ def process_matrix(file_obj, file_name):
 
 #Input and process files into dataframe
 
-spectra_file = files.upload()
-matrix_file = files.upload()
+f = open(sys.argv[1], "r")
+spectra_list = [line.rstrip('\n') for line in f]
+spectra_list.append("Pass/Fail")
+f.close()
 
-spectra_list = process_spectra(spectra_file, list(spectra_file.keys())[0])
-spectra_list[-1] = "Pass/Fail"
-spectra_list[0] = spectra_list[0].replace("b'", "")
+#Case if there are duplicate in list
+seen = {}
+for i, x in enumerate(spectra_list):
+    if x not in seen:
+        seen[x] = 1
+    else:
+        seen[x] += 1
+        num = seen[x]
+        temp = x.split('#')
+        temp_name = temp[0] + str(num)+ '#' + temp[1]
+        spectra_list[i] = temp_name 
 
-matrix_list = process_matrix(matrix_file, list(matrix_file.keys())[0])
 
-matrix_list.pop()
-
-df = pd.DataFrame(data=matrix_list, columns=spectra_list)
+df = pd.read_csv(sys.argv[2], sep=' ', names=spectra_list, header=None)
+df = df.replace(["-","+"], ["FAIL","PASS"])
 
 #Split dataframe into variables and classes as well as handle any insufficient data
 
@@ -108,6 +115,6 @@ for i_rule, rule in enumerate(skope_rules_clf.rules_):
 
 #Write output file
 
-with open("Math-8-Skope-rules.txt", "w") as file:
+with open(sys.argv[3] + "-Skope-rules.txt", "w") as file:
     for i in skope_rules_clf.rules_:
         file.write(str(i) + "\n")
