@@ -91,7 +91,7 @@ fails = []
 passes = []
 i = 0
 for result in y:
-    if result == 0:
+    if result == 0 or result == "FAIL":
         fails.append(i)
     else:
         passes.append(i)

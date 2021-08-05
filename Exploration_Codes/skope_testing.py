@@ -65,7 +65,7 @@ for i, x in enumerate(spectra_list):
 
 
 df = pd.read_csv(sys.argv[2], sep=' ', names=spectra_list, header=None)
-df = df.replace(["-","+"], ["FAIL","PASS"])
+df = df.replace(["-","+"], [0, 1])
 
 #Split dataframe into variables and classes as well as handle any insufficient data
 
