@@ -116,7 +116,7 @@ print(df)
 fails = []
 passes = []
 i = 0
-if model_name == "log-reg" or model_name == "svm":
+if model_name == "log-reg" or model_name == "SVM":
     for result in y:
         if result == 0:
             fails.append(i)
