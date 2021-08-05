@@ -77,7 +77,7 @@ if len(sys.argv) < 5:
     #print("e.g., python agnositc_model_combine_ml.py RF 1\\spectra 1\\matrix Closure-1 ")
     exit()
 if sys.argv[1] not in ["RF", "KNN", "log-reg", "SVM, XGB"]:
-    print("Please choos from this model names: RF, KNN, log-reg, SVM, XGB")
+    print("Please choose from this model names: RF, KNN, log-reg, SVM, XGB")
     exit()
     
 model_name = sys.argv[1]
@@ -103,7 +103,7 @@ for i, x in enumerate(spectra_list):
 
 
 df = pd.read_csv(input_file_matrix, sep=' ', names=spectra_list, header=None)
-if model_name == "log-reg" or model_name == "SVM":
+if model_name == "log-reg" or model_name == "SVM" or model_name == "XGB":
     df = df.replace(["-","+"], [0,1])
 else:
     df = df.replace(["-","+"], ["FAIL","PASS"])
