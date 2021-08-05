@@ -68,7 +68,7 @@ for i, x in enumerate(spectra_list):
 
 
 df = pd.read_csv(sys.argv[2], sep=' ', names=spectra_list, header=None)
-df = df.replace(["-","+"], ["FAIL","PASS"])
+df = df.replace(["-","+"], [0,1])
 
 #Split dataframe into variables and classes as well as handle any insufficient data
 
@@ -79,7 +79,7 @@ fails = []
 passes = []
 i = 0
 for result in y:
-    if result == 0 or result == "FAIL":
+    if result == 0:
         fails.append(i)
     else:
         passes.append(i)
@@ -136,7 +136,7 @@ feature_coef_max = {}
 feature_coef_min = {}
 
 for i in coef_values_on_predict:
-    feautre_coef_means[i] = sum(coef_values_on_predict[i]) / len(coef_values_on_predict[i])
+    feature_coef_means[i] = sum(coef_values_on_predict[i]) / len(coef_values_on_predict[i])
     feature_coef_max[i] = max(coef_values_on_predict[i])
     feature_coef_min[i] = min(coef_values_on_predict[i])
 
@@ -148,7 +148,7 @@ with open(sys.argv[3] + "_maple_results.txt", "w") as file:
         for j in range(len(feature_coefficients_based_on_error_instance[i])):
             file.write(feature_coefficients_based_on_error_instance[i][j] + "\n")
 
-write_output_file(sys.argv[3] + '_maple_mean.txt', feautre_coef_means)
+write_output_file(sys.argv[3] + '_maple_mean.txt', feature_coef_means)
 write_output_file(sys.argv[3] + '_maple_max.txt', feature_coef_max)
 write_output_file(sys.argv[3] + '_maple_min.txt', feature_coef_min)
 
