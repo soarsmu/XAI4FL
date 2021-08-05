@@ -42,6 +42,8 @@ def process_matrix(file_obj, file_name):
     return result
 
 #Input and process files into dataframe
+#Input: File paths, both spectra and matrix. System finds the files
+#Output: Dataframe (Spectra List + PASS/FAIL labels as column and Test instances as rows with its execution matrix) 
 
 f = open(sys.argv[1], "r")
 spectra_list = [line.rstrip('\n') for line in f]
@@ -64,7 +66,10 @@ for i, x in enumerate(spectra_list):
 df = pd.read_csv(sys.argv[2], sep=' ', names=spectra_list, header=None)
 df = df.replace(["-","+"], ["FAIL","PASS"])
 
-#Split dataframe into variables and classes as well as handle any insufficient data
+#Split dataframe into variables and classes as well as handle any insufficient data 
+#(Handles insufficient number labelled instance by appending a copy of that instance; Handles insufficient total number of instance by reappending the dataframe)
+#Input: Dataframe created from spectra and matrix files
+#Output: Dataset for model training and model testing (e.g., x_train -> instance feature values for training, y_test -> instance label for training)
 
 x = df[spectra_list[:len(spectra_list)-1]]
 y = df["Pass/Fail"]
@@ -91,17 +96,23 @@ if (df.shape[0] < 6):
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=1)
 
-#Declare and train the model
+#Declare and train the model (Current model is Random Forest)
+#Input: Training dataset (x_train, y_train)
+#Output: Trained model
 
 model = RandomForestClassifier(n_estimators=100, bootstrap=True, max_features='sqrt', random_state=1)
 
 model.fit(x_train, y_train)
 
 #Declare DALEX explainer object
+#Input: Trained model
+#Output: Explainer object (DALEX Method)
 
 exp_dalex = dalex.Explainer(model, data=x_train, y=y_train, model_type="classification")
 
-#Explain variable's contribution using Dalex breakdown plot approach
+#Explain variable's contribution using Dalex breakdown plot approach generated from explainer object
+#Input: Chosen instance (can be an array of instances, explanation per instance is computationally expensive) to be explained
+#Output: Contribution of each line of code (feature) based on instance given
 
 breakdown_fail = exp_dalex.predict_parts(x.iloc[18], type="break_down")
 breakdown_fail_interaction = exp_dalex.predict_parts(x.iloc[18], type="break_down_interactions")
@@ -114,6 +125,9 @@ for index, row in breakdown_fail.result.iterrows():
     dalex_lines[row['variable_name']] = row['contribution']
 
 #Write output file
+#Input: Lines of code each with their values of contribution
+#Output: .txt File containing each line of code's value of contribution
+
 with open(sys.argv[3]+"_dalex.txt", "w") as file:
     for i in dalex_lines:
         file.write(str(i) + ";" + str(dalex_lines[i]) + "\n")

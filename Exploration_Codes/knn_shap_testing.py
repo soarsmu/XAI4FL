@@ -59,6 +59,8 @@ def write_output_file(filename, obj, is_reverse=False):
             file.write(";".join([i[0], str(i[1])]) + "\n")
 
 #Input and process files into dataframe
+#Input: File paths, both spectra and matrix. System finds the files
+#Output: Dataframe (Spectra List + PASS/FAIL labels as column and Test instances as rows with its execution matrix)
 
 f = open(sys.argv[1], "r")
 spectra_list = [line.rstrip('\n') for line in f]
@@ -81,7 +83,10 @@ for i, x in enumerate(spectra_list):
 df = pd.read_csv(sys.argv[2], sep=' ', names=spectra_list, header=None)
 df = df.replace(["-","+"], ["FAIL","PASS"])
 
-#Split dataframe into variables and classes as well as handle any insufficient data
+#Split dataframe into variables and classes as well as handle any insufficient data 
+#(Handles insufficient number labelled instance by appending a copy of that instance; Handles insufficient total number of instance by reappending the dataframe)
+#Input: Dataframe created from spectra and matrix files
+#Output: Dataset for model training and model testing (e.g., x_train -> instance feature values for training, y_test -> instance label for training) 
 
 x = df[spectra_list[:len(spectra_list)-1]]
 y = df["Pass/Fail"]
@@ -108,7 +113,9 @@ if (df.shape[0] < 6):
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=1)
 
-#Declare and train model
+#Declare and train the model (Current model is K-Nearest-Neighbor)
+#Input: Training dataset (x_train, y_train)
+#Output: Trained model; prints classification report of model
 
 model = KNeighborsClassifier()
 
@@ -118,7 +125,9 @@ y_pred=model.predict(x_test)
 
 print(metrics.classification_report(y_test, y_pred))
 
-#Explain model using SHAP values
+#Declares SHAP explainer object and explains variable's contribution using SHAP Kernel explainer
+#Input: Trained model and array of "FAIL"-labelled instances
+#Output: Dictionary of each line of code (feature)'s SHAP values 
 
 shap_to_txt = {}
 
@@ -132,7 +141,9 @@ for i in fails:
         temp_list.append(spectra_list[index] + ";" + str(j))
     shap_to_txt[x.iloc[i].name] = temp_list
 
-#Process individual SHAP values as well as mean, max, and min values for each test case
+#Process individual SHAP values as well as mean, max, and min SHAP values for each test case
+#Input: Dictionary of each line of code (feature)'s SHAP values
+#Output: Dictionaries of each line of code's mean, max, and min SHAP values
 
 shap_lines_output_val = {}
 
@@ -167,6 +178,8 @@ for i in shap_means:
     shap_means[i] = sum(shap_means[i]) / len(shap_means[i])
 
 #Write output file
+#Input: Dictionaries of each line of code's mean, max, and min SHAP values
+#Output: .txt Files containing each line of code's SHAP values, mean, max, and min SHAP values
 
 with open(sys.argv[3]+"_knn-shap_results.txt", "w") as file:
     for i in shap_to_txt:

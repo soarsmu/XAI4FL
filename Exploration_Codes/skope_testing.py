@@ -11,7 +11,6 @@ Original file is located at
 Remember to pip install skope-rules
 """
 
-
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
@@ -45,6 +44,8 @@ def process_matrix(file_obj, file_name):
     return result
 
 #Input and process files into dataframe
+#Input: File paths, both spectra and matrix. System finds the files
+#Output: Dataframe (Spectra List + PASS/FAIL labels as column and Test instances as rows with its execution matrix)
 
 f = open(sys.argv[1], "r")
 spectra_list = [line.rstrip('\n') for line in f]
@@ -67,7 +68,10 @@ for i, x in enumerate(spectra_list):
 df = pd.read_csv(sys.argv[2], sep=' ', names=spectra_list, header=None)
 df = df.replace(["-","+"], [0, 1])
 
-#Split dataframe into variables and classes as well as handle any insufficient data
+#Split dataframe into variables and classes as well as handle any insufficient data 
+#(Handles insufficient number labelled instance by appending a copy of that instance; Handles insufficient total number of instance by reappending the dataframe)
+#Input: Dataframe created from spectra and matrix files
+#Output: Dataset for model training and model testing (e.g., x_train -> instance feature values for training, y_test -> instance label for training)
 
 x = df[spectra_list[:len(spectra_list)-1]]
 y = df["Pass/Fail"]
@@ -94,13 +98,17 @@ if (df.shape[0] < 6):
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=1)
 
-#Declare and train model
+#Declare and train the model (Current model is Random Forest)
+#Input: Training dataset (x_train, y_train)
+#Output: Trained model
 
 model = RandomForestClassifier(n_estimators=100, bootstrap=True, max_features='sqrt', random_state=1)
 
 model.fit(x_train, y_train)
 
 #Create Skope Rules explanation model
+#Input: Training dataset (x_train, y_train)
+#Output: Trained Skope Rules explanation model; prints rules generated from explanation model
 
 skope_rules_clf = SkopeRules(feature_names=spectra_list[:-1], random_state=42, n_estimators=30,
                                recall_min=0.05, precision_min=0.9,
@@ -109,12 +117,12 @@ skope_rules_clf = SkopeRules(feature_names=spectra_list[:-1], random_state=42, n
 
 skope_rules_clf.fit(x_train, y_train)
 
-#Print rules generated from explanation model
-
 for i_rule, rule in enumerate(skope_rules_clf.rules_):
     print(rule)
 
 #Write output file
+#Input: Rules retrieved from trained Skope Rules explanation model
+#Output: .txt File containing rules from Skope Rules
 
 with open(sys.argv[3] + "-Skope-rules.txt", "w") as file:
     for i in skope_rules_clf.rules_:

@@ -60,6 +60,8 @@ def write_output_file(filename, obj, is_reverse=False):
             file.write(";".join([i[0], str(i[1])]) + "\n")
 
 #Input and process files into dataframe
+#Input: File paths, both spectra and matrix. System finds the files
+#Output: Dataframe (Spectra List + PASS/FAIL labels as column and Test instances as rows with its execution matrix)
 
 f = open(sys.argv[1], "r")
 spectra_list = [line.rstrip('\n') for line in f]
@@ -82,7 +84,10 @@ for i, x in enumerate(spectra_list):
 df = pd.read_csv(sys.argv[2], sep=' ', names=spectra_list, header=None)
 df = df.replace(["-","+"], ["FAIL","PASS"])
 
-#Split dataframe into variables and classes as well as handle any insufficient data
+#Split dataframe into variables and classes as well as handle any insufficient data 
+#(Handles insufficient number labelled instance by appending a copy of that instance; Handles insufficient total number of instance by reappending the dataframe)
+#Input: Dataframe created from spectra and matrix files
+#Output: Dataset for model training and model testing (e.g., x_train -> instance feature values for training, y_test -> instance label for training)
 
 x = df[spectra_list[:len(spectra_list)-1]]
 y = df["Pass/Fail"]
@@ -109,7 +114,9 @@ if (df.shape[0] < 6):
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=1)
 
-#Prepare data and parameters for model 
+#Prepare parameters for model and convert dataset to matrix object supported by XGBoost algorithm
+#Input: Training and test dataset (x_train, x_test, y_train, y_test)
+#Output: Param dictionary for XGB and matrix objects form x_train and x_test  
 
 data_train = xgb.DMatrix(x_train, label=y_train)
 data_test = xgb.DMatrix(x_test, label=y_test)
@@ -120,7 +127,9 @@ param = {
     'objective': 'multi:softprob',  
     'num_class': 2}
 
-#Declare and train model
+#Declare and train the model (Current model is XGBoost)
+#Input: Param dictionary for XGB and matrix objects form x_train and x_test  
+#Output: Trained model; prints classification report of model
 
 model = xgb.train(param, data_train)
 
@@ -132,7 +141,9 @@ print("Precision = {}".format(precision_score(y_test, best_preds, average='macro
 print("Recall = {}".format(recall_score(y_test, best_preds, average='macro')))
 print("Accuracy = {}".format(accuracy_score(y_test, best_preds)))
 
-#Explain model using SHAP values
+#Declares SHAP explainer object and explains variable's contribution using SHAP Tree explainer
+#Input: Trained model and array of "FAIL"-labelled instances
+#Output: Dictionary of each line of code (feature)'s SHAP values
 
 shap_to_txt = {}
 
@@ -143,7 +154,9 @@ for i in fails:
     shap_to_txt[x.iloc[i].name] = []
     shap_to_txt[x.iloc[i].name] += make_line_in_txt_shap(list(shap_value_exp_obj), i)
 
-#Process individual SHAP values as well as mean, max, and min values for each test case
+#Process individual SHAP values as well as mean, max, and min SHAP values for each test case
+#Input: Dictionary of each line of code (feature)'s SHAP values
+#Output: Dictionaries of each line of code's mean, max, and min SHAP values
 
 shap_lines_output_val = {}
 
@@ -178,6 +191,8 @@ for i in shap_means:
     shap_means[i] = sum(shap_means[i]) / len(shap_means[i])
 
 #Write output file
+#Input: Dictionaries of each line of code's mean, max, and min SHAP values
+#Output: .txt Files containing each line of code's SHAP values, mean, max, and min SHAP values
 
 with open(sys.argv[3] + "_xgb-shap_results.txt", "w") as file:
     for i in shap_to_txt:

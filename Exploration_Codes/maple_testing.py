@@ -48,6 +48,8 @@ def write_output_file(filename, obj, is_reverse=False):
             file.write(";".join([i[0], str(i[1])]) + "\n")
 
 #Input and process files into dataframe
+#Input: File paths, both spectra and matrix. System finds the files
+#Output: Dataframe (Spectra List + PASS/FAIL labels as column and Test instances as rows with its execution matrix)
 
 f = open(sys.argv[1], "r")
 spectra_list = [line.rstrip('\n') for line in f]
@@ -70,7 +72,10 @@ for i, x in enumerate(spectra_list):
 df = pd.read_csv(sys.argv[2], sep=' ', names=spectra_list, header=None)
 df = df.replace(["-","+"], [0,1])
 
-#Split dataframe into variables and classes as well as handle any insufficient data
+#Split dataframe into variables and classes as well as handle any insufficient data 
+#(Handles insufficient number labelled instance by appending a copy of that instance; Handles insufficient total number of instance by reappending the dataframe)
+#Input: Dataframe created from spectra and matrix files
+#Output: Dataset for model training and model testing (e.g., x_train -> instance feature values for training, y_test -> instance label for training)
 
 x = df[spectra_list[:len(spectra_list)-1]]
 y = df["Pass/Fail"]
@@ -97,17 +102,23 @@ if (df.shape[0] < 6):
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, stratify=y, random_state=1)
 
-#Declare and train model
+#Declare and train the model (Current model is Random Forest)
+#Input: Training dataset (x_train, y_train)
+#Output: Trained model
 
 model = RandomForestClassifier(n_estimators=100, bootstrap=True, max_features='sqrt', random_state=1)
 
 model.fit(x_train, y_train)
 
 #Declare MAPLE explainer object
+#Input: Trained model predict function & trained dataset (x_test), test dataset (x_test), prediction array from model x_test in a form NumPy array
+#Output: Explainer object (MAPLE Method)
 
 exp = MAPLE.MAPLE(np.array(x_train), np.array(model.predict(x_train)), np.array(x_test), np.array(model.predict(x_test)))
 
 #Explain each feature's contribution based on its coefficient
+#Input: Explanation object and array of "FAIL"-labelled instances
+#Output: Dictionary of the contribution (represented by coefficient) of each feature when a prediction is made on a failed instance 
 
 feature_coefficients_based_on_error_instance = {}
 
@@ -119,6 +130,8 @@ for i in fails:
         feature_coefficients_based_on_error_instance[i].append(test_string)
 
 #Process individual coefficient along with mean, min, and max values
+#Input: Dictionary of the contribution (represented by coefficient) of each feature when a prediction is made on a failed instance
+#Output: Dictionaries of each line of code's coefficient results, max, mean, min coefficient values
 
 coef_values_on_predict = {}
 
@@ -141,6 +154,8 @@ for i in coef_values_on_predict:
     feature_coef_min[i] = min(coef_values_on_predict[i])
 
 #Write output file
+#Input: Dictionaries of each line of code's coefficient results, max, mean, min coefficient values
+#Output: .txt Files containing each line of code's coefficient values, mean, max, and min coefficient values
 
 with open(sys.argv[3] + "_maple_results.txt", "w") as file:
     for i in feature_coefficients_based_on_error_instance:
