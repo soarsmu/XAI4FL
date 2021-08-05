@@ -73,14 +73,14 @@ fails = []
 passes = []
 i = 0
 for result in y:
-    if result == 0 or result == "FAIL":
+    if result == "FAIL":
         fails.append(i)
     else:
         passes.append(i)
     i += 1
 
 if len(fails) == 1:
-    df = df.append(df.iloc[fails[0]])
+    df = df.append(df.iloc[fails[0]], ignore_index=True)
     x = df[spectra_list[:len(spectra_list)-1]]
     y = df["Pass/Fail"]
 
