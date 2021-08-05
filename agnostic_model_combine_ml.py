@@ -76,7 +76,7 @@ if len(sys.argv) < 5:
     print("Please give input of <model_name> <spectra_file_location> <matrix_file_location> <output_file_name>")
     #print("e.g., python agnositc_model_combine_ml.py RF 1\\spectra 1\\matrix Closure-1 ")
     exit()
-if sys.argv[1] not in ["RF", "KNN", "log-reg", "SVM, XGB"]:
+if sys.argv[1] not in ["RF", "KNN", "log-reg", "SVM", "XGB"]:
     print("Please choose from this model names: RF, KNN, log-reg, SVM, XGB")
     exit()
     
@@ -155,11 +155,18 @@ if model_name == "KNN" or model_name == "log-reg" or model_name == "SVM":
         explainer = shap.LinearExplainer(model, x_train)
         shap_values = explainer.shap_values(x)
 
-    for i in fails:
-        temp_list = []
-        for index, j in enumerate(shap_values[0][i]):
-            temp_list.append(spectra_list[index] + ";" + str(j))
-        shap_to_txt[x.iloc[i].name] = temp_list
+    if model_name == "log-reg" or model_name == "SVM":
+        for i in fails:
+            temp_list = []
+            for index, j in enumerate(shap_values[i]):
+                temp_list.append(spectra_list[index] + ";" + str(j))
+            shap_to_txt[x.iloc[i].name] = temp_list
+    elif model_name == "KNN":
+        for i in fails:
+            temp_list = []
+            for index, j in enumerate(shap_values[0][i]):
+                temp_list.append(spectra_list[index] + ";" + str(j))
+            shap_to_txt[x.iloc[i].name] = temp_list
     #Process individual SHAP values as well as mean, max, and min values for each test case
 
     shap_lines_output_val = {}
