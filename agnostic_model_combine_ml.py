@@ -57,15 +57,22 @@ def choose_model(model_name, x_train, x_test, y_train, y_test):
 
     return model
 
+
+#Helper function that takes in shap.Explanation object and instance name or index to generate list of SHAP values based on given instance
 def make_line_in_txt_shap(shap_value_exp_obj_instance, instance_name):
     feature_indexes = []
     new_list = []
+    # Iterate through dataframe row with index = instance_name and store lines of code executed inside feature_indexes array.
     for i in range(len(df.iloc[instance_name])):
         if df.iloc[instance_name][i] == 1:
             feature_indexes.append(i)
+    # Iterate through feature_indexes array to find lines of code executed and pair those lines of code with their respective SHAP values intro string
+    # Pair string: <line_of_code>;<hsap_value>
+    # Pair strings are stored in new_list array.
     for i in feature_indexes:
         new_list.append(";".join([list(x.columns)[i], str(shap_value_exp_obj_instance[i].values)]))
     return new_list
+    # Output: new_list -> ['org.apache.commons.math3.random.Well19937c#95;0.008888888888888889', 'org.apache.commons.math3.random.Well19937c#96;0.017103535353535353']
 
 def write_output_file(filename, obj, is_reverse=False):
     with open(filename, 'w') as file:
@@ -149,26 +156,59 @@ model = choose_model(model_name, x_train, x_test, y_train, y_test)
 shap_to_txt = {}
 
 if model_name == "KNN" or model_name == "log-reg" or model_name == "SVM":
+
+    # Creates SHAP Explainer Object based on machine learning model
+    # KernelExplainer -> KNN ; LinearExplainer -> LogReg, SVM
+    # Input: Machine learning model object, training dataset (x_train, x_test, y_train, y_test)
+    # Output: SHAP values dictionary per failed test case instance (shap_to_txt)
+
     if model_name == "KNN":
         explainer = shap.KernelExplainer(model.predict_proba, x_train)
         shap_values = explainer.shap_values(x)
+
+        # shap_values output (3D array with length = 2); shap_values[0] -> 3D array with positive SHAP values (SHAP values * 1) (the one we're using) with length = number of spectra; 
+        # shap_values[1] -> 3D array with negative SHAP values (SHAP values * -1) with length = number of spectra
+        # shap_values output (3D array with length = 2):
+        # [array([[0., 0., 0., ..., 0., 0., 0.], [0., 0., 0., ..., 0., 0., 0.], [0., 0., 0., ..., 0., 0., 0.], ..., [0., 0., 0., ..., 0., 0., 0.]]),
+        #  array([[0., 0., 0., ..., 0., 0., 0.], [0., 0., 0., ..., 0., 0., 0.], [0., 0., 0., ..., 0., 0., 0.], ..., [0., 0., 0., ..., 0., 0., 0.]])]
+        # shap_values[0] output (2D array with length = number of instances):
+        # [[0. 0. 0. ... 0. 0. 0.], [0. 0. 0. ... 0. 0. 0.], ... , [0. 0. 0. ... 0. 0. 0.], [0. 0. 0. ... 0. 0. 0.]]
+        # shap_values[0][18] output (1D array with length = number of spectra): 
+        # array([ 0. , 0. , 0. , 0. , 0. , ... , 0.00537892  0.01126959  0.0039343   0.0089556, -0.01115984 ... , 0.00311491, 0. , 0. , ... , 0. ])
+    
     elif model_name == "log-reg" or model_name == "SVM":
         explainer = shap.LinearExplainer(model, x_train)
         shap_values = explainer.shap_values(x)
+
+        # shap_values output (2D array with length = number of instance):
+        # array([[0., 0., 0., ..., 0., 0., 0.], [0., 0., 0., ..., 0., 0., 0.], ..., [0., 0., 0., ..., 0., 0., 0.], [0., 0., 0., ..., 0., 0., 0.]])
+        # shap_values[18] output (1D array with length = number of spectra): 
+        # array([ 0. , 0. , 0. , 0. , 0. , ... , , -0.00232071, -0.00232071, -0.00232071, -0.00232071, -0.00232071, ... , -0.01180167, 0. , 0. , ... , 0.  ])
 
     if model_name == "log-reg" or model_name == "SVM":
         for i in fails:
             temp_list = []
             for index, j in enumerate(shap_values[i]):
+                # We can directly iterate the SHAP values of each feature given an instance as the array is only 2-Dimensional 
                 temp_list.append(spectra_list[index] + ";" + str(j))
             shap_to_txt[x.iloc[i].name] = temp_list
     elif model_name == "KNN":
         for i in fails:
             temp_list = []
             for index, j in enumerate(shap_values[0][i]):
+                # We need to determine which SHAP Values (in our case it's positive SHAP values, i.e., 0th index) before iterating the SHAP values 
                 temp_list.append(spectra_list[index] + ";" + str(j))
             shap_to_txt[x.iloc[i].name] = temp_list
-    #Process individual SHAP values as well as mean, max, and min values for each test case
+
+    # Output: shap_to_txt dictionary (key -> index of failed test case instance; value -> array of <line_of_code>;<shap_value>):
+    # {18: ['org.apache.commons.math3.util.MathArrays$1#674;0.0',
+    #   'org.apache.commons.math3.util.MathArrays$1#678;0.0',
+    #   'org.apache.commons.math3.util.MathArrays$1#680;0.0', 
+    #   ..., 'org.apache.commons.math3.random.RandomDataImpl#581;0.0']}
+    
+    # Process individual SHAP values as well as mean, max, and min SHAP values for each test case
+    # Input: SHAP values dictionary per failed test case instance (shap_to_txt)
+    # Output: SHAP values dictionary per line of code (shap_lines_output_val)
 
     shap_lines_output_val = {}
 
@@ -180,23 +220,65 @@ if model_name == "KNN" or model_name == "log-reg" or model_name == "SVM":
             if feature not in shap_lines_output_val:
                 shap_lines_output_val[feature] = []
             shap_lines_output_val[feature].append(float(shapval))
+    
+    # Output: shap_lines_output_val (key -> line of code; value -> array of SHAP values obtained from each failed instance 
+    # with array length = number of failed test case instances) :
+    # {'org.apache.commons.math3.distribution.AbstractRealDistribution#112': [0.0],
+    # 'org.apache.commons.math3.distribution.AbstractRealDistribution#113': [0.0], ... , 
+    # 'org.apache.commons.math3.distribution.AbstractRealDistribution#246': [-0.0029355801005312245],
+    # 'org.apache.commons.math3.distribution.AbstractRealDistribution#247': [-0.0029355801005312245], ...
+    # 'org.apache.commons.math3.util.Pair#94': [0.0]}
+
 else:
+    # Creates SHAP Tree Explainer Object for XGBoost and Random Forest
+    # Input: Machine learning tree-based model object, training dataset (x_train, x_test, y_train, y_test) 
+    # Output: SHAP values dictionary per failed test case instance (shap_to_txt)
+
     shap_values = shap.TreeExplainer(model).shap_values(x)
+    # BUGGED make_line_in_txt_shap function causes lines of code to be lost during compile. FIXED by using normal iteration    
     for i in fails:
-        shap_value_exp_obj = shap.Explanation(shap_values[0][i], feature_names=list(x.columns))
-        shap_to_txt[x.iloc[i].name] = []
-        shap_to_txt[x.iloc[i].name] += make_line_in_txt_shap(list(shap_value_exp_obj), i)
+        temp_list = []
+        for index, j in enumerate(shap_values[0][i]):
+            temp_list.append(spectra_list[index] + ";" + str(j))
+        shap_to_txt[x.iloc[i].name] = temp_list
+
+    # Output: shap_to_txt dictionary (key -> index of failed test case instance; value -> array of <line_of_code>;<shap_value>):
+    # {18: ['org.apache.commons.math3.util.MathArrays$1#674;0.0',
+    # 'org.apache.commons.math3.util.MathArrays$1#678;0.0', ... , 
+    # 'org.apache.commons.math3.distribution.DiscreteRealDistribution#66;0.0033760683760683764',
+    # 'org.apache.commons.math3.distribution.DiscreteRealDistribution#67;0.006817901234567901',
+    # 'org.apache.commons.math3.distribution.DiscreteRealDistribution#87;0.005427328843995511', ... , 
+    # 'org.apache.commons.math3.random.RandomDataImpl#565;0.0',
+    # 'org.apache.commons.math3.random.RandomDataImpl#581;0.0']}
+
+    # Process individual SHAP values as well as mean, max, and min SHAP values for each test case
+    # Input: SHAP values dictionary per failed test case instance (shap_to_txt)
+    # Output: SHAP values dictionary per line of code (shap_lines_output_val)
 
     shap_lines_output_val = {}
 
     for i in shap_to_txt:
-        for j in shap_to_txt[i]:
-            feature_and_value = j.split(";")
-            feature = feature_and_value[0]
-            value =  float(feature_and_value[1])
+        for index, value in enumerate(shap_to_txt[i]):
+            feature_shapval = value.split(";")
+            feature = feature_shapval[0]
+            shapval = feature_shapval[1]
             if feature not in shap_lines_output_val:
                 shap_lines_output_val[feature] = []
-            shap_lines_output_val[feature].append(value)
+            shap_lines_output_val[feature].append(float(shapval))
+    
+    # Output: shap_lines_output_val (key -> line of code; value -> array of SHAP values obtained from each failed instance 
+    # with array length = number of failed test case instances) :
+    # {'org.apache.commons.math3.distribution.AbstractRealDistribution#112': [0.0],
+    # 'org.apache.commons.math3.distribution.AbstractRealDistribution#113': [0.0], ... , 
+    # 'org.apache.commons.math3.distribution.DiscreteDistribution#148': [0.006186868686868687],
+    # 'org.apache.commons.math3.distribution.DiscreteDistribution#157': [0.015071895424836602],
+    # 'org.apache.commons.math3.distribution.DiscreteDistribution#158': [0.025824074074074076], ... , 
+    # 'org.apache.commons.math3.util.Pair#84': [0.0],
+    # 'org.apache.commons.math3.util.Pair#94': [0.0]}
+
+#Process individual SHAP values as well as mean, max, and min SHAP values for each test case
+#Input: SHAP values dictionary per line of code (shap_lines_output_val)
+#Output: Dictionaries of each line of code's mean, max, and min SHAP values (shap_means, shap_max, shap_min)
 
 shap_means = {}
 shap_max = {}
@@ -218,6 +300,18 @@ for i in shap_lines_output_val:
 
 for i in shap_means:
     shap_means[i] = sum(shap_means[i]) / len(shap_means[i])
+
+# Output: shap_means, shap_max, shap_min; Each dictionary follows the format: key -> line of code, value -> min/max/mean SHAP value
+# Example for shap_means:
+# {'org.apache.commons.math3.distribution.AbstractRealDistribution#112': 0.0,
+# 'org.apache.commons.math3.distribution.AbstractRealDistribution#113': 0.0, ... , 
+# 'org.apache.commons.math3.distribution.DiscreteRealDistribution#159': 0.004962962962962964,
+# 'org.apache.commons.math3.distribution.DiscreteRealDistribution#161': 0.001574074074074074, ... ,
+# 'org.apache.commons.math3.util.Pair#94': 0.0} 
+
+#Write output file
+#Input: Dictionaries of each line of code's mean, max, and min SHAP values
+#Output: .txt Files containing each line of code's SHAP values, mean, max, and min SHAP values
 
 with open(output_file_name+"_"+model_name+"_shap_results.txt", "w") as file:
     for i in shap_to_txt:
