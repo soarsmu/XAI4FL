@@ -1,0 +1,210 @@
+* Checking out Math-4 to /scratch/acp13jcd/run_gzoltar_28189_Math-4
+* Compiling Math-4
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+* Running GZoltar
+   ____ _____     _ _               
+  / ___|__  /___ | | |_ __ _ _ __   
+ | |  _  / // _ \| | __/ _` | '__| 
+ | |_| |/ /| (_) | | || (_| | |     
+  \____/____\___/|_|\__\__,_|_| 
+
+[ERROR] /scratch/acp13jcd/run_gzoltar_28189_Math-4/lib/junit-4.8.2.jar does not exist
+java.lang.Exception
+	at com.gzoltar.lib.master.modes.Diagnose.execute(Unknown Source)
+	at com.gzoltar.lib.master.GZoltar.parseCommandLine(Unknown Source)
+	at com.gzoltar.lib.master.GZoltar.main(Unknown Source)
+* Preparing classpath
+* Collecting classes under test
+* Collecting test cases
+* Performing analysis
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testEndPoints
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testEndPoints
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionParallel
+* Failure: null | testIntersectionParallel(org.apache.commons.math3.geometry.euclidean.twod.SubLineTest)
+java.lang.NullPointerException
+	at org.apache.commons.math3.geometry.euclidean.twod.Line.toSubSpace(Line.java:182)
+	at org.apache.commons.math3.geometry.euclidean.twod.SubLine.intersection(SubLine.java:120)
+	at org.apache.commons.math3.geometry.euclidean.twod.SubLineTest.testIntersectionParallel(SubLineTest.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at com.gzoltar.lib.instrumentation.testing.junit.a.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionParallel
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testNoEndPoints
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testNoEndPoints
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionInsideInside
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionInsideInside
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionBoundaryBoundary
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionBoundaryBoundary
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionOutsideOutside
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionOutsideOutside
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionBoundaryOutside
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionBoundaryOutside
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testSeveralSegments
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testSeveralSegments
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testHalfInfiniteNeg
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testHalfInfiniteNeg
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testHalfInfinitePos
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testHalfInfinitePos
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionInsideOutside
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionInsideOutside
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testNoSegments
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testNoSegments
+* Started org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionInsideBoundary
+* Finished org.apache.commons.math3.geometry.euclidean.twod.SubLineTest#testIntersectionInsideBoundary
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testOppositeHyperplanes
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testOppositeHyperplanes
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testDisjointPolygons
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testDisjointPolygons
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testEmptyDifference
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testEmptyDifference
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testXor
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testXor
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testBug20040520
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testBug20040520
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testBug20041003
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testBug20041003
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testStair
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testStair
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testUnion
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testUnion
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testHole
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testHole
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testIssue880Complete
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testIssue880Complete
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testIssue880Simplified
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testIssue880Simplified
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testChoppedHexagon
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testChoppedHexagon
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testLineIntersection
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testLineIntersection
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testDifference
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testDifference
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testIntersection
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testIntersection
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testUnlimitedSubHyperplane
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testUnlimitedSubHyperplane
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testConcentric
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testConcentric
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testSingularPoint
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testSingularPoint
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testSqueezedHexa
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testSqueezedHexa
+* Started org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testSimplyConnected
+* Finished org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest#testSimplyConnected
+* Started org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testBox
+* Finished org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testBox
+* Started org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testCross
+* Finished org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testCross
+* Started org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testBuildBox
+* Finished org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testBuildBox
+* Started org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testTetrahedron
+* Finished org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testTetrahedron
+* Started org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testIsometry
+* Finished org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testIsometry
+* Started org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testIssue780
+* Finished org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest#testIssue780
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testEndPoints
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testEndPoints
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testNoEndPoints
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testNoEndPoints
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionInsideInside
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionInsideInside
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionBoundaryBoundary
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionBoundaryBoundary
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionOutsideOutside
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionOutsideOutside
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionBoundaryOutside
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionBoundaryOutside
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionNotIntersecting
+* Failure: null | testIntersectionNotIntersecting(org.apache.commons.math3.geometry.euclidean.threed.SubLineTest)
+java.lang.NullPointerException
+	at org.apache.commons.math3.geometry.euclidean.threed.Line.getAbscissa(Line.java:114)
+	at org.apache.commons.math3.geometry.euclidean.threed.Line.toSubSpace(Line.java:129)
+	at org.apache.commons.math3.geometry.euclidean.threed.SubLine.intersection(SubLine.java:116)
+	at org.apache.commons.math3.geometry.euclidean.threed.SubLineTest.testIntersectionNotIntersecting(SubLineTest.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at com.gzoltar.lib.instrumentation.testing.junit.a.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionNotIntersecting
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testSeveralSegments
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testSeveralSegments
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testHalfInfiniteNeg
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testHalfInfiniteNeg
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testHalfInfinitePos
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testHalfInfinitePos
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionInsideOutside
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionInsideOutside
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testNoSegments
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testNoSegments
+* Started org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionInsideBoundary
+* Finished org.apache.commons.math3.geometry.euclidean.threed.SubLineTest#testIntersectionInsideBoundary
+* Filtering test cases that do not cover any component
+* Sending data to master
+* Closing connection with client
+* Performing fault localization
+* Running Ochiai
+* Running Ochiai2
+* Running Tarantula
+* Running Jaccard
+* Running SBI
+* Running Kulczynski2
+* Running Sorensen-Dice
+* Running Anderberg
+* Running Simple-matching
+* Running Rogers and Tanimoto
+* Running Russel and Rao
+* Running Dstar
+* Running Opt
+* Running Barinel
+* Running Ideal
+* Running Naish1
+* Writing coverage matrix to '/fastdata/acp13jcd/GZoltar/Math/4/Math/developer/0/Math-4b-developer.0/matrix'
+* Normalizing spectra, coefficient: DSTAR
+* Normalizing spectra, coefficient: OPT
+* Writing spectra to '/fastdata/acp13jcd/GZoltar/Math/4/Math/developer/0/Math-4b-developer.0/spectra'
+* Metrics
+* Writing statistics to '/fastdata/acp13jcd/GZoltar/Math/4/Math/developer/0/Math-4b-developer.0/statistics.csv'
+* Computation finished
+
+DONE!
