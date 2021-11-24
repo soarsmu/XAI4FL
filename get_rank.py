@@ -1,16 +1,21 @@
 import os
 import pandas as pd 
+import sys
 from scipy.stats import rankdata
-
+cwd_1 = ""
+if len(sys.argv) > 1:
+	cwd_1 = sys.argv[1]
 cwd = os.getcwd()
 
 def get_results():
 	file_names = {'_shap_max.txt':'max', '_shap_min.txt':'min', '_shap_mean.txt':'mean'}
 	colnames = ['statements', 'effect_size']
 	all_rank = {}
-	directories = [x[0] for x in os.walk(cwd)]
+	if cwd_1 == "":
+		directories = [x[0] for x in os.walk(cwd)]
+	else:
+		directories = [x[0] for x in os.walk(cwd_1)]
 	for x in directories:
-		print(x)
 		temp_name = x.split('\\')
 		if len(temp_name) < 2:
 			temp_name = x.split('/')
@@ -18,6 +23,7 @@ def get_results():
 		check_file = file_name
 		check_file += '_shap_max.txt'
 		if os.path.isfile(os.path.join(x,check_file)):
+			print(x)
 			project = file_name.split('-')
 			for i in file_names:
 				#temp = pd.read_csv(os.path.join(x,file_name+i), sep=';', names=colnames, header=None)
@@ -73,7 +79,6 @@ def get_buggy_line(all_rank):
 				file_name_candidates = project+'-'+bug_number+'.candidates'
 				if os.path.isfile(os.path.join(path, file_name_candidates)):
 					file = open(os.path.join(path, file_name_candidates), 'r')
-					print(file_name_candidates)
 					lines = file.readlines()
 					for line in lines:
 						temp_split = line.rstrip().split(',')
@@ -119,10 +124,6 @@ def get_line(proj, bug, buggy_l):
 		temp_2.append(temp_arr[1])
 		if temp_arr[1] == buggy_line:
 			get_from = temp_arr[0]
-			print(proj)
-			print(bug)
-			print("FOUUUUUNNDDDDD")
-			print(get_from)
 		count += 1
 	file1.close()
 
@@ -132,7 +133,6 @@ def get_line(proj, bug, buggy_l):
 	if get_from == "":
 		return buggy_l
 	temp_line = process_line(get_from)
-	print(temp_line)
 	return temp_line
 
 
@@ -317,8 +317,6 @@ def get_rank(all_rank,buggy_line,sloc_data):
 							if not_found_temp == 1:
 								new_stmts = get_line(project, bug_number, stmts)
 								if new_stmts in all_rank[project][bug_number]['max'][0]:
-									print("FOUUUUUNNDDDDD MOREEEEE")
-									print(sorted_max[all_rank[project][bug_number]['max'][0].index(new_stmts)])
 									ranked_final[project][bug_number][stmts]['max'] = sorted_max[all_rank[project][bug_number]['max'][0].index(new_stmts)]
 									ranked_final[project][bug_number][stmts]['min'] = sorted_max[all_rank[project][bug_number]['min'][0].index(new_stmts)]
 									ranked_final[project][bug_number][stmts]['mean'] = sorted_max[all_rank[project][bug_number]['mean'][0].index(new_stmts)]
@@ -326,7 +324,6 @@ def get_rank(all_rank,buggy_line,sloc_data):
 									ranked_final[project][bug_number][stmts]['max_stmts'] = new_stmts
 									ranked_final[project][bug_number][stmts]['min_stmts'] = new_stmts
 									ranked_final[project][bug_number][stmts]['mean_stmts'] = new_stmts
-									print(ranked_final[project][bug_number][stmts]['max'])
 								else:
 									temp_stmts = new_stmts.split('#')
 									#print(temp_stmts[0])
@@ -381,7 +378,6 @@ buggy_line_data = get_buggy_line(rank_data)
 sloc_data = get_sloc()
 #print(sloc_data)
 final_rank = get_rank(rank_data,buggy_line_data,sloc_data)
-print(final_rank['Chart']['13'])
 print_result(final_rank)
 
 
