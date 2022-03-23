@@ -22,12 +22,15 @@ while i < len(data):
 	#print(data[i])
 	project = data[i][0]
 	bug = data[i][1]
-	sloc = data[i][colnames['sloc']]
+	sloc = float(data[i][colnames['sloc']])
 	temp_len = data[i][colnames['temp_len']]
 
 	temp_mean_best = []
 	temp_min_best = []
 	temp_max_best = []
+	temp1_mean_best = []
+	temp1_min_best = []
+	temp1_max_best = []
 	# print(data[i])
 	while i < len(data) and data[i][0] == project and data[i][1] == bug:
 		if data[i][colnames['is_not_found']] == 1:
@@ -36,6 +39,9 @@ while i < len(data):
 			temp_mean_best.append([not_found, data[i][colnames['buggy_line']]])
 			temp_min_best.append([not_found, data[i][colnames['buggy_line']]])
 			temp_max_best.append([not_found, data[i][colnames['buggy_line']]])
+			temp1_mean_best.append(not_found)
+			temp1_min_best.append(not_found)
+			temp1_max_best.append(not_found)
 		else:
 			if pd.isnull(data[i][colnames['buggy_line_max']]):
 				temp_mean_best.append([float(data[i][colnames['shap_mean']]), data[i][colnames['buggy_line']]])
@@ -45,6 +51,9 @@ while i < len(data):
 				temp_mean_best.append([float(data[i][colnames['shap_mean']]), data[i][colnames['buggy_line_mean']]])
 				temp_min_best.append([float(data[i][colnames['shap_min']]), data[i][colnames['buggy_line_min']]])
 				temp_max_best.append([float(data[i][colnames['shap_max']]), data[i][colnames['buggy_line_max']]])
+			temp1_mean_best.append(float(data[i][colnames['shap_mean']]))
+			temp1_min_best.append(float(data[i][colnames['shap_min']]))
+			temp1_max_best.append(float(data[i][colnames['shap_max']]))
 			
 		i += 1
 	#cek ulang bagian sortingnya
@@ -52,23 +61,28 @@ while i < len(data):
 	temp_mean_best.sort(key=lambda x: x[0])
 	temp_min_best.sort(key=lambda x: x[0])
 	temp_max_best.sort(key=lambda x: x[0])
-
+	temp1_mean_best.sort()
+	temp1_min_best.sort()
+	temp1_max_best.sort()
 	#print(temp_tarantula_best)
 	size = len(temp_mean_best)
 	if size == 1:
 		half_size = 1
 	else:
 		half_size = int(size / 2)
-
+	print(temp1_mean_best[0])
+	print(temp1_mean_best[:half_size])
 	
 	temp_array = [project, bug] 
 	temp_array.extend([temp_mean_best[0][0], temp_min_best[0][0],temp_max_best[0][0]])
 	temp_array.extend([temp_mean_best[int(len(temp_mean_best)/2)][0], temp_min_best[int(len(temp_min_best)/2)][0],temp_max_best[int(len(temp_max_best)/2)][0]])
 	temp_array.extend([temp_mean_best[-1][0], temp_min_best[-1][0],temp_max_best[-1][0]])
-	#temp_array.extend([temp_mean_best[0][0]/sloc, temp_min_best[0][0]/sloc, temp_max_best[0][0]/sloc])
-	#temp_array.extend([float(sum(temp_mean_best[:half_size][0]) / len(temp_mean_best[:half_size])) / sloc, float(sum(temp_min_best[:half_size][0]) / len(temp_min_best[:half_size])) / sloc,float(sum(temp_max_best[:half_size][0]) / len(temp_max_best[:half_size])) / sloc])
-	#temp_array.extend([float(sum(temp_mean_best[:][0]) / len(temp_mean_best)) / sloc, float(sum(temp_min_best[:][0]) / len(temp_min_best)) / sloc, float(sum(temp_max_best[:][0]) / len(temp_max_best)) / sloc])
-	temp_array.extend([temp_mean_best[0][1], temp_min_best[0][1],temp_max_best[0][1]])
+	temp_array.extend([temp_mean_best[0][0]/sloc, temp_min_best[0][0]/sloc, temp_max_best[0][0]/sloc])
+	temp_array.extend([float(temp_mean_best[int(len(temp_mean_best)/2)][0])/sloc, float(temp_min_best[int(len(temp_min_best)/2)][0])/sloc,float(temp_max_best[int(len(temp_max_best)/2)][0])/sloc])
+	temp_array.extend([float(temp_mean_best[-1][0])/sloc, float(temp_min_best[-1][0])/sloc,float(temp_max_best[-1][0])/sloc])
+	#temp_array.extend([float(sum(temp1_mean_best[:half_size]) / len(temp1_mean_best[:half_size])) / sloc, float(sum(temp1_min_best[:half_size]) / len(temp1_min_best[:half_size])) / sloc,float(sum(temp1_max_best[:half_size]) / len(temp1_max_best[:half_size])) / sloc])
+	#temp_array.extend([float(sum(temp1_mean_best[:]) / len(temp1_mean_best)) / sloc, float(sum(temp1_min_best[:]) / len(temp1_min_best)) / sloc, float(sum(temp1_max_best[:]) / len(temp1_max_best)) / sloc])
+	#temp_array.extend([temp1_mean_best[0], temp1_min_best[0],temp1_max_best[0]])
 
 	all_result.append(temp_array)
 
@@ -78,7 +92,7 @@ print(size_all)
 
 
 
-output_name = "combine_feat.txt"
+output_name = "combine.txt"
 if len(sys.argv) > 2:
 	output_name = sys.argv[2]
 with open(output_name,'w', newline='', encoding='utf-8') as output:

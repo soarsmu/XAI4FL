@@ -1,0 +1,111 @@
+* Checking out Math-2 to /scratch/acp13jcd/run_gzoltar_39555_Math-2
+* Compiling Math-2
+Running ant (compile)...................................................... OK
+Running ant (compile.tests)................................................ OK
+* Running GZoltar
+   ____ _____     _ _               
+  / ___|__  /___ | | |_ __ _ _ __   
+ | |  _  / // _ \| | __/ _` | '__| 
+ | |_| |/ /| (_) | | || (_| | |     
+  \____/____\___/|_|\__\__,_|_| 
+
+[ERROR] /scratch/acp13jcd/run_gzoltar_39555_Math-2/lib/junit-4.8.2.jar does not exist
+java.lang.Exception
+	at com.gzoltar.lib.master.modes.Diagnose.execute(Unknown Source)
+	at com.gzoltar.lib.master.GZoltar.parseCommandLine(Unknown Source)
+	at com.gzoltar.lib.master.GZoltar.main(Unknown Source)
+* Preparing classpath
+* Collecting classes under test
+* Collecting test cases
+* Performing analysis
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testLargeValues
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testLargeValues
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testDegenerateNoFailures
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testDegenerateNoFailures
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testAccessors
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testAccessors
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testPreconditions
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testPreconditions
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testDegenerateNoSuccesses
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testDegenerateNoSuccesses
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testDegenerateFullSample
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testDegenerateFullSample
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testMath644
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testMath644
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testMoments
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testMoments
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testMath1021
+* Failure: sample=-50 | testMath1021(org.apache.commons.math3.distribution.HypergeometricDistributionTest)
+java.lang.AssertionError: sample=-50
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.apache.commons.math3.distribution.HypergeometricDistributionTest.testMath1021(HypergeometricDistributionTest.java:297)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at com.gzoltar.lib.instrumentation.testing.junit.a.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testMath1021
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testMoreLargeValues
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testMoreLargeValues
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testDensities
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testDensities
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testInverseCumulativeProbabilities
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testInverseCumulativeProbabilities
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testSampling
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testSampling
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testCumulativeProbabilities
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testCumulativeProbabilities
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testIllegalArguments
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testIllegalArguments
+* Started org.apache.commons.math3.distribution.HypergeometricDistributionTest#testConsistencyAtSupportBounds
+* Finished org.apache.commons.math3.distribution.HypergeometricDistributionTest#testConsistencyAtSupportBounds
+* Filtering test cases that do not cover any component
+* Sending data to master
+* Closing connection with client
+* Performing fault localization
+* Running Ochiai
+* Running Ochiai2
+* Running Tarantula
+* Running Jaccard
+* Running SBI
+* Running Kulczynski2
+* Running Sorensen-Dice
+* Running Anderberg
+* Running Simple-matching
+* Running Rogers and Tanimoto
+* Running Russel and Rao
+* Running Dstar
+* Running Opt
+* Running Barinel
+* Running Ideal
+* Running Naish1
+* Writing coverage matrix to '/fastdata/acp13jcd/GZoltar/Math/2/Math/developer/0/Math-2b-developer.0/matrix'
+* Normalizing spectra, coefficient: DSTAR
+* Normalizing spectra, coefficient: OPT
+* Writing spectra to '/fastdata/acp13jcd/GZoltar/Math/2/Math/developer/0/Math-2b-developer.0/spectra'
+* Metrics
+* Writing statistics to '/fastdata/acp13jcd/GZoltar/Math/2/Math/developer/0/Math-2b-developer.0/statistics.csv'
+* Computation finished
+
+DONE!

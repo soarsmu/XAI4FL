@@ -14,3 +14,13 @@ org.apache.commons.lang3.text.translate.EntityArrays#373;0.0
 org.apache.commons.lang3.text.translate.EntityArrays#374;0.0
 org.apache.commons.lang3.text.translate.EntityArrays#375;0.0
 org.apache.commons.lang3.text.translate.EntityArrays#377;0.0
+org.apache.commons.lang3.text.translate.EntityArrays#28;-1.0
+org.apache.commons.lang3.text.translate.EntityArrays#130;-1.0
+org.apache.commons.lang3.text.translate.EntityArrays#134;-1.0
+org.apache.commons.lang3.text.translate.EntityArrays#332;-1.0
+org.apache.commons.lang3.text.translate.EntityArrays#335;-1.0
+org.apache.commons.lang3.text.translate.EntityArrays#343;-1.0
+org.apache.commons.lang3.text.translate.EntityArrays#346;-1.0
+org.apache.commons.lang3.text.translate.EntityArrays#351;-1.0
+org.apache.commons.lang3.text.translate.EntityArrays#354;-1.0
+org.apache.commons.lang3.text.translate.EntityArrays#363;-1.0

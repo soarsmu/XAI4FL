@@ -8,7 +8,7 @@ my_function () {
 }
 
 second_function () {
-    python agnositc_model_testing.py "${pwd}/${x}/spectra" "${pwd}/${x}/matrix" "${pwd}/${project_name[$dir1]}/${project_name[$dir1]}-${x}/${project_name[$dir1]}-${x}"
+    python XAI4FL.py "${pwd}/${x}/spectra" "${pwd}/${x}/matrix" "${pwd}/${project_name[$dir1]}/${project_name[$dir1]}-${x}/${project_name[$dir1]}-${x}"
 	pwd
 
 }
